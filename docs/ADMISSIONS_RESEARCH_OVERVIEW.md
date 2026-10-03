@@ -14,6 +14,8 @@ This team-supported simulation study explores a robot-navigation problem that is
 
 The study extends that testing to three newly authored layouts. It is an evaluation contribution to an existing research framework, with AI assistance in implementation, execution and reporting. The team's algorithms and trained model remain credited team work.
 
+**AI-assisted learning:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. Codex also assisted with implementation, experiment operation, analysis, visualization, and writing. [Full AI-use and contribution disclosure →](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation)
+
 ## What was changed and why
 
 The offset-opening map forces an indirect route through an opening at one end of a divider. The staggered-baffle map adds repeated turns around alternating dividers. The island map presents two possible routes around a central solid obstacle and exercises the map-coordinate transformation with a different starting heading.

@@ -8,6 +8,12 @@ Their guidance and generosity made this learning experience possible. I am grate
 
 *Shih-Kai Lan (Sky)*
 
+## AI-assisted learning and implementation
+
+As a high-school student, I used **ChatGPT** to help organize research resources, clarify unfamiliar concepts, and get quick advice on small questions as I learned. This assistance supported my learning alongside the guidance provided by Professor Zhao, Zhenyu Wu, and Huaze Liu.
+
+**Codex** also assisted with code inspection, map/script implementation, experiment operation, quantitative analysis, visualization, and writing. These uses are disclosed so readers can distinguish the team's research foundation, my learning and evaluation work, and the assistance provided by AI tools.
+
 ## Preliminary independent exploration
 
 The G1 rough-terrain package contains custom Isaac Lab task configuration, rewards, edge-return commands, a saved model and scripts from Sky's earlier independent exploration. It builds on Isaac Lab, Unitree assets and the RL framework; it is not an original general-purpose simulator or robot controller. Implementation and setup received AI assistance. The historical task package is preserved as found; no new training or playback validation was performed during archiving.

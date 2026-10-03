@@ -69,6 +69,8 @@ The threshold requires enough localization belief to satisfy **both position and
 
 **Credit:** Professor Ye Zhao provided advice and connected me with the team. Zhenyu Wu, Huaze Liu and the team provided the framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
 
+**Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu. I include this disclosure so readers can understand how AI tools supported my learning and the preparation of this portfolio.
+
 ## The curiosity behind the work
 
 At a 2024 Georgia Tech / CIC Asia Future Tech Forum event, I saw professors, university students and high-school students using engineering to contribute to the world. Seeing students close to my age participate made research feel possible for me.
