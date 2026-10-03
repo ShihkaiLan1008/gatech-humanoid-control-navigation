@@ -64,7 +64,7 @@ My personal motivation, the experience that drew me into robotics, and a concret
 This personal repository preserves source snapshots, maps, models, research datasets, logs, reports and full execution recordings. Original checkouts remain intact. Generated compiler caches, credentials and virtual environments are excluded. Large artifacts use Git LFS:
 
 ```bash
-git clone https://github.com/azureowl372/research-retrospective.git
+git clone https://github.com/azureowl372/ShihKai-Lan-Research-Project-with-Georgia-Tech-LIDAR-LAB..git research-retrospective
 cd research-retrospective
 git lfs pull
 ```
