@@ -2,9 +2,9 @@
 
 I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his generous advice and for introducing me to his student, Zhenyu Wu. His guidance opened the door for me to learn from the team's research.
 
-My sincere thanks go to **Zhenyu Wu** for guiding me throughout this work, providing detailed instructions, helping me set up the research environment, and sharing code and research resources. He also introduced me to Huaze Liu, making this collaboration possible.
+I owe particular thanks to **Zhenyu Wu**, who was my main source of practical guidance throughout this project. He gave me detailed instructions for approaching the work, provided extensive help with setting up the research environment, and shared the code and resources I needed to begin. His support was central to my ability to take part in the research and continue learning. He also introduced me to Huaze Liu. I am deeply grateful for the time and effort he devoted to helping me through this experience.
 
-I am equally grateful to **Huaze Liu** for generously sharing his maps and research work as references for my learning and experiments. These materials gave me a foundation from which to explore new maps and questions.
+I also sincerely thank **Huaze Liu** for generously sharing his maps and research work as references for my learning and experiments. These materials gave me a foundation from which to explore new maps and questions.
 
 Their time, guidance, and generosity have meant a great deal to me. This portfolio reflects both what I have learned and my respect for the people whose support helped me get here.
 
@@ -34,6 +34,8 @@ A robot has a map and a destination—but its estimate of its own position can d
 
 Zhenyu's assignment was to test the team's navigation framework on new layouts. This extension introduced three maps, checked their geometry, ran the existing humanoid controller and preserved the results for analysis.
 
+**My role:** I directed the AI-assisted workflow around that assignment: clarifying the goal, keeping the work focused on new-map testing, asking for an account of what had been done, and shaping how the research would be explained. [How I turned the task into directions for AI tools →](docs/HOW_I_DIRECTED_AI.md)
+
 ![Pilot study: three new maps, four completed trials, four physical arrivals, one formal success. One seed per map.](assets/pilot-at-a-glance.svg)
 
 **The finding:** all four completed trials entered the physical goal region, but three ended with insufficient arrival confidence. That gap between motion and certainty is the research question worth pursuing.
@@ -61,15 +63,27 @@ The threshold requires enough localization belief to satisfy **both position and
 
 ## My contribution within the team project
 
-| The team's foundation | This research extension |
+### How I directed the work
+
+My contribution included interpreting the research assignment and giving AI tools a clear purpose. When I needed clarity about the testing, I asked where it had been performed and restated the goal: use the team's existing work as a reference, create new maps, and test the navigation system on them.
+
+I also asked for investigation after the computer restarted unexpectedly, decided when to pause and resume the work, and requested an explanation of the experiments, their significance, and future possibilities. For this portfolio, I specified that readers should understand both the research and my role, with clear credit for my mentors and AI assistance.
+
+These decisions show how I used AI deliberately: defining the task, questioning whether the work matched it, communicating what I needed, and refining the deliverable. [Concrete examples of my directions and the resulting work →](docs/HOW_I_DIRECTED_AI.md)
+
+### How the contributions fit together
+
+| Contributor | Role in this study |
 | :--- | :--- |
-| Navigation algorithms, localization and sensing strategy | Three new layouts testing detours, repeated turns and route choice |
-| Trained G1 walking controller and simulator integration | Execution, recordings, geometry checks and quantitative evaluation |
-| Original maps and research code | A reproducible case study with videos, analysis and open questions |
+| **Professor Zhao and the research team** | Advice, the new-map assignment, research resources, existing algorithms, maps, trained controller and simulator integration |
+| **Me — Shih-Kai Lan (Sky)** | Task interpretation, direction of the AI-assisted workflow, scope clarification, questions about testing, and decisions about presentation and attribution |
+| **ChatGPT and Codex** | Concept explanations and resource organization; substantial code/map implementation, simulation operation, analysis, visualization and drafting |
 
-**Credit:** Professor Ye Zhao provided advice and connected me with the team. Zhenyu Wu, Huaze Liu and the team provided the framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
+Together, this work produced three new map layouts and a documented simulation case study with recordings, quantitative results, and open questions.
 
-**Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu. I include this disclosure so readers can understand how AI tools supported my learning and the preparation of this portfolio.
+**Credit:** Professor Ye Zhao provided advice and connected me with the team. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
+
+**Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the assignment, context, priorities, and follow-up directions that guided the assistance. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu.
 
 ## The curiosity behind the work
 

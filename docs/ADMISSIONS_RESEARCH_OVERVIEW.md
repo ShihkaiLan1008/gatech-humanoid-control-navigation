@@ -6,7 +6,9 @@
 
 ## Acknowledgments
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to **Zhenyu Wu**. Zhenyu guided the work, helped me set up the research environment, shared code and research resources, and introduced me to **Huaze Liu**. Huaze generously shared his maps and research work as references for my learning and experiments. Their guidance and generosity provided the foundation for this study. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to **Zhenyu Wu**.
+
+**Zhenyu was my main source of practical guidance throughout the project.** He provided detailed instructions, extensive setup help, and the code and research resources I needed. His support was central to my participation and learning, and I am deeply grateful for the time and effort he devoted to helping me. He also introduced me to **Huaze Liu**, whom I sincerely thank for generously sharing his maps and research work as references for my experiments. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
 
 ## Question and context
 
@@ -14,7 +16,15 @@ This team-supported simulation study explores a robot-navigation problem that is
 
 The study extends that testing to three newly authored layouts. It is an evaluation contribution to an existing research framework, with AI assistance in implementation, execution and reporting. The team's algorithms and trained model remain credited team work.
 
-**AI-assisted learning:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. Codex also assisted with implementation, experiment operation, analysis, visualization, and writing. [Full AI-use and contribution disclosure →](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation)
+## My role: turning the assignment into directions
+
+I understood Zhenyu's assignment as a question about an existing system: how would it behave on new maps? I provided the team's repository and mentor context to AI tools, asked where testing had been done, and restated that new-map evaluation was the task. This kept the requested work tied to the research assignment.
+
+When the computer restarted unexpectedly, I asked for investigation and continuation, then decided when to pause and resume. I also directed the report to explain the study's purpose, results, significance, and future questions in language an admissions reader could understand while retaining technical depth. I requested explicit credit for the team's support and AI assistance.
+
+This role required communicating the goal, clarifying scope, asking follow-up questions, and refining the output. The resulting study used substantial AI assistance for implementation and analysis. [Concrete examples of my directions →](HOW_I_DIRECTED_AI.md)
+
+**AI-assisted learning:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the context, priorities, and follow-up directions. Codex also assisted with implementation, experiment operation, analysis, visualization, and writing. [Full AI-use and contribution disclosure →](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation)
 
 ## What was changed and why
 
