@@ -1,3 +1,7 @@
+![Research portfolio section](../assets/section-direction.svg)
+
+[← Portfolio home](../README.md) · [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) · [Technical depth](TECHNICAL_DEPTH.md) · [Video gallery](VIDEOS.md)
+
 # Why I care, and where I want to go
 
 Personal narrative prepared from Sky's account of their interests and experience. The event description follows that account rather than asserting a separately verified official event title or award record. No award or prize is claimed for Sky.

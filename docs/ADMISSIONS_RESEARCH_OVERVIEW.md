@@ -1,3 +1,7 @@
+![Research portfolio section](../assets/section-study.svg)
+
+[← Portfolio home](../README.md) · [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) · [Technical depth](TECHNICAL_DEPTH.md) · [Video gallery](VIDEOS.md)
+
 # Can a humanoid know when it has arrived?
 
 ## Question and context

@@ -1,6 +1,18 @@
-# Full physical-simulation replays
+![Research portfolio section](../assets/section-videos.svg)
+
+[← Portfolio home](../README.md) · [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) · [Technical depth](TECHNICAL_DEPTH.md) · [Video gallery](VIDEOS.md)
+
+# The experiments, in motion
 
 Videos replay saved executed robot states with a trajectory/localization panel. They are simulation evidence; no real robot is shown. All four files were decoded completely and start/middle/end frames visually checked. Walls occasionally occlude the robot; the plot panel helps track the motion.
+
+## A glimpse of the recorded runs
+
+| Original room | Central island |
+| :---: | :---: |
+| [![Original room simulation](../projects/tactile-navigation/outputs/original_room2_video_frame.png)](../projects/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.mp4) | [![Central-island simulation](../projects/tactile-navigation/outputs/island_video_frame.png)](../projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4) |
+
+## Full recordings
 
 | Run | Replay | Outcome |
 |---|---|---|

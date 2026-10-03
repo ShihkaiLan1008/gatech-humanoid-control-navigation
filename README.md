@@ -1,67 +1,123 @@
-# Sky Lan — robotics research retrospective
+![Sky Lan — Walking toward understanding. Robotics research portfolio with a recorded simulation trajectory.](assets/research-cover.svg)
 
-**Private research archive · team-supported, AI-assisted work · simulation studies**
+<p align="center">
+  <strong>Humanoid robotics &nbsp;·&nbsp; Mechanical engineering &nbsp;·&nbsp; Research in simulation</strong><br>
+  <sub>Private portfolio · team-supported work · AI assistance disclosed</sub>
+</p>
 
-My interest began at a 2024 Georgia Tech / CIC Asia Future Tech Forum event, where I saw robotics work from professors, university students and high-school students like me. What surprised me was the possibility of using engineering to contribute to the world while still being a student. That experience drew me toward mechanical engineering and robotics.
+<p align="center">
+  <a href="docs/ADMISSIONS_RESEARCH_OVERVIEW.md"><strong>START HERE</strong></a> &nbsp; / &nbsp;
+  <a href="docs/VIDEOS.md">WATCH THE ROBOT</a> &nbsp; / &nbsp;
+  <a href="docs/TECHNICAL_DEPTH.md">GO DEEPER</a> &nbsp; / &nbsp;
+  <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a>
+</p>
 
-Watching changes in robot inputs turn into movement made the subject personal: to me, seeing a robot learn to walk felt like a parent watching a child take its first steps. My long-term interest is adaptive robot walking with less dependence on repeated training, transferable movement knowledge and cleaner, more efficient use of energy.
+---
 
-This portfolio brings together preliminary independent G1 locomotion exploration and extensions of the team's tactile robotics work. The central case study asks a concrete question: **can an existing touch-based humanoid navigation framework work on map layouts beyond those originally tested?** The studies below are steps toward those interests; they do not yet demonstrate training-free locomotion, universal transfer or clean-energy gains.
+## Can a robot know when it has arrived?
 
-## The project in one minute
+A robot has a map and a destination—but its estimate of its own position can drift as it walks. Touching a wall can help it correct that estimate. The challenge is to move successfully **and gather enough evidence to confirm arrival**.
 
-Think of a robot walking around obstacles with a map, but an imperfect estimate of where it is. A planned route is only the first step. As it moves, its estimate can drift. Touching a wall provides information that can help correct that estimate. The system must decide both how to move and when it has enough evidence to say it has arrived.
+Zhenyu's assignment was to test the team's navigation framework on new layouts. This extension introduced three maps, checked their geometry, ran the existing humanoid controller and preserved the results for analysis.
 
-The team supplied the navigation framework and trained walking controller. This extension added three map layouts, checked their geometry, ran the existing system, and collected quantitative results and full replay videos. **Every completed trial reached the physical goal region without a recorded fall, but only one of the four met the system's formal completion criterion.** The others remained below its 95% belief-based arrival threshold. This is the key finding: physical arrival and confident arrival are different engineering goals.
+![Pilot study: three new maps, four completed trials, four physical arrivals, one formal success. One seed per map.](assets/pilot-at-a-glance.svg)
 
-These are single-seed simulation observations. They do not establish a general success rate, a reliable product or real-robot performance.
+**The finding:** all four completed trials entered the physical goal region, but three ended with insufficient arrival confidence. That gap between motion and certainty is the research question worth pursuing.
 
-## What the team built, and what this extension added
+[Read the accessible research overview →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md)
 
-| Team foundation | Work in this extension |
-|---|---|
-| Existing maps and map-loading framework | Three new layouts: offset opening, alternating dividers, central island |
-| Global planner and uncertainty-aware route execution | Geometry checks and experiments using shared settings |
-| Particle-filter localization and contact-sensing strategy | Analysis of estimated versus true position, contacts and arrival confidence |
-| Trained G1 locomotion controller and simulator integration | Four completed physical-simulation records, videos, figures and reproducible reports |
+## From code to movement
 
-Zhenyu Wu, Huaze Liu and the team retain authorship of their framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. The portfolio identifies that assistance rather than presenting the framework or all implementation as independently authored by Sky. [Full contribution statement](CONTRIBUTIONS.md).
+[![A recorded G1 simulation navigating the central-island map, beside its trajectory and localization diagnostics. Click to open the full replay.](projects/tactile-navigation/outputs/island_video_frame.png)](projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4)
 
-## Three research threads
+<p align="center"><sub>Central-island experiment · actual recorded simulation · full replay linked above</sub></p>
 
-| Study | What it investigates | Main evidence and limits |
-|---|---|---|
-| [Independent G1 rough terrain](projects/independent-g1-rough-terrain/README.md) | How a learned locomotion policy and a custom command can support exploration and return toward an environment origin | Code, saved model_3000, configuration and training log; preliminary exploration, no guaranteed fall prevention or energy-efficiency claim |
-| [Tactile controller and foot tracking](projects/tactile-controller/RETROSPECTIVE.md) | Setup, local reward/training experiments and measurement of foot-reference tracking | Reports and screening; local tuned model had higher mean reference error than the reference model, so this is not an improvement claim |
-| [New-map tactile navigation](docs/ADMISSIONS_RESEARCH_OVERVIEW.md) | Whether the existing navigation system executes on different geometries and meets its arrival criterion | Three new maps plus an original-map pilot; four recordings, one formal success, one seed per map |
+<p align="center">
+  <a href="docs/VIDEOS.md"><strong>Explore all four replays →</strong></a> &nbsp; · &nbsp;
+  <a href="projects/tactile-navigation/outputs/sky_navigation_trajectories.png">Compare the executed paths →</a>
+</p>
 
-## Why this work matters
+## What the results reveal
 
-Robotics needs both action and evidence: a robot must move, estimate where it is, and know when its estimate is trustworthy enough for the task. Contact-based localization could complement other sensing where visual information is difficult to use. This study does not test darkness, smoke, assistive deployment or search-and-rescue; those are potential application directions rather than demonstrated capabilities.
+![Final arrival beliefs: original room 93.35%, central island 92.41%, offset opening 91.89%, staggered baffles 96.04%. Only staggered baffles clears the common 95% criterion.](assets/arrival-confidence.svg)
 
-The work provides a reproducible way to examine an existing system on new layouts and expose a failure mode that a success-only demo would miss. The current research artifact can support map evaluation, replay-based diagnosis and follow-up experiments on uncertainty and sensing.
+The threshold requires enough localization belief to satisfy **both position and heading**. It is an internal belief criterion. Each map was tested with one seed, so these observations are a pilot study rather than a general success-rate estimate.
 
-## Where the research can go next
+[Methods and metric definitions →](docs/TECHNICAL_DEPTH.md) &nbsp; · &nbsp; [Full report and limitations →](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md)
 
-1. Repeat all layouts across seeds with a common time budget, and retain every outcome.
-2. Vary one geometric factor at a time, such as opening width, to identify reproducible limits.
-3. Inspect final belief distributions and contact observations to understand uncertain arrival before changing the planner or threshold.
-4. Compare sensing choices or additional final probes in a controlled experiment.
-5. After repeatable simulation evidence, investigate transfer with the team on real hardware and its appropriate operating procedures.
+## My contribution within the team project
 
-My personal motivation, the experience that drew me into robotics, and a concrete path toward my longer-term goals are in [Why I care and where I want to go](docs/MY_RESEARCH_DIRECTION.md). This narrative is based on my account of the forum and my response to the robotics work; technical claims remain tied to the saved evidence.
+| The team's foundation | This research extension |
+| :--- | :--- |
+| Navigation algorithms, localization and sensing strategy | Three new layouts testing detours, repeated turns and route choice |
+| Trained G1 walking controller and simulator integration | Execution, recordings, geometry checks and quantitative evaluation |
+| Original maps and research code | A reproducible case study with videos, analysis and open questions |
 
-## Read at your preferred depth
+**Credit:** Zhenyu Wu, Huaze Liu and the team provided the framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
 
-- **Admissions overview:** [problem, contribution, meaning and future direction](docs/ADMISSIONS_RESEARCH_OVERVIEW.md).
-- **Technical depth:** [architecture, metric definitions and open research questions](docs/TECHNICAL_DEPTH.md).
-- **Evidence:** [full report and results](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md), [trajectory figure](projects/tactile-navigation/outputs/sky_navigation_trajectories.png), [video index](docs/VIDEOS.md).
-- **Application writing:** [report/conclusion instructions](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md).
-- **Trust and provenance:** [contributions](CONTRIBUTIONS.md), [source hashes](SOURCE_MANIFEST.json), [upstream revisions](PROVENANCE.json), [confidentiality](CONFIDENTIALITY.md).
+## The curiosity behind the work
 
-## Archive and retrieval
+At a 2024 Georgia Tech / CIC Asia Future Tech Forum event, I saw professors, university students and high-school students using engineering to contribute to the world. Seeing students close to my age participate made research feel possible for me.
 
-This personal repository preserves source snapshots, maps, models, research datasets, logs, reports and full execution recordings. Original checkouts remain intact. Generated compiler caches, credentials and virtual environments are excluded. Large artifacts use Git LFS:
+> Watching a robot learn to walk felt like a parent watching a child take its first steps.
+
+That connection between an input and a physical movement drew me toward mechanical engineering. I want to explore more adaptive walking, movement knowledge that can transfer between robots, and cleaner, more efficient use of energy.
+
+[My story and the questions I want to pursue →](docs/MY_RESEARCH_DIRECTION.md)
+
+## A growing research journey
+
+<table>
+<tr>
+<td width="33%" valign="top">
+<h3>01 · Locomotion</h3>
+<p><strong>Independent G1 exploration</strong></p>
+<p>Rough-terrain training and a custom command that guides the robot toward its environment origin.</p>
+<p><a href="projects/independent-g1-rough-terrain/README.md">Code, model &amp; training record →</a></p>
+</td>
+<td width="33%" valign="top">
+<h3>02 · Measurement</h3>
+<p><strong>Tactile controller experiments</strong></p>
+<p>Reward changes, training artifacts and an unfavorable foot-tracking result preserved for learning.</p>
+<p><a href="projects/tactile-controller/RETROSPECTIVE.md">Experiment retrospective →</a></p>
+</td>
+<td width="33%" valign="top">
+<h3>03 · Navigation</h3>
+<p><strong>New maps, new questions</strong></p>
+<p>Different obstacle layouts reveal the relationship between physical arrival and localization confidence.</p>
+<p><a href="docs/ADMISSIONS_RESEARCH_OVERVIEW.md">Featured case study →</a></p>
+</td>
+</tr>
+</table>
+
+## Turning ambition into experiments
+
+| Next step | The question it can answer |
+| :--- | :--- |
+| **Repeat** · more seeds, matched budgets | Which findings persist beyond a single run? |
+| **Explain** · inspect belief and contact records | What causes arrival uncertainty, and can final sensing help? |
+| **Transfer** · another robot body or terrain | How much movement knowledge can be reused with less retraining? |
+| **Measure** · energy alongside stability | What tradeoffs connect useful movement and energy consumption? |
+
+Adaptive walking, broad transfer and cleaner energy are future directions. The current evidence establishes a simulation case study and a starting point for those questions.
+
+---
+
+<details>
+<summary><strong>Research evidence, limitations and application writing</strong></summary>
+
+- [Full navigation report](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md) · [Numeric audit](projects/tactile-navigation/outputs/sky_validation.json) · [Video audit](projects/tactile-navigation/outputs/sky_video_validation.json)
+- [Source inventory and hashes](SOURCE_MANIFEST.json) · [Source revisions](PROVENANCE.json) · [Graphic sources](assets/SOURCES.md)
+- [College-application report and conclusion guide](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
+- Scope: one seed per map, simulation only, team model 35500 substituted for the missing default 34000. The original room and new maps had different time caps; the system-interrupted attempt remains separate.
+- The earlier controller screening did not demonstrate improvement. The independent G1 package does not establish guaranteed fall prevention or energy-efficiency gains.
+
+</details>
+
+<details>
+<summary><strong>Private archive and reproduction</strong></summary>
+
+This repository preserves source snapshots, models, datasets, logs, reports and recordings. Large artifacts use Git LFS:
 
 ```bash
 git clone https://github.com/azureowl372/ShihKai-Lan-Research-Project-with-Georgia-Tech-LIDAR-LAB..git research-retrospective
@@ -69,4 +125,8 @@ cd research-retrospective
 git lfs pull
 ```
 
-This archive is not one standalone runtime. WSL/controller links and Isaac Lab dependencies are documented by project; some historical scripts retain original local paths. Keep it private. Admissions readers cannot access a private link unless you explicitly grant access or provide an approved excerpt.
+Dependencies and original local paths are documented by project. The archive is private and read-only; authorized updates require unarchiving it. Admissions readers need an approved excerpt or explicitly granted access. [Confidentiality and access →](CONFIDENTIALITY.md)
+
+</details>
+
+<p align="center"><sub>Ask a question. Build an experiment. Keep the evidence. Continue learning.</sub></p>

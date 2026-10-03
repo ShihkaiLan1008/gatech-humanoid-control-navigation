@@ -1,3 +1,7 @@
+![Research portfolio section](../assets/section-technical.svg)
+
+[← Portfolio home](../README.md) · [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) · [Technical depth](TECHNICAL_DEPTH.md) · [Video gallery](VIDEOS.md)
+
 # Technical depth: motion, belief and completion
 
 ## How the parts work together
