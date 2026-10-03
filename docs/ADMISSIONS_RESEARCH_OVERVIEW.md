@@ -4,6 +4,10 @@
 
 # Can a humanoid know when it has arrived?
 
+## Acknowledgments
+
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to **Zhenyu Wu**. Zhenyu guided the work, helped me set up the research environment, shared code and research resources, and introduced me to **Huaze Liu**. Huaze generously shared his maps and research work as references for my learning and experiments. Their guidance and generosity provided the foundation for this study. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
+
 ## Question and context
 
 This team-supported simulation study explores a robot-navigation problem that is easy to overlook: reaching a destination and knowing that it has reached it are not the same. The team's system combines a trained humanoid walking controller, a map-based route planner, an estimate of the robot's position and touch observations. Zhenyu's assignment was to run the existing navigation code with visible evidence, then create new maps to explore generality and robustness.

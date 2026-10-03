@@ -1,3 +1,17 @@
+# With gratitude
+
+I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his generous advice and for introducing me to his student, Zhenyu Wu. His guidance opened the door for me to learn from the team's research.
+
+My sincere thanks go to **Zhenyu Wu** for guiding me throughout this work, providing detailed instructions, helping me set up the research environment, and sharing code and research resources. He also introduced me to Huaze Liu, making this collaboration possible.
+
+I am equally grateful to **Huaze Liu** for generously sharing his maps and research work as references for my learning and experiments. These materials gave me a foundation from which to explore new maps and questions.
+
+Their time, guidance, and generosity have meant a great deal to me. This portfolio reflects both what I have learned and my respect for the people whose support helped me get here.
+
+*With sincere thanks and respect, Shih-Kai Lan (Sky)*
+
+---
+
 ![Sky Lan — Walking toward understanding. Robotics research portfolio with a recorded simulation trajectory.](assets/research-cover.svg)
 
 <p align="center">
@@ -53,7 +67,7 @@ The threshold requires enough localization belief to satisfy **both position and
 | Trained G1 walking controller and simulator integration | Execution, recordings, geometry checks and quantitative evaluation |
 | Original maps and research code | A reproducible case study with videos, analysis and open questions |
 
-**Credit:** Zhenyu Wu, Huaze Liu and the team provided the framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
+**Credit:** Professor Ye Zhao provided advice and connected me with the team. Zhenyu Wu, Huaze Liu and the team provided the framework and models. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
 
 ## The curiosity behind the work
 

@@ -1,5 +1,13 @@
 # Contributions and provenance
 
+## Acknowledgments
+
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to his student **Zhenyu Wu**. Zhenyu provided detailed instructions, substantial help with setting up the research environment, and access to code and research resources. He also introduced me to **Huaze Liu**, who generously shared his maps and research work as references for my learning and experiments.
+
+Their guidance and generosity made this learning experience possible. I am grateful for their time and support, and I credit their research contributions throughout this portfolio.
+
+*Shih-Kai Lan (Sky)*
+
 ## Preliminary independent exploration
 
 The G1 rough-terrain package contains custom Isaac Lab task configuration, rewards, edge-return commands, a saved model and scripts from Sky's earlier independent exploration. It builds on Isaac Lab, Unitree assets and the RL framework; it is not an original general-purpose simulator or robot controller. Implementation and setup received AI assistance. The historical task package is preserved as found; no new training or playback validation was performed during archiving.
