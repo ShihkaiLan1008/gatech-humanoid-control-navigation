@@ -1,0 +1,42 @@
+[
+  {
+    "trial": "footstep/sky_offset_gate/seed_0",
+    "output": "sky_offset_gate_footstep_pf_global_s0.mp4",
+    "command": [
+      "/home/sky/.venvs/tactile_controller/bin/python",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/scripts/punch_video.py",
+      "--run",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.json",
+      "--states",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/states_sky_offset_gate_footstep_pf_global_s0.npz",
+      "--out",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.partial.mp4",
+      "--stride",
+      "10",
+      "--checkpoint",
+      "models/sky_local/model_35500.pt"
+    ],
+    "status": "complete",
+    "bytes": 19351422
+  },
+  {
+    "trial": "footstep/sky_staggered_baffles/seed_0",
+    "output": "sky_staggered_baffles_footstep_pf_global_s0.mp4",
+    "command": [
+      "/home/sky/.venvs/tactile_controller/bin/python",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/scripts/punch_video.py",
+      "--run",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.json",
+      "--states",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/states_sky_staggered_baffles_footstep_pf_global_s0.npz",
+      "--out",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.partial.mp4",
+      "--stride",
+      "10",
+      "--checkpoint",
+      "models/sky_local/model_35500.pt"
+    ],
+    "status": "complete",
+    "bytes": 24568834
+  }
+]

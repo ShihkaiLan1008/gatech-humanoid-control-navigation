@@ -1,0 +1,19 @@
+{
+  "room": "sky_offset_gate",
+  "controller": "footstep",
+  "seed": 0,
+  "directory": "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0",
+  "started_unix": 1791016497.2856233,
+  "cpu_affinity": [
+    0,
+    2
+  ],
+  "rss_limit_gb": 4.0,
+  "rss_limit_kind": "polled process-group RSS",
+  "peak_rss_bytes": 3806265344,
+  "state": "finished",
+  "pid": 387,
+  "returncode": 0,
+  "ended_unix": 1791016930.3628383,
+  "wall_clock_s": 433.513980879
+}

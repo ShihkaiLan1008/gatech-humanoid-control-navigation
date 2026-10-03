@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tactile-navigation"
+version = "0.1.0"
+description = "Contact-rich tactile navigation for a humanoid on a known floorplan"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.23",
+]
+
+[project.optional-dependencies]
+# Figures, replay videos and the benchmark plots.
+viz = ["matplotlib>=3.6"]
+# The test suite. Everything under tests/ runs without MuJoCo or a GPU.
+test = ["pytest>=6.2"]
+
+# The MuJoCo/G1 backend is NOT declared here: it comes from the separate
+# low-level controller repository (mjlab + the wall-following RL task), which
+# carries its own pinned environment. See "Physical (MuJoCo/G1) runs" in the
+# README.
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# pytest is configured in pytest.ini (single source of truth).

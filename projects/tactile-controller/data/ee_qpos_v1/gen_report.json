@@ -1,0 +1,106 @@
+{
+  "config": "/home/zhw/LidarLab/tactile_controller/src/data_gen/ee_qpos/ee_qpos.yaml",
+  "sides": {
+    "left": {
+      "cells": 511875,
+      "layers": 51,
+      "solves": 679033,
+      "accepted": 167388,
+      "failed": 26034,
+      "outside_region": 246519,
+      "unreached": 70195,
+      "smooth": {
+        "checked": 167391,
+        "flagged": 1739,
+        "repaired": 10
+      },
+      "failed_by_reason": {
+        "pos": 26031,
+        "ori": 9240,
+        "coll": 264,
+        "limit": 0,
+        "elbow": 0
+      },
+      "jitter_tried": 467224,
+      "jitter_accepted": 456895,
+      "samples": 624283,
+      "accepted_bbox": {
+        "min": [
+          0.0,
+          0.05,
+          0.1
+        ],
+        "max": [
+          0.475,
+          0.575,
+          0.3
+        ]
+      },
+      "pos_err_mm": {
+        "p50": 0.04816591367125511,
+        "max": 4.999574661254883
+      },
+      "ori_err_deg": {
+        "p50": 0.013371970504522324,
+        "max": 2.9964377880096436
+      },
+      "elbow_rad": {
+        "p50": -0.13993747532367706,
+        "max": 1.3924572467803955
+      },
+      "wall_s": 126.5,
+      "solves_per_s": 5366
+    },
+    "right": {
+      "cells": 511875,
+      "layers": 51,
+      "solves": 679340,
+      "accepted": 167399,
+      "failed": 26045,
+      "outside_region": 246519,
+      "unreached": 70168,
+      "smooth": {
+        "checked": 167400,
+        "flagged": 1744,
+        "repaired": 9
+      },
+      "failed_by_reason": {
+        "pos": 26042,
+        "ori": 9234,
+        "coll": 259,
+        "limit": 0,
+        "elbow": 0
+      },
+      "jitter_tried": 467492,
+      "jitter_accepted": 457338,
+      "samples": 624737,
+      "accepted_bbox": {
+        "min": [
+          0.0,
+          -0.575,
+          0.1
+        ],
+        "max": [
+          0.475,
+          -0.05,
+          0.3
+        ]
+      },
+      "pos_err_mm": {
+        "p50": 0.048156898468732834,
+        "max": 5.0
+      },
+      "ori_err_deg": {
+        "p50": 0.013378598727285862,
+        "max": 2.995469331741333
+      },
+      "elbow_rad": {
+        "p50": -0.1400214284658432,
+        "max": 1.3888572454452515
+      },
+      "wall_s": 124.1,
+      "solves_per_s": 5472
+    }
+  },
+  "wall_s": 251.6
+}

@@ -1,0 +1,533 @@
+task: {"room": "sky_offset_gate", "face_yaw_map": 1.5707963267948966, "standoff_m": 0.3, "start_map_xy": [0.0, 0.0], "goal_map_xy": [4.4, 2.4000000000000004], "goal_radius_m": 0.3}
+[setup] planning global route before controller spawn
+[setup] initial heading: {"mode": "route", "scene_yaw_rad": 1.5707963267948966, "spawn_yaw_rad": 3.141592653589793}
+[footstep] checkpoint: /mnt/c/Users/gigabyte/Documents/ChatGPT/GT research/checkpoints/decoupled_footplacement/0911/foot_mimic_noforce_arm_model_35500.pt
+[footstep] hand motion: {'arm_speed_scale': 2.0, 'speed_m_s': 0.32, 'probe_speed_m_s': 0.16, 'yaw_rate_rad_s': 1.0, 'transition_min_s': 0.3, 'profile': 'smoothstep', 'transition_dwell_s': 0.15, 'miss_dwell_s': 0.25, 'contact_hold_s': 0.1, 'carry_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}}
+[footstep] controller motion: {'arrive_pos_tol_m': 0.03, 'depart_pos_tol_m': 0.1}
+Setting seed: 11
+Warp 1.15.0 initialized:
+   CUDA Toolkit 12.9, Driver 13.3
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5070 Laptop GPU" (8 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/.cache/warp/1.15.0
+Module mujoco_warp._src.smooth c4020f1 load on device 'cuda:0' took 4561.69 ms  (compiled)
+Module _nxn_broadphase__locals__kernel_cd21dc9b cd21dc9 load on device 'cuda:0' took 415.61 ms  (compiled)
+Module _primitive_narrowphase__locals__primitive_narrowphase_a35075ae a35075a load on device 'cuda:0' took 2400.04 ms  (compiled)
+Module mujoco_warp._src.constraint 36c8060 load on device 'cuda:0' took 208.34 ms  (compiled)
+Module _friction_dof__locals__kernel_3de76fad 3de76fa load on device 'cuda:0' took 290.92 ms  (compiled)
+Module _limit_slide_hinge__locals__kernel_b25a8d13 b25a8d1 load on device 'cuda:0' took 317.12 ms  (compiled)
+Module _efc_contact_init__locals__kernel_6e7f298a 6e7f298 load on device 'cuda:0' took 279.06 ms  (compiled)
+Module _efc_contact_jac_sparse__locals__kernel_a80bb5e9 a80bb5e load on device 'cuda:0' took 284.61 ms  (compiled)
+Module _efc_contact_update__locals__kernel_2d2d1a29 2d2d1a2 load on device 'cuda:0' took 294.69 ms  (compiled)
+Module mujoco_warp._src.forward bfd9fb5 load on device 'cuda:0' took 1456.87 ms  (compiled)
+Module mujoco_warp._src.passive d8c18c6 load on device 'cuda:0' took 1693.33 ms  (compiled)
+Module mujoco_warp._src.sensor de892d8 load on device 'cuda:0' took 3304.75 ms  (compiled)
+Module mujoco_warp._src.forward b068ad6 load on device 'cuda:0' took 1036.90 ms  (compiled)
+Module _qfrc_smooth__locals__kernel_3ac7164a 3ac7164 load on device 'cuda:0' took 215.46 ms  (compiled)
+Module mujoco_warp._src.support ca784c5 load on device 'cuda:0' took 331.54 ms  (compiled)
+Module _tile_cholesky_factorize_solve_block__locals__kernel_6a90e1e3 40a293f load on device 'cuda:0' took 3873.10 ms  (compiled)
+Module _solve_init_dof__locals__kernel_293c86d1 293c86d load on device 'cuda:0' took 213.78 ms  (compiled)
+Module mujoco_warp._src.solver 3a105a0 load on device 'cuda:0' took 1407.16 ms  (compiled)
+Module _solve_init_jaref_kernel__locals__kernel_c18bf578 c18bf57 load on device 'cuda:0' took 252.77 ms  (compiled)
+Module mul_m_kernel__locals___mul_m_4f80c25f 4f80c25 load on device 'cuda:0' took 242.69 ms  (compiled)
+Module _update_constraint_efc__locals__kernel_7b921a6e 7b921a6 load on device 'cuda:0' took 263.11 ms  (compiled)
+Module _update_constraint_init_qfrc_constraint_sparse__locals__kernel_65a5704f 65a5704 load on device 'cuda:0' took 247.62 ms  (compiled)
+Module _update_gradient_zero_grad_dot__locals__kernel_ca4acd13 ca4acd1 load on device 'cuda:0' took 215.56 ms  (compiled)
+Module _update_gradient_grad__locals__kernel_9e296ebd 9e296eb load on device 'cuda:0' took 215.66 ms  (compiled)
+Module _update_gradient_init_h_sparse__locals__kernel_864e53b1 864e53b load on device 'cuda:0' took 235.76 ms  (compiled)
+Module _JTDAJ_sparse__locals__kernel_66cd2906 66cd290 load on device 'cuda:0' took 264.62 ms  (compiled)
+Module _JTDAJ_sparse__locals__kernel_66cd2906 f4ed9da load on device 'cuda:0' took 558.98 ms  (compiled)
+Module _update_gradient_cholesky_blocked__locals__kernel_c4c2171d ebf350c load on device 'cuda:0' took 3976.03 ms  (compiled)
+Module _linesearch_jv_fused_kernel__locals__kernel_c2fb89f4 c2fb89f load on device 'cuda:0' took 266.46 ms  (compiled)
+Module _linesearch_iterative_kernel__locals__kernel_a612bcb6 3daf78d load on device 'cuda:0' took 532.28 ms  (compiled)
+Module _update_constraint_efc__locals__kernel_ddea4c95 ddea4c9 load on device 'cuda:0' took 266.39 ms  (compiled)
+Module _update_gradient_zero_grad_dot__locals__kernel_819fe036 819fe03 load on device 'cuda:0' took 221.09 ms  (compiled)
+Module _update_gradient_grad__locals__kernel_af49475a af49475 load on device 'cuda:0' took 217.52 ms  (compiled)
+Module _update_gradient_h_incremental_sparse__locals__kernel_b9225d2d b9225d2 load on device 'cuda:0' took 315.62 ms  (compiled)
+Module _update_gradient_cholesky_blocked_skip_unchanged__locals__kernel_e02e081a c0ca58e load on device 'cuda:0' took 3147.23 ms  (compiled)
+Module _contact_sort__locals__contact_sort_8d950af1 a76bf05 load on device 'cuda:0' took 669.93 ms  (compiled)
+Module mujoco_warp._src.derivative 833f5d0 load on device 'cuda:0' took 1188.13 ms  (compiled)
+Module _next_time_builder__locals___next_time_8c8bbcbc 8c8bbcb load on device 'cuda:0' took 244.11 ms  (compiled)
+Module reset_data__locals__reset_xfrc_applied_aec370af aec370a load on device 'cuda:0' took 208.31 ms  (compiled)
+Module reset_data__locals__reset_M_96396a8d 96396a8 load on device 'cuda:0' took 208.24 ms  (compiled)
+Module reset_data__locals__reset_mocap_b321694c b321694 load on device 'cuda:0' took 230.40 ms  (compiled)
+Module reset_data__locals__reset_contact_88cd7446 88cd744 load on device 'cuda:0' took 246.86 ms  (compiled)
+Module reset_data__locals__reset_sleep_1c5b28e7 1c5b28e load on device 'cuda:0' took 227.03 ms  (compiled)
+Module reset_data__locals__reset_nworld_1ba8fb6e 1ba8fb6 load on device 'cuda:0' took 307.91 ms  (compiled)
+
++---------------------------------+
+|         Base Environment        |
++------------------------+--------+
+| Property               | Value  |
++------------------------+--------+
+| Number of environments | 1      |
+| Environment device     | cuda:0 |
+| Environment seed       | 11     |
+| Physics step-size      | 0.005  |
+| Environment step-size  | 0.02   |
++------------------------+--------+
+
+[INFO] <EventManager> contains 1 active terms.
++---------------------------------------+
+| Active Event Terms in Mode: 'startup' |
++----------+----------------------------+
+|  Index   | Name                       |
++----------+----------------------------+
+|    0     | base_mass                  |
+|    1     | other_body_mass            |
+|    2     | foot_friction              |
+|    3     | pd_gains                   |
+|    4     | joint_armature             |
+|    5     | joint_friction             |
+|    6     | encoder_bias               |
+|    7     | base_com                   |
++----------+----------------------------+
++-----------------------------+
+| Domain Randomization Fields |
++-------+---------------------+
+| Index | Field Name          |
++-------+---------------------+
+|   0   | body_mass           |
+|   1   | body_subtreemass    |
+|   2   | dof_invweight0      |
+|   3   | body_invweight0     |
+|   4   | tendon_length0      |
+|   5   | tendon_invweight0   |
+|   6   | actuator_acc0       |
+|   7   | geom_friction       |
+|   8   | actuator_gainprm    |
+|   9   | actuator_biasprm    |
+|   10  | dof_armature        |
+|   11  | dof_frictionloss    |
+|   12  | body_ipos           |
++-------+---------------------+
+
+[INFO] <CommandManager> contains 3 active terms.
++---------------------------------------------------------+
+|                   Active Command Terms                  |
++-------+--------------+----------------------------------+
+| Index | Name         |               Type               |
++-------+--------------+----------------------------------+
+|   0   | left_ee_cmd  |         HandPoseCommand          |
+|   1   | right_ee_cmd |         HandPoseCommand          |
+|   2   | step_cmd     | EstimatedPositionFootstepCommand |
++-------+--------------+----------------------------------+
+
+[INFO] <ActionManager> contains 2 active terms.
++------------------------------------------+
+|     Active Action Terms (shape: 29)      |
++-------+----------------------+-----------+
+| Index | Name                 | Dimension |
++-------+----------------------+-----------+
+|   0   | lower_body_joint_pos |        15 |
+|   1   | upper_body_joint_pos |        14 |
++-------+----------------------+-----------+
+
+[INFO] <ObservationManager> contains 2 groups.
++-----------------------------------------------------------------------+
+| Active Observation Terms in Group: 'upper_body_actor' (shape: (519,)) |
++---------+---------------------------------+---------------------------+
+|  Index  | Name                            |           Shape           |
++---------+---------------------------------+---------------------------+
+|    0    | base_ang_vel                    |      (15,)  ← 5×(3,)      |
+|    1    | projected_gravity               |      (15,)  ← 5×(3,)      |
+|    2    | joint_pos                       |     (145,)  ← 5×(29,)     |
+|    3    | joint_vel                       |     (145,)  ← 5×(29,)     |
+|    4    | actions                         |     (145,)  ← 5×(29,)     |
+|    5    | left_ee_commands                |            (7,)           |
+|    6    | right_ee_commands               |            (7,)           |
+|    7    | measured_ee_pose                |           (14,)           |
+|    8    | ee_pose_err                     |           (18,)           |
+|    9    | hand_contact_force_cmd          |            (8,)           |
++---------+---------------------------------+---------------------------+
++-----------------------------------------------------------------------+
+| Active Observation Terms in Group: 'lower_body_actor' (shape: (480,)) |
++---------+---------------------------------+---------------------------+
+|  Index  | Name                            |           Shape           |
++---------+---------------------------------+---------------------------+
+|    0    | base_ang_vel                    |      (15,)  ← 5×(3,)      |
+|    1    | projected_gravity               |      (15,)  ← 5×(3,)      |
+|    2    | joint_pos                       |     (145,)  ← 5×(29,)     |
+|    3    | joint_vel                       |     (145,)  ← 5×(29,)     |
+|    4    | actions                         |     (145,)  ← 5×(29,)     |
+|    5    | step_commands                   |            (7,)           |
+|    6    | hand_contact_force_cmd          |            (8,)           |
++---------+---------------------------------+---------------------------+
+
+[INFO] <TerminationManager> contains 0 active terms.
++--------------------------+
+| Active Termination Terms |
++-------+------+-----------+
+| Index | Name |  Time Out |
++-------+------+-----------+
++-------+------+-----------+
+
+[INFO] <RewardManager> contains 0 active terms.
++-----------------------+
+|  Active Reward Terms  |
++-------+------+--------+
+| Index | Name | Weight |
++-------+------+--------+
++-------+------+--------+
+
+[INFO] <NullCurriculumManager> (inactive)
+[INFO] <NullMetricsManager> (inactive)
+[INFO] <NullRecorderManager> (inactive)
+/home/sky/.venvs/tactile_controller/lib/python3.13/site-packages/mjlab/managers/event_manager.py:325: UserWarning: dr.body_mass only randomizes mass and leaves the inertia tensor unchanged. For a physically consistent density change, use dr.pseudo_inertia(alpha_range=...) instead, which scales both mass and inertia together. dr.body_mass is only appropriate when modelling a point mass added at the COM.
+  term_cfg.func(self._env, env_ids, **term_cfg.params)
+Module mujoco_warp._src.io 466491b load on device 'cuda:0' took 1187.13 ms  (compiled)
+Module _tile_cholesky_factorize_block__locals__kernel_19fc5f1b 2df9bf3 load on device 'cuda:0' took 1330.83 ms  (compiled)
+Module _tile_cholesky_solve_block__locals__kernel_c8336212 4cdd7dc load on device 'cuda:0' took 2361.27 ms  (compiled)
+Unknown tag "mujoco" in /robot[@name='g1_29dof_nohand']
+[   0.00s] GLOBAL_PLAN {'feasible': True, 'distance_m': 9.8, 'explored': 23825, 'reason': 'seed/refine fallback: strict', 'requested_strategy': 'seed_refine', 'strategy': 'belief_astar', 'strategy_stats': {'geometric_expansions': 89768, 'repair_expansions': 12000, 'seeds': 4, 'repair_attempts': 6, 'shortcuts_tried': 0, 'shortcuts_accepted': 0, 'candidates_evaluated': 4, 'fallback': True}}
+[   0.00s] START_HEADING {'scene_yaw_deg': 90.0, 'spawn_yaw_deg': 180.0, 'mode': 'route'}
+[   0.00s] GLOBAL_ROUTE {'legs': 7, 'stations': 89, 'distance_m': 9.8, 'probes': 89, 'est_time_s': 473.8, 'peak_sigma_m': 0.122}
+[   0.00s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.635, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[   1.50s] MOVE {'kind': 'route:leg1', 'forward_m': 0.4, 'move_id': 1, 'left_m': -0.0}
+[   5.14s] STATION {'kind': 'leg1', 's': 0.356, 'off': -0.356, 'g': 0.356, 's_end': 0.5, 'target': [-0.4, 0.0], 'move': 'done', 'required': True}
+[   5.14s] TOUCH {'hand': 'right', 'alpha_deg': 0.0, 'p_hit': 0.35, 'ig': 0.469, 'margin_m': -0.02}
+[   5.14s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 0.469, 'target_xyz': {'right': [0.3, -0.15, 0.1]}, 'target_yaw_deg': {'right': 0.0}}
+[   7.14s] PUNCH {'kind': 'touch:leg1', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.0}
+[   7.14s] TOUCH_RESULT {'kind': 'leg1', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.050->0.051', 'target': 0.061, 'yaw_sigma_deg': '1.3->0.8'}
+[   7.14s] STATION_UNSERVED {'kind': 'leg1', 'g': 0.36, 'station_g': 0.5, 'misses': 1}
+[   7.14s] ARM_CARRY {'kind': 'reconnect:route', 'duration_s': 0.62}
+[   7.14s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.469, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[   7.76s] MOVE {'kind': 'reconnect:route', 'forward_m': -0.002, 'move_id': 2, 'left_m': -0.062}
+[  10.40s] STATION {'kind': 'leg1', 's': 0.349, 'off': -0.349, 'g': 0.349, 's_end': 0.5, 'target': [-0.336, 0.0], 'move': 'done', 'required': True}
+[  10.40s] TOUCH {'hand': 'right', 'alpha_deg': 0.0, 'p_hit': 0.3, 'ig': 0.337, 'margin_m': -0.03}
+[  10.40s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 0.469, 'target_xyz': {'right': [0.3, -0.15, 0.1]}, 'target_yaw_deg': {'right': 0.0}}
+[  12.40s] PUNCH {'kind': 'touch:leg1', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.0}
+[  12.40s] TOUCH_RESULT {'kind': 'leg1', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.051->0.052', 'target': 0.061, 'yaw_sigma_deg': '0.9->0.7'}
+[  12.40s] STATION_UNSERVED {'kind': 'leg1', 'g': 0.35, 'station_g': 0.5, 'misses': 1}
+[  12.40s] ARM_CARRY {'kind': 'route:leg1', 'duration_s': 0.62}
+[  12.40s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.469, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  13.02s] MOVE {'kind': 'route:leg1', 'forward_m': 0.165, 'move_id': 3, 'left_m': -0.022}
+[  15.66s] STATION {'kind': 'leg1', 's': 0.499, 'off': -0.499, 'g': 0.499, 's_end': 0.5, 'target': [-0.5, 0.0], 'move': 'done', 'required': True}
+[  15.66s] TOUCH {'hand': 'right', 'alpha_deg': 36.7, 'p_hit': 0.6, 'ig': 0.611, 'margin_m': 0.02}
+[  15.66s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 0.96, 'target_xyz': {'right': [0.2406, -0.3291, 0.1]}, 'target_yaw_deg': {'right': -36.666666666666664}}
+[  17.64s] PUNCH {'kind': 'touch:leg1', 'hand': 'right', 'contact': True, 'reason': 'brake', 'ext': 0.87, 'read_n': 35.2, 'true_n': 35.2, 'hold_n': 0.3, 's': 1.98}
+[  17.64s] TOUCH_RESULT {'kind': 'leg1', 'n': 0, 'hand': 'right', 'hit': True, 'sigma': '0.055->0.050', 'target': 0.063, 'yaw_sigma_deg': '0.7->0.6'}
+[  17.64s] LEG {'kind': 'leg2', 'touch': True, 's_end': 2.8, 'yaw_deg': 180.0}
+[  17.64s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.11}
+[  17.64s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  18.76s] MOVE {'kind': 'route:leg2', 'forward_m': -0.013, 'move_id': 4, 'left_m': -0.41}
+[  26.40s] STATION_PASSED {'g': 0.6, 'kind': 'wall'}
+[  26.40s] STATION {'kind': 'leg2', 's': 0.4, 'off': -0.002, 'g': 0.9, 's_end': 2.8, 'target': [-0.5, 0.4], 'move': 'done', 'required': True}
+[  26.40s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.59, 'ig': 0.701, 'margin_m': 0.02}
+[  26.40s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[  28.68s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.28}
+[  28.68s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.045->0.029', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.6'}
+[  28.68s] STATION_UNSERVED {'kind': 'leg2', 'g': 0.9, 'station_g': 0.7, 'misses': 1}
+[  28.68s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.11}
+[  28.68s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  29.80s] MOVE {'kind': 'route:leg2', 'forward_m': 0.019, 'move_id': 5, 'left_m': -0.401}
+[  36.42s] STATION_PASSED {'g': 0.7, 'kind': 'wall'}
+[  36.42s] STATION_PASSED {'g': 0.8, 'kind': 'wall'}
+[  36.42s] STATION_PASSED {'g': 0.9, 'kind': 'wall'}
+[  36.42s] STATION_PASSED {'g': 1.0, 'kind': 'wall'}
+[  36.42s] STATION {'kind': 'leg2', 's': 0.77, 'off': -0.018, 'g': 1.27, 's_end': 2.8, 'target': [-0.5, 0.798], 'move': 'done', 'required': True}
+[  36.42s] TOUCH {'hand': 'left', 'alpha_deg': 43.3, 'p_hit': 0.5, 'ig': 0.682, 'margin_m': 0.0}
+[  36.42s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2182, 0.3559, 0.1]}, 'target_yaw_deg': {'left': 43.333333333333336}}
+[  38.82s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': True, 'reason': 'contact', 'ext': 1.0, 'read_n': 9.1, 'true_n': 9.1, 'hold_n': 0.0, 's': 2.4}
+[  38.82s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.050->0.017', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.7'}
+[  38.82s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.28}
+[  38.82s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  40.12s] MOVE {'kind': 'route:leg2', 'forward_m': -0.048, 'move_id': 6, 'left_m': -0.398}
+[  46.74s] STATION_PASSED {'g': 1.2, 'kind': 'wall'}
+[  46.74s] STATION_PASSED {'g': 1.3, 'kind': 'wall'}
+[  46.74s] STATION {'kind': 'leg2', 's': 1.14, 'off': 0.001, 'g': 1.64, 's_end': 2.8, 'target': [-0.5, 1.164], 'move': 'done', 'required': True}
+[  46.74s] TOUCH {'hand': 'right', 'alpha_deg': 40.0, 'p_hit': 0.56, 'ig': 0.633, 'margin_m': 0.01}
+[  46.74s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.047, 'target_xyz': {'right': [0.2298, -0.3428, 0.1]}, 'target_yaw_deg': {'right': -40.0}}
+[  49.16s] PUNCH {'kind': 'touch:leg2', 'hand': 'right', 'contact': True, 'reason': 'contact', 'ext': 1.0, 'read_n': 6.6, 'true_n': 6.6, 'hold_n': 0.0, 's': 2.42}
+[  49.16s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'right', 'hit': True, 'sigma': '0.041->0.018', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.7'}
+[  49.16s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.2}
+[  49.16s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  50.36s] MOVE {'kind': 'route:leg2', 'forward_m': -0.01, 'move_id': 7, 'left_m': -0.4}
+[  56.98s] STATION_PASSED {'g': 1.5, 'kind': 'wall'}
+[  56.98s] STATION_PASSED {'g': 1.6, 'kind': 'wall'}
+[  56.98s] STATION_PASSED {'g': 1.7, 'kind': 'wall'}
+[  56.98s] STATION {'kind': 'leg2', 's': 1.526, 'off': 0.004, 'g': 2.026, 's_end': 2.8, 'target': [-0.5, 1.543], 'move': 'done', 'required': True}
+[  56.98s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.55, 'ig': 0.653, 'margin_m': 0.01}
+[  56.98s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[  59.26s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.28}
+[  59.26s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.044->0.031', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.6'}
+[  59.26s] STATION_UNSERVED {'kind': 'leg2', 'g': 2.03, 'station_g': 1.8, 'misses': 1}
+[  59.26s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.11}
+[  59.26s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  60.38s] MOVE {'kind': 'route:leg2', 'forward_m': 0.026, 'move_id': 8, 'left_m': -0.401}
+[  67.02s] STATION_PASSED {'g': 1.8, 'kind': 'wall'}
+[  67.02s] STATION_PASSED {'g': 1.9, 'kind': 'wall'}
+[  67.02s] STATION_PASSED {'g': 2.0, 'kind': 'wall'}
+[  67.02s] STATION_PASSED {'g': 2.1, 'kind': 'wall'}
+[  67.02s] STATION {'kind': 'leg2', 's': 1.889, 'off': 0.004, 'g': 2.389, 's_end': 2.8, 'target': [-0.5, 1.911], 'move': 'done', 'required': True}
+[  67.02s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.55, 'ig': 0.717, 'margin_m': 0.01}
+[  67.02s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[  68.98s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 0.8, 'read_n': 21.7, 'true_n': 21.7, 'hold_n': 0.0, 's': 1.96}
+[  68.98s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.049->0.019', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.7'}
+[  68.98s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.11}
+[  68.98s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  70.10s] MOVE {'kind': 'route:leg2', 'forward_m': -0.034, 'move_id': 9, 'left_m': -0.399}
+[  76.74s] STATION_PASSED {'g': 2.3, 'kind': 'wall'}
+[  76.74s] STATION_PASSED {'g': 2.4, 'kind': 'wall'}
+[  76.74s] STATION_PASSED {'g': 2.5, 'kind': 'wall'}
+[  76.74s] STATION {'kind': 'leg2', 's': 2.251, 'off': 0.008, 'g': 2.751, 's_end': 2.8, 'target': [-0.5, 2.272], 'move': 'done', 'required': True}
+[  76.74s] TOUCH {'hand': 'left', 'alpha_deg': 33.3, 'p_hit': 0.63, 'ig': 0.694, 'margin_m': 0.02}
+[  76.74s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2506, 0.3149, 0.1]}, 'target_yaw_deg': {'left': 33.33333333333333}}
+[  78.94s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.2}
+[  78.94s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.044->0.030', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.7'}
+[  78.94s] STATION_UNSERVED {'kind': 'leg2', 'g': 2.75, 'station_g': 2.6, 'misses': 1}
+[  78.94s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 1.02}
+[  78.94s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  79.98s] MOVE {'kind': 'route:leg2', 'forward_m': 0.029, 'move_id': 10, 'left_m': -0.401}
+[  86.62s] STATION_PASSED {'g': 2.6, 'kind': 'wall'}
+[  86.62s] STATION_PASSED {'g': 2.7, 'kind': 'wall'}
+[  86.62s] STATION_PASSED {'g': 2.8, 'kind': 'wall'}
+[  86.62s] STATION {'kind': 'leg2', 's': 2.619, 'off': 0.007, 'g': 3.119, 's_end': 2.8, 'target': [-0.5, 2.65], 'move': 'done', 'required': True}
+[  86.62s] TOUCH {'hand': 'right', 'alpha_deg': 90.0, 'p_hit': 0.37, 'ig': 0.865, 'margin_m': -0.04}
+[  86.62s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 2.356, 'target_xyz': {'right': [0.0, -0.45, 0.1]}, 'target_yaw_deg': {'right': -90.0}}
+[  90.42s] PUNCH {'kind': 'touch:leg2', 'hand': 'right', 'contact': True, 'reason': 'contact', 'ext': 1.0, 'read_n': 9.2, 'true_n': 9.2, 'hold_n': 0.2, 's': 3.8}
+[  90.42s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'right', 'hit': True, 'sigma': '0.052->0.052', 'target': 0.053, 'yaw_sigma_deg': '0.8->0.7'}
+[  90.42s] ARM_CARRY {'kind': 'route:leg2', 'duration_s': 2.51}
+[  90.42s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 2.356, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  92.94s] MOVE {'kind': 'route:leg2', 'forward_m': 0.002, 'move_id': 11, 'left_m': -0.123}
+[  96.58s] STATION_PASSED {'g': 3.0, 'kind': 'wall'}
+[  96.58s] STATION {'kind': 'leg2', 's': 2.777, 'off': 0.007, 'g': 3.277, 's_end': 2.8, 'target': [-0.5, 2.8], 'move': 'done', 'required': True}
+[  96.58s] TOUCH {'hand': 'left', 'alpha_deg': 33.3, 'p_hit': 0.62, 'ig': 0.811, 'margin_m': 0.02}
+[  96.58s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2506, 0.3149, 0.1]}, 'target_yaw_deg': {'left': 33.33333333333333}}
+[  98.06s] PUNCH {'kind': 'touch:leg2', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 0.37, 'read_n': 18.1, 'true_n': 18.1, 'hold_n': 0.5, 's': 1.48}
+[  98.06s] TOUCH_RESULT {'kind': 'leg2', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.052->0.019', 'target': 0.053, 'yaw_sigma_deg': '0.7->0.6'}
+[  98.06s] LEG {'kind': 'leg3', 'touch': True, 's_end': 0.1, 'yaw_deg': 90.0}
+[  98.06s] ARM_CARRY {'kind': 'route:leg3', 'duration_s': 1.02}
+[  98.06s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[  99.10s] MOVE {'kind': 'route:leg3', 'forward_m': -0.036, 'move_id': 12, 'left_m': -0.111, 'turn_deg': -90.0}
+[ 108.74s] STATION {'kind': 'leg3', 's': 0.094, 'off': -0.094, 'g': 3.394, 's_end': 0.1, 'target': [-0.5, 2.9], 'move': 'done', 'required': True}
+[ 108.74s] TOUCH {'hand': 'right', 'alpha_deg': 46.7, 'p_hit': 0.55, 'ig': 0.643, 'margin_m': 0.01}
+[ 108.74s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.222, 'target_xyz': {'right': [0.2059, -0.3682, 0.1]}, 'target_yaw_deg': {'right': -46.666666666666664}}
+[ 111.20s] PUNCH {'kind': 'touch:leg3', 'hand': 'right', 'contact': True, 'reason': 'brake', 'ext': 1.0, 'read_n': 24.1, 'true_n': 24.1, 'hold_n': 0.2, 's': 2.46}
+[ 111.20s] TOUCH_RESULT {'kind': 'leg3', 'n': 0, 'hand': 'right', 'hit': True, 'sigma': '0.022->0.023', 'target': 0.056, 'yaw_sigma_deg': '5.0->1.4'}
+[ 111.20s] LEG {'kind': 'leg4', 'touch': True, 's_end': 5.3, 'yaw_deg': 90.0}
+[ 111.20s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.37}
+[ 111.20s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.222, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 112.58s] MOVE {'kind': 'route:leg4', 'forward_m': -0.041, 'move_id': 13, 'left_m': -0.398}
+[ 120.22s] STATION_PASSED {'g': 3.3, 'kind': 'wall'}
+[ 120.22s] STATION_PASSED {'g': 3.4, 'kind': 'wall'}
+[ 120.22s] STATION_PASSED {'g': 3.5, 'kind': 'wall'}
+[ 120.22s] STATION {'kind': 'leg4', 's': 0.384, 'off': -0.017, 'g': 3.784, 's_end': 5.3, 'target': [-0.094, 2.9], 'move': 'done', 'required': True}
+[ 120.22s] TOUCH {'hand': 'left', 'alpha_deg': 43.3, 'p_hit': 0.49, 'ig': 0.588, 'margin_m': -0.0}
+[ 120.22s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2182, 0.3559, 0.1]}, 'target_yaw_deg': {'left': 43.333333333333336}}
+[ 122.68s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.46}
+[ 122.68s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.042->0.034', 'target': 0.053, 'yaw_sigma_deg': '1.5->1.1'}
+[ 122.68s] STATION_UNSERVED {'kind': 'leg4', 'g': 3.78, 'station_g': 3.6, 'misses': 1}
+[ 122.68s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.28}
+[ 122.68s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 123.98s] MOVE {'kind': 'route:leg4', 'forward_m': -0.005, 'move_id': 14, 'left_m': -0.4}
+[ 130.60s] STATION_PASSED {'g': 3.6, 'kind': 'wall'}
+[ 130.60s] STATION_PASSED {'g': 3.7, 'kind': 'wall'}
+[ 130.60s] STATION_PASSED {'g': 3.8, 'kind': 'wall'}
+[ 130.60s] STATION {'kind': 'leg4', 's': 0.746, 'off': -0.017, 'g': 4.146, 's_end': 5.3, 'target': [0.271, 2.9], 'move': 'done', 'required': True}
+[ 130.60s] TOUCH {'hand': 'right', 'alpha_deg': 43.3, 'p_hit': 0.56, 'ig': 0.804, 'margin_m': 0.01}
+[ 130.60s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.134, 'target_xyz': {'right': [0.2182, -0.3559, 0.1]}, 'target_yaw_deg': {'right': -43.333333333333336}}
+[ 133.06s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.46}
+[ 133.06s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.054->0.040', 'target': 0.053, 'yaw_sigma_deg': '1.2->1.0'}
+[ 133.06s] STATION_UNSERVED {'kind': 'leg4', 'g': 4.15, 'station_g': 3.9, 'misses': 1}
+[ 133.06s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.28}
+[ 133.06s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 134.36s] MOVE {'kind': 'route:leg4', 'forward_m': 0.013, 'move_id': 15, 'left_m': -0.4}
+[ 140.98s] STATION_PASSED {'g': 3.9, 'kind': 'wall'}
+[ 140.98s] STATION_PASSED {'g': 4.0, 'kind': 'wall'}
+[ 140.98s] STATION_PASSED {'g': 4.1, 'kind': 'wall'}
+[ 140.98s] STATION_PASSED {'g': 4.2, 'kind': 'wall'}
+[ 140.98s] STATION {'kind': 'leg4', 's': 1.112, 'off': 0.002, 'g': 4.512, 's_end': 5.3, 'target': [0.63, 2.9], 'move': 'done', 'required': True}
+[ 140.98s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.56, 'ig': 0.805, 'margin_m': 0.01}
+[ 140.98s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[ 143.12s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 1.0, 'read_n': 15.0, 'true_n': 15.0, 'hold_n': 0.0, 's': 2.14}
+[ 143.12s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.056->0.022', 'target': 0.053, 'yaw_sigma_deg': '1.1->0.9'}
+[ 143.12s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.11}
+[ 143.12s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 144.24s] MOVE {'kind': 'route:leg4', 'forward_m': -0.029, 'move_id': 16, 'left_m': -0.399}
+[ 150.86s] STATION_PASSED {'g': 4.4, 'kind': 'wall'}
+[ 150.86s] STATION_PASSED {'g': 4.5, 'kind': 'wall'}
+[ 150.86s] STATION_PASSED {'g': 4.6, 'kind': 'wall'}
+[ 150.86s] STATION {'kind': 'leg4', 's': 1.462, 'off': -0.012, 'g': 4.862, 's_end': 5.3, 'target': [0.992, 2.9], 'move': 'done', 'required': True}
+[ 150.86s] TOUCH {'hand': 'right', 'alpha_deg': 43.3, 'p_hit': 0.53, 'ig': 0.706, 'margin_m': 0.01}
+[ 150.86s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.134, 'target_xyz': {'right': [0.2182, -0.3559, 0.1]}, 'target_yaw_deg': {'right': -43.333333333333336}}
+[ 153.32s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.46}
+[ 153.32s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.047->0.036', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.8'}
+[ 153.32s] STATION_UNSERVED {'kind': 'leg4', 'g': 4.86, 'station_g': 4.7, 'misses': 1}
+[ 153.32s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.28}
+[ 153.32s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.134, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 154.62s] MOVE {'kind': 'route:leg4', 'forward_m': 0.017, 'move_id': 17, 'left_m': -0.4}
+[ 161.24s] STATION_PASSED {'g': 4.7, 'kind': 'wall'}
+[ 161.24s] STATION_PASSED {'g': 4.8, 'kind': 'wall'}
+[ 161.24s] STATION_PASSED {'g': 4.9, 'kind': 'wall'}
+[ 161.24s] STATION {'kind': 'leg4', 's': 1.837, 'off': -0.005, 'g': 5.237, 's_end': 5.3, 'target': [1.369, 2.9], 'move': 'done', 'required': True}
+[ 161.24s] TOUCH {'hand': 'right', 'alpha_deg': 40.0, 'p_hit': 0.57, 'ig': 0.814, 'margin_m': 0.02}
+[ 161.24s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.047, 'target_xyz': {'right': [0.2298, -0.3428, 0.1]}, 'target_yaw_deg': {'right': -40.0}}
+[ 163.60s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.36}
+[ 163.60s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.054->0.039', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.9'}
+[ 163.60s] STATION_UNSERVED {'kind': 'leg4', 'g': 5.24, 'station_g': 5.0, 'misses': 1}
+[ 163.60s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.2}
+[ 163.60s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 164.80s] MOVE {'kind': 'route:leg4', 'forward_m': 0.025, 'move_id': 18, 'left_m': -0.4}
+[ 171.42s] STATION_PASSED {'g': 5.0, 'kind': 'wall'}
+[ 171.42s] STATION_PASSED {'g': 5.1, 'kind': 'wall'}
+[ 171.42s] STATION_PASSED {'g': 5.2, 'kind': 'wall'}
+[ 171.42s] STATION_PASSED {'g': 5.3, 'kind': 'wall'}
+[ 171.42s] STATION {'kind': 'leg4', 's': 2.219, 'off': 0.007, 'g': 5.619, 's_end': 5.3, 'target': [1.748, 2.9], 'move': 'done', 'required': True}
+[ 171.42s] TOUCH {'hand': 'left', 'alpha_deg': 33.3, 'p_hit': 0.61, 'ig': 0.848, 'margin_m': 0.02}
+[ 171.42s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2506, 0.3149, 0.1]}, 'target_yaw_deg': {'left': 33.33333333333333}}
+[ 173.60s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 1.0, 'read_n': 11.1, 'true_n': 11.1, 'hold_n': 0.0, 's': 2.18}
+[ 173.60s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.056->0.021', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.8'}
+[ 173.60s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.02}
+[ 173.60s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.873, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 174.64s] MOVE {'kind': 'route:leg4', 'forward_m': -0.004, 'move_id': 19, 'left_m': -0.4}
+[ 181.26s] STATION_PASSED {'g': 5.5, 'kind': 'wall'}
+[ 181.26s] STATION_PASSED {'g': 5.6, 'kind': 'wall'}
+[ 181.26s] STATION_PASSED {'g': 5.7, 'kind': 'wall'}
+[ 181.26s] STATION {'kind': 'leg4', 's': 2.573, 'off': -0.009, 'g': 5.973, 's_end': 5.3, 'target': [2.106, 2.9], 'move': 'done', 'required': True}
+[ 181.26s] TOUCH {'hand': 'left', 'alpha_deg': 40.0, 'p_hit': 0.55, 'ig': 0.659, 'margin_m': 0.01}
+[ 181.26s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2298, 0.3428, 0.1]}, 'target_yaw_deg': {'left': 40.0}}
+[ 183.62s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.36}
+[ 183.62s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.045->0.030', 'target': 0.053, 'yaw_sigma_deg': '0.9->0.8'}
+[ 183.62s] STATION_UNSERVED {'kind': 'leg4', 'g': 5.97, 'station_g': 5.8, 'misses': 1}
+[ 183.62s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.2}
+[ 183.62s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 184.82s] MOVE {'kind': 'route:leg4', 'forward_m': 0.006, 'move_id': 20, 'left_m': -0.4}
+[ 191.44s] STATION_PASSED {'g': 5.8, 'kind': 'wall'}
+[ 191.44s] STATION_PASSED {'g': 5.9, 'kind': 'wall'}
+[ 191.44s] STATION_PASSED {'g': 6.0, 'kind': 'wall'}
+[ 191.44s] STATION {'kind': 'leg4', 's': 2.926, 'off': -0.0, 'g': 6.326, 's_end': 5.3, 'target': [2.481, 2.9], 'move': 'done', 'required': True}
+[ 191.44s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.59, 'ig': 0.72, 'margin_m': 0.02}
+[ 191.44s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[ 193.72s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.28}
+[ 193.72s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': False, 'sigma': '0.047->0.036', 'target': 0.053, 'yaw_sigma_deg': '0.9->0.9'}
+[ 193.72s] STATION_UNSERVED {'kind': 'leg4', 'g': 6.33, 'station_g': 6.1, 'misses': 1}
+[ 193.72s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.11}
+[ 193.72s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 194.84s] MOVE {'kind': 'route:leg4', 'forward_m': 0.023, 'move_id': 21, 'left_m': -0.401}
+[ 201.46s] STATION_PASSED {'g': 6.1, 'kind': 'wall'}
+[ 201.46s] STATION_PASSED {'g': 6.2, 'kind': 'wall'}
+[ 201.46s] STATION_PASSED {'g': 6.3, 'kind': 'wall'}
+[ 201.46s] STATION_PASSED {'g': 6.4, 'kind': 'wall'}
+[ 201.46s] STATION {'kind': 'leg4', 's': 3.306, 'off': 0.003, 'g': 6.706, 's_end': 5.3, 'target': [2.826, 2.9], 'move': 'done', 'required': True}
+[ 201.46s] TOUCH {'hand': 'right', 'alpha_deg': 40.0, 'p_hit': 0.54, 'ig': 0.764, 'margin_m': 0.01}
+[ 201.46s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.047, 'target_xyz': {'right': [0.2298, -0.3428, 0.1]}, 'target_yaw_deg': {'right': -40.0}}
+[ 203.82s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.36}
+[ 203.82s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.053->0.039', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.8'}
+[ 203.82s] STATION_UNSERVED {'kind': 'leg4', 'g': 6.71, 'station_g': 6.5, 'misses': 1}
+[ 203.82s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.2}
+[ 203.82s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 205.02s] MOVE {'kind': 'route:leg4', 'forward_m': 0.027, 'move_id': 22, 'left_m': -0.401}
+[ 211.64s] STATION_PASSED {'g': 6.5, 'kind': 'wall'}
+[ 211.64s] STATION_PASSED {'g': 6.6, 'kind': 'wall'}
+[ 211.64s] STATION_PASSED {'g': 6.7, 'kind': 'wall'}
+[ 211.64s] STATION_PASSED {'g': 6.8, 'kind': 'wall'}
+[ 211.64s] STATION {'kind': 'leg4', 's': 3.652, 'off': -0.002, 'g': 7.052, 's_end': 5.3, 'target': [3.187, 2.9], 'move': 'done', 'required': True}
+[ 211.64s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.59, 'ig': 0.81, 'margin_m': 0.02}
+[ 211.64s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[ 213.64s] PUNCH {'kind': 'touch:leg4', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 0.87, 'read_n': 11.9, 'true_n': 11.9, 'hold_n': 0.0, 's': 2.0}
+[ 213.64s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.054->0.022', 'target': 0.053, 'yaw_sigma_deg': '0.9->0.8'}
+[ 213.64s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.11}
+[ 213.64s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 214.76s] MOVE {'kind': 'route:leg4', 'forward_m': -0.044, 'move_id': 23, 'left_m': -0.399}
+[ 221.38s] STATION_PASSED {'g': 7.0, 'kind': 'wall'}
+[ 221.38s] STATION_PASSED {'g': 7.1, 'kind': 'wall'}
+[ 221.38s] STATION {'kind': 'leg4', 's': 4.029, 'off': 0.007, 'g': 7.429, 's_end': 5.3, 'target': [3.56, 2.9], 'move': 'done', 'required': True}
+[ 221.38s] TOUCH {'hand': 'right', 'alpha_deg': 36.7, 'p_hit': 0.6, 'ig': 0.714, 'margin_m': 0.02}
+[ 221.38s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 0.96, 'target_xyz': {'right': [0.2406, -0.3291, 0.1]}, 'target_yaw_deg': {'right': -36.666666666666664}}
+[ 223.66s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.28}
+[ 223.66s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.044->0.033', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.8'}
+[ 223.66s] STATION_UNSERVED {'kind': 'leg4', 'g': 7.43, 'station_g': 7.2, 'misses': 1}
+[ 223.66s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.11}
+[ 223.66s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 224.78s] MOVE {'kind': 'route:leg4', 'forward_m': 0.03, 'move_id': 24, 'left_m': -0.4}
+[ 231.40s] STATION_PASSED {'g': 7.2, 'kind': 'wall'}
+[ 231.40s] STATION_PASSED {'g': 7.3, 'kind': 'wall'}
+[ 231.40s] STATION_PASSED {'g': 7.4, 'kind': 'wall'}
+[ 231.40s] STATION_PASSED {'g': 7.5, 'kind': 'wall'}
+[ 231.40s] STATION {'kind': 'leg4', 's': 4.403, 'off': 0.007, 'g': 7.803, 's_end': 5.3, 'target': [3.925, 2.9], 'move': 'done', 'required': True}
+[ 231.40s] TOUCH {'hand': 'right', 'alpha_deg': 36.7, 'p_hit': 0.6, 'ig': 0.761, 'margin_m': 0.02}
+[ 231.40s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 0.96, 'target_xyz': {'right': [0.2406, -0.3291, 0.1]}, 'target_yaw_deg': {'right': -36.666666666666664}}
+[ 233.68s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.28}
+[ 233.68s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.049->0.037', 'target': 0.053, 'yaw_sigma_deg': '0.9->0.8'}
+[ 233.68s] STATION_UNSERVED {'kind': 'leg4', 'g': 7.8, 'station_g': 7.6, 'misses': 1}
+[ 233.68s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.11}
+[ 233.68s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 234.80s] MOVE {'kind': 'route:leg4', 'forward_m': 0.031, 'move_id': 25, 'left_m': -0.401}
+[ 241.42s] STATION_PASSED {'g': 7.6, 'kind': 'wall'}
+[ 241.42s] STATION_PASSED {'g': 7.7, 'kind': 'wall'}
+[ 241.42s] STATION_PASSED {'g': 7.8, 'kind': 'wall'}
+[ 241.42s] STATION_PASSED {'g': 7.9, 'kind': 'wall'}
+[ 241.42s] STATION {'kind': 'leg4', 's': 4.785, 'off': -0.019, 'g': 8.185, 's_end': 5.3, 'target': [4.309, 2.9], 'move': 'done', 'required': True}
+[ 241.42s] TOUCH {'hand': 'right', 'alpha_deg': 46.7, 'p_hit': 0.48, 'ig': 0.743, 'margin_m': -0.0}
+[ 241.42s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.222, 'target_xyz': {'right': [0.2059, -0.3682, 0.1]}, 'target_yaw_deg': {'right': -46.666666666666664}}
+[ 243.96s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.54}
+[ 243.96s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.055->0.042', 'target': 0.053, 'yaw_sigma_deg': '0.9->0.8'}
+[ 243.96s] STATION_UNSERVED {'kind': 'leg4', 'g': 8.19, 'station_g': 8.0, 'misses': 1}
+[ 243.96s] ARM_CARRY {'kind': 'route:leg4', 'duration_s': 1.37}
+[ 243.96s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.222, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 245.34s] MOVE {'kind': 'route:leg4', 'forward_m': 0.007, 'move_id': 26, 'left_m': -0.4}
+[ 251.96s] STATION_PASSED {'g': 8.0, 'kind': 'wall'}
+[ 251.96s] STATION_PASSED {'g': 8.1, 'kind': 'wall'}
+[ 251.96s] STATION_PASSED {'g': 8.2, 'kind': 'wall'}
+[ 251.96s] STATION_PASSED {'g': 8.3, 'kind': 'wall'}
+[ 251.96s] STATION {'kind': 'leg4', 's': 5.175, 'off': -0.017, 'g': 8.575, 's_end': 5.3, 'target': [4.694, 2.9], 'move': 'done', 'required': True}
+[ 251.96s] TOUCH {'hand': 'right', 'alpha_deg': 90.0, 'p_hit': 0.55, 'ig': 1.403, 'margin_m': 0.02}
+[ 251.96s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 2.356, 'target_xyz': {'right': [0.0, -0.45, 0.1]}, 'target_yaw_deg': {'right': -90.0}}
+[ 256.02s] PUNCH {'kind': 'touch:leg4', 'hand': 'right', 'contact': True, 'reason': 'transition_contact', 'ext': 0.0, 'read_n': 15.0, 'true_n': 15.0, 'hold_n': 0.3, 's': 4.06}
+[ 256.02s] TOUCH_RESULT {'kind': 'leg4', 'n': 0, 'hand': 'right', 'hit': True, 'sigma': '0.059->0.058', 'target': 0.053, 'yaw_sigma_deg': '1.0->0.9'}
+[ 256.02s] LEG {'kind': 'leg5', 'touch': True, 's_end': 0.1, 'yaw_deg': 0.0}
+[ 256.02s] MOVE {'kind': 'route:leg5', 'forward_m': -0.018, 'move_id': 27, 'left_m': -0.092, 'turn_deg': -90.0}
+[ 265.66s] STATION_PASSED {'g': 8.5, 'kind': 'wall'}
+[ 265.66s] STATION {'kind': 'leg5', 's': 0.1, 'off': -0.1, 'g': 8.8, 's_end': 0.1, 'target': [4.9, 2.9], 'move': 'done', 'required': True}
+[ 265.66s] TOUCH {'hand': 'right', 'alpha_deg': 46.7, 'p_hit': 0.52, 'ig': 0.852, 'margin_m': 0.0}
+[ 265.66s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.222, 'target_xyz': {'right': [0.2059, -0.3682, 0.1]}, 'target_yaw_deg': {'right': -46.666666666666664}}
+[ 268.20s] PUNCH {'kind': 'touch:leg5', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.54}
+[ 268.20s] TOUCH_RESULT {'kind': 'leg5', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.059->0.050', 'target': 0.056, 'yaw_sigma_deg': '5.4->2.3'}
+[ 268.20s] STATION_UNSERVED {'kind': 'leg5', 'g': 8.8, 'station_g': 8.6, 'misses': 1}
+[ 268.20s] LEG {'kind': 'leg6', 'touch': True, 's_end': 0.5, 'yaw_deg': 0.0}
+[ 268.20s] ARM_CARRY {'kind': 'route:leg6', 'duration_s': 1.37}
+[ 268.20s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.222, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 269.58s] MOVE {'kind': 'route:leg6', 'forward_m': 0.007, 'move_id': 28, 'left_m': -0.406}
+[ 277.22s] STATION_PASSED {'g': 8.6, 'kind': 'wall'}
+[ 277.22s] STATION_PASSED {'g': 8.7, 'kind': 'wall'}
+[ 277.22s] STATION_PASSED {'g': 8.8, 'kind': 'wall'}
+[ 277.22s] STATION_PASSED {'g': 8.9, 'kind': 'wall'}
+[ 277.22s] STATION {'kind': 'leg6', 's': 0.381, 'off': 0.0, 'g': 9.181, 's_end': 0.5, 'target': [4.9, 2.5], 'move': 'done', 'required': True}
+[ 277.22s] TOUCH {'hand': 'right', 'alpha_deg': 40.0, 'p_hit': 0.54, 'ig': 0.804, 'margin_m': 0.01}
+[ 277.22s] ARM_TRANSITION {'hands': ['right'], 'duration_s': 1.047, 'target_xyz': {'right': [0.2298, -0.3428, 0.1]}, 'target_yaw_deg': {'right': -40.0}}
+[ 279.58s] PUNCH {'kind': 'touch:leg6', 'hand': 'right', 'contact': False, 'reason': 'miss', 'ext': None, 'read_n': 0.0, 'true_n': 0.0, 'hold_n': None, 's': 2.36}
+[ 279.58s] TOUCH_RESULT {'kind': 'leg6', 'n': 0, 'hand': 'right', 'hit': False, 'sigma': '0.053->0.037', 'target': 0.053, 'yaw_sigma_deg': '2.3->1.6'}
+[ 279.58s] STATION_UNSERVED {'kind': 'leg6', 'g': 9.18, 'station_g': 9.0, 'misses': 1}
+[ 279.58s] ARM_CARRY {'kind': 'route:leg6', 'duration_s': 1.2}
+[ 279.58s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 1.047, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 280.78s] MOVE {'kind': 'route:leg6', 'forward_m': 0.039, 'move_id': 29, 'left_m': -0.131}
+[ 284.42s] STATION_PASSED {'g': 9.0, 'kind': 'wall'}
+[ 284.42s] STATION {'kind': 'leg6', 's': 0.501, 'off': 0.0, 'g': 9.301, 's_end': 0.5, 'target': [4.9, 2.4], 'move': 'done', 'required': True}
+[ 284.42s] TOUCH {'hand': 'left', 'alpha_deg': 36.7, 'p_hit': 0.59, 'ig': 0.631, 'margin_m': 0.02}
+[ 284.42s] ARM_TRANSITION {'hands': ['left'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2406, 0.3291, 0.1]}, 'target_yaw_deg': {'left': 36.666666666666664}}
+[ 286.00s] PUNCH {'kind': 'touch:leg6', 'hand': 'left', 'contact': True, 'reason': 'brake', 'ext': 0.4, 'read_n': 16.0, 'true_n': 16.0, 'hold_n': 0.0, 's': 1.58}
+[ 286.00s] TOUCH_RESULT {'kind': 'leg6', 'n': 0, 'hand': 'left', 'hit': True, 'sigma': '0.040->0.022', 'target': 0.071, 'yaw_sigma_deg': '1.6->1.3'}
+[ 286.00s] LEG {'kind': 'leg7', 'touch': False, 's_end': 0.5, 'yaw_deg': 180.0}
+[ 286.00s] ARM_CARRY {'kind': 'route:leg7', 'duration_s': 1.11}
+[ 286.00s] ARM_TRANSITION {'hands': ['left', 'right'], 'duration_s': 0.96, 'target_xyz': {'left': [0.2, 0.15, 0.1], 'right': [0.2, -0.15, 0.1]}, 'target_yaw_deg': {'left': 0.0, 'right': 0.0}}
+[ 287.12s] MOVE {'kind': 'route:leg7', 'forward_m': -0.436, 'move_id': 30, 'left_m': 0.007, 'turn_deg': 180.0}
+[ 305.76s] STATION_PASSED {'g': 9.2, 'kind': 'wall'}
+[ 305.76s] STATION_PASSED {'g': 9.3, 'kind': 'wall'}
+[ 305.76s] STATION {'kind': 'leg7', 's': 0.414, 'off': -0.022, 'g': 9.714, 's_end': 0.5, 'target': [4.5, 2.4], 'move': 'done', 'required': False}
+[ 305.76s] TOUCH {'hand': 'right', 'alpha_deg': 90.0, 'p_hit': 0.01, 'ig': 0.024, 'margin_m': -0.23}
+[ 305.76s] MOVE {'kind': 'route:leg7', 'forward_m': 0.086, 'move_id': 31, 'left_m': 0.022}
+[ 308.40s] STATION {'kind': 'leg7', 's': 0.502, 'off': 0.002, 'g': 9.802, 's_end': 0.5, 'target': [4.4, 2.4], 'move': 'done', 'required': False}
+[ 308.40s] TOUCH {'hand': 'right', 'alpha_deg': 90.0, 'p_hit': 0.0, 'ig': 0.016, 'margin_m': -0.26}
+[ 308.40s] TOUCH {'hand': 'right', 'alpha_deg': 90.0, 'p_hit': 0.0, 'ig': 0.016, 'margin_m': -0.26}
+[ 308.40s] arrival_uncertain 
+
+outcome arrival_uncertain  sim 309.4 s  wall 427.5 s
+punches 29 thrown, 12 landed (left 7, right 5)
+stop: arrival_uncertain at t=308.4 s, base [4.365, 2.38]
+true peak force 46.9 N
+belief err median 0.043 m  final 0.038 m  max 0.131 m  sigma final 0.100
+evaluation: {"success": false, "reported_complete": false, "goal_reached": true, "final_goal_error_m": 0.04073638322349707, "outcome": "arrival_uncertain", "fallen": false, "duration_s": 308.40000000000947, "wall_clock_s": 426.47136425971985, "position_error_mean_m": 0.056498195001338854, "position_error_rmse_m": 0.0664340867452903, "position_error_max_m": 0.15073242058683525, "position_error_final_m": 0.03791298368895998, "yaw_error_mean_deg": 2.2666608579615604, "yaw_error_rmse_deg": 2.803001130005425, "yaw_error_max_deg": 5.505547461018985, "estimation_scored_duration_s": 308.40000000000947, "estimation_coverage": 1.0, "trajectory_samples": 15483, "estimation_samples": 15483, "path_length_m": 24.35961017408762, "truth_coverage": 1.0, "probe_attempts": 29, "touch_contacts": 12, "probe_misses": 17, "probes_interrupted": 0, "touch_hit_rate": 0.41379310344827586}
+wrote /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.json

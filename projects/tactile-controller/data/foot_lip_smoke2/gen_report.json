@@ -1,0 +1,70 @@
+{
+  "mode": "rest",
+  "refine": false,
+  "cfg": {
+    "dt": 0.02,
+    "landing": {
+      "x": [
+        -0.2,
+        0.25
+      ],
+      "dy": [
+        -0.08,
+        0.18
+      ],
+      "yaw": [
+        -0.3,
+        0.3
+      ]
+    },
+    "liftoff": {
+      "dx": [
+        -0.25,
+        0.2
+      ],
+      "dy": [
+        -0.08,
+        0.18
+      ],
+      "yaw": [
+        -0.3,
+        0.3
+      ]
+    },
+    "tempo": {
+      "T": [
+        0.75,
+        1.25
+      ],
+      "fractions": {
+        "ds_pre": 0.25,
+        "swing": 0.45,
+        "ds_post": 0.3
+      }
+    },
+    "apex": [
+      0.05,
+      0.08
+    ],
+    "grid": {
+      "x_cells": 9,
+      "dy_cells": 4,
+      "yaw_cells": 6,
+      "tempo_bins": 3
+    },
+    "gates": {
+      "dsp_hull_margin_m": 0.005,
+      "zmp_err_m": 0.01,
+      "ik_foot_m": 0.003,
+      "ik_com_m": 0.002,
+      "min_gap_m": 0.005
+    },
+    "attempts_per_slot": 3
+  },
+  "n_tasks": 10,
+  "n_ok": 10,
+  "rejects_by_reason": {},
+  "reject_rate": 0.0,
+  "worst_cells": {},
+  "wall_s": 2.217197895050049
+}

@@ -1,0 +1,4 @@
+room,feasible,reason,requested_strategy,strategy,position_bound_m,yaw_bound_deg,distance_m,contacts,peak_position_sigma_m,peak_yaw_sigma_deg,explored_states,elapsed_s
+sky_offset_gate,True,seed/refine fallback: strict,seed_refine,belief_astar,0.18,20.0,9.799999999999997,89,0.12183335193105724,10.967327029859462,23825,45.01987552599999
+sky_staggered_baffles,True,strict seed/refine,seed_refine,seed_refine,0.18,20.0,12.182444765265615,96,0.11636130253286253,12.370871449235972,0,22.477177431
+sky_island_choice,True,strict seed/refine,seed_refine,seed_refine,0.18,20.0,8.181665382639189,69,0.11987356030255979,10.880466378324886,0,7.953588961999998

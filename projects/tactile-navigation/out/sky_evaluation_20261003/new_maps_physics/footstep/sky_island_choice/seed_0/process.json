@@ -1,0 +1,21 @@
+{
+  "room": "sky_island_choice",
+  "controller": "footstep",
+  "seed": 0,
+  "directory": "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0",
+  "started_unix": 1791015326.3505077,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "rss_limit_gb": 6.0,
+  "rss_limit_kind": "polled process-group RSS",
+  "peak_rss_bytes": 3798335488,
+  "state": "finished",
+  "pid": 776,
+  "returncode": 0,
+  "ended_unix": 1791015886.4192932,
+  "wall_clock_s": 560.050297438
+}

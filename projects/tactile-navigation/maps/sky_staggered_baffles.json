@@ -1,0 +1,16 @@
+{
+  "format": "tactile-navigation/map_gen v1",
+  "name": "sky_staggered_baffles",
+  "source": "Sky evaluation map, based on the team's manifest format",
+  "experiment": "Alternating wall openings require repeated turns and expose accumulated localization drift.",
+  "room": {"width_m": 6.0, "depth_m": 4.0},
+  "start_xy": [0.8, 0.8],
+  "start_heading_deg": 90.0,
+  "goal_xy": [5.2, 3.2],
+  "goal_radius_m": 0.3,
+  "free_space_rects": [[0.0, 0.0, 6.0, 4.0]],
+  "obstacles": [
+    {"id": "south_baffle", "kind": "wall", "pts": [[2.0, 0.0], [2.0, 2.2]]},
+    {"id": "north_baffle", "kind": "wall", "pts": [[4.0, 1.8], [4.0, 4.0]]}
+  ]
+}

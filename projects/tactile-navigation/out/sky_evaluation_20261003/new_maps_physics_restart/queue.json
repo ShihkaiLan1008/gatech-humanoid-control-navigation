@@ -1,0 +1,26 @@
+{
+  "rooms": [
+    "sky_offset_gate",
+    "sky_staggered_baffles"
+  ],
+  "controllers": [
+    "footstep"
+  ],
+  "seeds": [
+    0
+  ],
+  "demo_args": [
+    "--policy",
+    "global",
+    "--override",
+    "checkpoint=models/sky_local/model_35500.pt",
+    "--probe-reach-profile",
+    "configs/probe_reach_ee_qpos_v1.json",
+    "--max-s",
+    "900"
+  ],
+  "layout": "standard",
+  "cpus_per_seed": 2,
+  "memory_per_seed_gb": 4.0,
+  "wall_timeout_s": 1800.0
+}

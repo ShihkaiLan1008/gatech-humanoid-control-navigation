@@ -1,0 +1,47 @@
+[
+  {
+    "room": "sky_offset_gate",
+    "feasible": true,
+    "reason": "seed/refine fallback: strict",
+    "requested_strategy": "seed_refine",
+    "strategy": "belief_astar",
+    "position_bound_m": 0.18,
+    "yaw_bound_deg": 20.0,
+    "distance_m": 9.799999999999997,
+    "contacts": 89,
+    "peak_position_sigma_m": 0.12183335193105724,
+    "peak_yaw_sigma_deg": 10.967327029859462,
+    "explored_states": 23825,
+    "elapsed_s": 45.01987552599999
+  },
+  {
+    "room": "sky_staggered_baffles",
+    "feasible": true,
+    "reason": "strict seed/refine",
+    "requested_strategy": "seed_refine",
+    "strategy": "seed_refine",
+    "position_bound_m": 0.18,
+    "yaw_bound_deg": 20.0,
+    "distance_m": 12.182444765265615,
+    "contacts": 96,
+    "peak_position_sigma_m": 0.11636130253286253,
+    "peak_yaw_sigma_deg": 12.370871449235972,
+    "explored_states": 0,
+    "elapsed_s": 22.477177431
+  },
+  {
+    "room": "sky_island_choice",
+    "feasible": true,
+    "reason": "strict seed/refine",
+    "requested_strategy": "seed_refine",
+    "strategy": "seed_refine",
+    "position_bound_m": 0.18,
+    "yaw_bound_deg": 20.0,
+    "distance_m": 8.181665382639189,
+    "contacts": 69,
+    "peak_position_sigma_m": 0.11987356030255979,
+    "peak_yaw_sigma_deg": 10.880466378324886,
+    "explored_states": 0,
+    "elapsed_s": 7.953588961999998
+  }
+]

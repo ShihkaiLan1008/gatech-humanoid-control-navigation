@@ -1,0 +1,18 @@
+{
+  "controller": "footstep",
+  "cpus_per_seed": 3,
+  "memory_per_seed_gb": 6,
+  "demo_args": [
+    "--policy", "global",
+    "--bound-pos", ".18", "--bound-yaw-deg", "20",
+    "--execution-pos-trigger", ".18", "--execution-pos-policy", "probe_then_continue",
+    "--probe-reach-profile", "configs/probe_reach_ee_qpos_v1.json",
+    "--start-heading", "route", "--route-guard", "belief",
+    "--thin", "dense", "--uncertainty-scale", "1",
+    "--standoff", ".30", "--override", "arrive_pos_tol_m=0.03",
+    "--max-s", "1800", "--override", "diagnose_moves=true",
+    "--planner-set", "route_strategy=seed_refine", "seed_fallback=true",
+    "grid_resolution_m=0.10", "max_move_m=0.375",
+    "route_objective=free_distance_then_distance_and_rotation"
+  ]
+}

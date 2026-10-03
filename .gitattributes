@@ -1,0 +1,30 @@
+* -text
+"projects/tactile-controller/checkpoints/decoupled_footplacement/0907/foot_mimic_noforce_model_34000.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_footplacement/0907/foot_mimic_withforce_model_36500.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_footplacement/0911/foot_mimic_noforce_arm_model_35500.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_vel_force_mpc/force_home_model_59000.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_vel_force_mpc/force_knee_model_60500.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_vel_force_mpc/vforce_model_52000.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/checkpoints/decoupled_vel_force_mpc/vforce_model_60000_v1.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/ee_qpos_v1/ee_qpos.npz" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/ee_target/g1_tactile_fixed-2fe2f08315-s0.npz" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/ee_target/g1_tactile_fixed-2fe2f08315-s1.npz" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/ee_target/g1_tactile_fixed-2fe2f08315-s2.npz" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/ee_target/g1_tactile_fixed-2fe2f08315-s3.npz" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/data/foot_lip_v2/rl_cache.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-31-58_baseline_smoke_256/git/GT research.diff" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-31-58_baseline_smoke_256/model_0.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-31-58_baseline_smoke_256/model_2.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-36-32_foot_precise_s005_smoke_256/git/GT research.diff" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-36-32_foot_precise_s005_smoke_256/model_0.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-36-32_foot_precise_s005_smoke_256/model_2.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-38-08_foot_precise_s005_500/git/GT research.diff" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-38-08_foot_precise_s005_500/model_0.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-38-08_foot_precise_s005_500/model_499.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/models/wm/demo_room/direct/best.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/models/wm/room2/direct/best.pt" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.mp4" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.json" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.mp4" filter=lfs diff=lfs merge=lfs -text
+"projects/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.mp4" filter=lfs diff=lfs merge=lfs -text

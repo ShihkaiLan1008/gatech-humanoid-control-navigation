@@ -1,0 +1,14 @@
+[
+  {
+    "project": "GT research",
+    "commit": "21aed054f51a926904bafc2e5db7fdace6f6660c",
+    "branch": "codex/foot-tracking-tuning",
+    "remote": "https://github.com/ZhenyuWu323/tactile_controller.git"
+  },
+  {
+    "project": "tactile-navigation",
+    "commit": "f6ba1df1ed45f6f482eadfe2f84b2182692abd60",
+    "branch": "sky/evaluation",
+    "remote": "https://github.com/HuazeLiu/tactile-navigation.git"
+  }
+]

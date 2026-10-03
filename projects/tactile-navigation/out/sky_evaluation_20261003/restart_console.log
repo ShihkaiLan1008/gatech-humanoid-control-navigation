@@ -1,0 +1,56 @@
+START {'room': 'sky_offset_gate', 'controller': 'footstep', 'seed': 0, 'directory': '/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0', 'started_unix': 1791016497.2856233, 'cpu_affinity': [0, 2], 'rss_limit_gb': 4.0, 'rss_limit_kind': 'polled process-group RSS', 'peak_rss_bytes': 0, 'state': 'running', 'pid': 387}
+DONE seed=0 exit=0
+START {'room': 'sky_staggered_baffles', 'controller': 'footstep', 'seed': 0, 'directory': '/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0', 'started_unix': 1791016930.5441318, 'cpu_affinity': [0, 2], 'rss_limit_gb': 4.0, 'rss_limit_kind': 'polled process-group RSS', 'peak_rss_bytes': 0, 'state': 'running', 'pid': 797}
+DONE seed=0 exit=0
+{
+  "runs": 2,
+  "successes": 1,
+  "success_evaluable_runs": 2,
+  "unknown_success_runs": 0,
+  "success_rate": 0.5,
+  "outcomes": {
+    "arrival_uncertain": 1,
+    "route_complete": 1
+  },
+  "mean": {
+    "position_error_mean_m": 0.05784519214464537,
+    "position_error_rmse_m": 0.06738000160386567,
+    "yaw_error_mean_deg": 2.323498450102001,
+    "yaw_error_rmse_deg": 2.803717463452929,
+    "wall_clock_s": 474.29847180843353,
+    "duration_s": 366.15999999995694,
+    "path_length_m": 29.500088183333197,
+    "probe_attempts": 34.0,
+    "touch_contacts": 14.5,
+    "touch_hit_rate": 0.42484526967285585,
+    "estimation_coverage": 1.0
+  },
+  "sample_std": {
+    "position_error_mean_m": 0.001904941628541889,
+    "position_error_rmse_m": 0.0013377256218475159,
+    "yaw_error_mean_deg": 0.08038049365764105,
+    "yaw_error_rmse_deg": 0.0010130484766416206,
+    "wall_clock_s": 67.63774414446753,
+    "duration_s": 81.68497536259568,
+    "path_length_m": 7.269733717755742,
+    "probe_attempts": 7.0710678118654755,
+    "touch_contacts": 3.5355339059327378,
+    "touch_hit_rate": 0.015630123368402915,
+    "estimation_coverage": 0.0
+  },
+  "metric_run_counts": {
+    "position_error_mean_m": 2,
+    "position_error_rmse_m": 2,
+    "yaw_error_mean_deg": 2,
+    "yaw_error_rmse_deg": 2,
+    "wall_clock_s": 2,
+    "duration_s": 2,
+    "path_length_m": 2,
+    "probe_attempts": 2,
+    "touch_contacts": 2,
+    "touch_hit_rate": 2,
+    "estimation_coverage": 2
+  },
+  "successful_runs_mean_duration_s": 423.9199999999044
+}
+Report: /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/summary.json and /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/runs.csv

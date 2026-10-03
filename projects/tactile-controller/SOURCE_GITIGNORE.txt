@@ -1,0 +1,25 @@
+__pycache__/
+.vscode/
+.venv/
+.ruff_cache/
+data/*
+# the hand reach-pool artifacts ship with the repo (everything else under data/ stays out)
+!data/ee_target/
+!data/ee_qpos_v1/
+docs/
+logs/
+wandb/
+figures/
+
+# Ignore all Markdown except README.md (planning/brainstorm/CLAUDE docs stay local)
+*.md
+!README.md
+!**/README.md
+
+*.zip
+
+# Claude Code local config (skills/agents kept local by user choice)
+.claude/
+
+# local archive of retired packages (mpc_online, mpc_offline); see the tag pre-archive-mpc-lines
+archive/

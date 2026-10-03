@@ -1,0 +1,176 @@
+{
+  "source_revision": "3d53adc",
+  "rooms": [
+    {
+      "room": "demo_room",
+      "seed": 30,
+      "outcome": "route_complete",
+      "stop": {
+        "t": 578.8,
+        "reason": "route_complete",
+        "base_map": [
+          12.096,
+          11.192
+        ]
+      },
+      "sim_s": 579.8,
+      "wall_clock_s": 1717.6,
+      "target_map": [
+        12.05436435592348,
+        11.105429212629037
+      ],
+      "endpoint_error_m": 0.09606262584218238,
+      "true_peak_force_n": 49.981693267822266,
+      "fallen": false,
+      "punches": 128,
+      "median_belief_error_m": 0.0573,
+      "route_segments": [
+        "face1",
+        "face2"
+      ],
+      "interruptions": [
+        {
+          "t": 197.94,
+          "event": "PASSIVE_CONTACT",
+          "base_map": [
+            8.308,
+            0.248
+          ],
+          "yaw_map": 1.572,
+          "kind": "step:face1",
+          "hand": "right",
+          "p_body": [
+            0.22281406999043288,
+            -0.33446472610040323
+          ]
+        },
+        {
+          "t": 202.86,
+          "event": "GUARD",
+          "base_map": [
+            8.265,
+            0.174
+          ],
+          "yaw_map": 1.564,
+          "kind": "step:face1",
+          "cleared": true,
+          "hold_yaw": 1.5637280595746754
+        },
+        {
+          "t": 202.86,
+          "event": "REPLAN",
+          "base_map": [
+            8.265,
+            0.174
+          ],
+          "yaw_map": 1.564,
+          "kind": "step"
+        },
+        {
+          "t": 232.54,
+          "event": "REPLAN",
+          "base_map": [
+            9.241,
+            -0.207
+          ],
+          "yaw_map": 1.571,
+          "kind": "step",
+          "status": "timeout"
+        }
+      ],
+      "json": "out/punch/passive_contact_3d53adc/demo_room/demo_room_vforce_pf_eigstep_s30.json"
+    },
+    {
+      "room": "room830",
+      "seed": 30,
+      "outcome": "route_complete",
+      "stop": {
+        "t": 303.18,
+        "reason": "route_complete",
+        "base_map": [
+          -0.559,
+          0.094
+        ]
+      },
+      "sim_s": 304.18,
+      "wall_clock_s": 982.9,
+      "target_map": [
+        -0.55,
+        -1.1102230246251565e-16
+      ],
+      "endpoint_error_m": 0.09442986815621433,
+      "true_peak_force_n": 74.78599548339844,
+      "fallen": false,
+      "punches": 70,
+      "median_belief_error_m": 0.0533,
+      "route_segments": [
+        "face1",
+        "face2",
+        "face3",
+        "face4",
+        "final"
+      ],
+      "interruptions": [
+        {
+          "t": 263.64,
+          "event": "PASSIVE_CONTACT",
+          "base_map": [
+            0.767,
+            0.058
+          ],
+          "yaw_map": -3.004,
+          "kind": "turn:face4",
+          "hand": "right",
+          "p_body": [
+            0.013508478477534475,
+            -0.43728897458011323
+          ]
+        },
+        {
+          "t": 265.22,
+          "event": "GUARD",
+          "base_map": [
+            0.789,
+            -0.005
+          ],
+          "yaw_map": -2.979,
+          "kind": "turn:face4",
+          "cleared": true,
+          "hold_yaw": -2.989532032396397
+        },
+        {
+          "t": 265.22,
+          "event": "REPLAN",
+          "base_map": [
+            0.789,
+            -0.005
+          ],
+          "yaw_map": -2.979,
+          "kind": "turn",
+          "remaining_rad": 1.4187357056015006
+        }
+      ],
+      "json": "out/punch/passive_contact_3d53adc/room830/room830_vforce_pf_eigstep_s30.json"
+    }
+  ],
+  "protocol": {
+    "policy": "eig_step",
+    "controller": "vforce",
+    "estimator": "pf",
+    "eig_grid": 25,
+    "seed": 30,
+    "max_sim_s": 1200,
+    "standoff_m": 0.4,
+    "demo_full_route": true,
+    "world_model": false,
+    "calibrated_execution_model": false,
+    "video_stride": 5,
+    "video_fps": 25,
+    "video_speedup": 5,
+    "execution_tests": {
+      "passed": 308,
+      "skipped": 3
+    },
+    "targeted_tests_passed": 28
+  }
+}

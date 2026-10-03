@@ -1,0 +1,20 @@
+[
+  {
+    "TimeCreated": "2026-10-03T16:34:08.2641632+08:00",
+    "Id": 1001,
+    "ProviderName": "Microsoft-Windows-WER-SystemErrorReporting",
+    "Message": "计算机已经从检测错误后重新启动。检测错误: 0x00000139 (0x0000000000000003, 0xffffc8051200ecf0, 0xffffc8051200ec48, 0x0000000000000000)。已将转储的数据保存在: C:\\WINDOWS\\Minidump\\100326-22312-01.dmp。报告 ID: 68e37763-4ec7-4cd7-be5e-54a832111970。"
+  },
+  {
+    "TimeCreated": "2026-10-03T16:33:51.5657991+08:00",
+    "Id": 41,
+    "ProviderName": "Microsoft-Windows-Kernel-Power",
+    "Message": "系统已在未先正常关机的情况下重新启动。如果系统停止响应、发生崩溃或意外断电，则可能会导致此错误。"
+  },
+  {
+    "TimeCreated": "2026-10-03T16:34:08.7924433+08:00",
+    "Id": 6008,
+    "ProviderName": "EventLog",
+    "Message": "上一次系统的 下午 04:09:23 在 ‎2026/‎10/‎3 上的关闭是意外的。"
+  }
+]

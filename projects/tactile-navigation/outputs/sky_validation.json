@@ -1,0 +1,48 @@
+{
+  "completed_trials": 4,
+  "physical_goals": 4,
+  "formal_successes": 1,
+  "checks": [
+    {
+      "room": "room2",
+      "final_goal_error_m": 0.0731010671631838,
+      "localization_rmse_m": 0.034759107834493985,
+      "goal_reached": true,
+      "success": false,
+      "arrival_probability": 0.933497299941425,
+      "samples": 9417,
+      "passed": true
+    },
+    {
+      "room": "sky_island_choice",
+      "final_goal_error_m": 0.06409861863308522,
+      "localization_rmse_m": 0.06568192454875822,
+      "goal_reached": true,
+      "success": false,
+      "arrival_probability": 0.9241460558722425,
+      "samples": 12884,
+      "passed": true
+    },
+    {
+      "room": "sky_offset_gate",
+      "final_goal_error_m": 0.04073638322349707,
+      "localization_rmse_m": 0.06643408674529032,
+      "goal_reached": true,
+      "success": false,
+      "arrival_probability": 0.9189116935977028,
+      "samples": 15483,
+      "passed": true
+    },
+    {
+      "room": "sky_staggered_baffles",
+      "final_goal_error_m": 0.04158805411026263,
+      "localization_rmse_m": 0.06832591646244109,
+      "goal_reached": true,
+      "success": true,
+      "arrival_probability": 0.9603814786867415,
+      "samples": 21281,
+      "passed": true
+    }
+  ],
+  "interrupted_attempts_separate": true
+}

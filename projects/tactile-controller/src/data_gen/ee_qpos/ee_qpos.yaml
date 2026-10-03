@@ -1,0 +1,69 @@
+# EE-target -> arm-qpos generation. Frames: tactile TIP in the PELVIS frame.
+# Positions in m, angles in degrees unless a key says rad.
+
+robot:
+  urdf: g1_29dof_tactile.urdf            # under assets.ASSET_DIR
+  root: pelvis
+  ee: {left: left_tactile, right: right_tactile}
+  arm_joints:                            # the free joints of each hand's solve, model order
+    left:  [left_shoulder_pitch_joint, left_shoulder_roll_joint, left_shoulder_yaw_joint, left_elbow_joint,
+            left_wrist_roll_joint, left_wrist_pitch_joint, left_wrist_yaw_joint]
+    right: [right_shoulder_pitch_joint, right_shoulder_roll_joint, right_shoulder_yaw_joint, right_elbow_joint,
+            right_wrist_roll_joint, right_wrist_pitch_joint, right_wrist_yaw_joint]
+  rest: {}                               # joint -> rad; unlisted joints rest at 0 (legs/waist stay there; arms' rest posture)
+  collision:
+    ignore_within_arm: true              # pairs among one arm's own links are never checked (the elbow limit bounds the fold)
+    ignore_pairs:                        # cross-chain pairs that overlap at the rest posture
+      - [torso_link, left_shoulder_roll_link]
+      - [torso_link, left_shoulder_yaw_link]
+      - [logo_link, left_shoulder_yaw_link]
+      - [torso_link, right_shoulder_roll_link]
+      - [torso_link, right_shoulder_yaw_link]
+      - [logo_link, right_shoulder_yaw_link]
+    link_buffer: {torso_link: -0.012}    # allowed penetration per link, m (negative = capsule shrunk)
+    nominal_margin: 0.005                # the rest posture must clear every active pair by this, else loading fails
+
+range:                                   # tool orientation = Rz(yaw) Ry(-pitch) Rx(roll): yaw 0 = +x forward, +90 = +y left;
+                                         # pitch = elevation, + up; roll = about the tool x-axis, 0 = tip y-axis horizontal
+                                         # r_range: HORIZONTAL distance of the tip from that arm's shoulder axis, m (a vertical cylinder shell)
+  left:  {x_min: 0.0, y_gap: 0.05, z_range: [0.10, 0.30], r_range: [0.1, 0.48],
+          pitch_range: [-30.0, 30.0], yaw_range: [-30.0, 90.0], roll_range: [0.0, 0.0]}
+  right: {x_min: 0.0, y_gap: 0.05, z_range: [0.10, 0.30], r_range: [0.1, 0.48],
+          pitch_range: [-30.0, 30.0], yaw_range: [-90.0, 30.0], roll_range: [0.0, 0.0]}
+
+sampling:
+  x_max: 0.60                            # lattice extent; the IK trims the outer edge
+  y_max: 0.65
+  pos_spacing: 0.025                     # m
+  dir_spacing: 10.0                      # deg, pitch, yaw and roll
+  samples_per_cell: 4                    # jittered samples per accepted cell, on top of the centre
+  batch: 4096                            # compiled batch size
+  seed: 0
+
+cost:                                    # CostCfg overrides; weights are live sliders in visualize
+  pos: 50.0
+  ori: 10.0
+  limit: 100.0
+  limit_margin: 0.05                     # rad
+  elbow: 100.0
+  elbow_max: 1.5                         # rad, +1.75 is a straight arm
+  rest: 0.1
+  coll: 100.0
+  coll_activation: 0.01                  # m
+  swivel: 5.0                            # elbow swivel psi about the shoulder->wrist axis (0 = elbow straight below, + = outward, pi = above)
+  swivel_far: 0.52                       # rad, psi target for targets >= swivel_r_far from the shoulder axis (horizontal)
+  swivel_near: 2.62                      # rad, psi target for targets <= swivel_r_near; linear ramp between the two radii
+  swivel_r_far: 0.35                     # m
+  swivel_r_near: 0.15                    # m
+  swivel_band: 0.52                      # rad, zero-cost half-width about the psi target (30 deg)
+  max_iterations: 50
+  lambda_initial: 1.0
+
+gates:
+  pos_tol: 0.005                         # m
+  ori_tol: 3.0                           # deg, tip orientation error (rotation angle)
+  smooth_tol: 0.5                        # rad, joint distance to the nearest accepted neighbour
+  max_retries: 2                         # re-solves of a failed cell from other accepted neighbours
+
+output:
+  dir: data/ee_qpos_v1

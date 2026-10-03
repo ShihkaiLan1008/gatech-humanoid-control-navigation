@@ -1,0 +1,22 @@
+[
+  {
+    "trial": "footstep/room2/seed_0",
+    "output": "room2_footstep_pf_global_s0.mp4",
+    "command": [
+      "/home/sky/.venvs/tactile_controller/bin/python",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/scripts/punch_video.py",
+      "--run",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.json",
+      "--states",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/states_room2_footstep_pf_global_s0.npz",
+      "--out",
+      "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.partial.mp4",
+      "--stride",
+      "5",
+      "--checkpoint",
+      "models/sky_local/model_35500.pt"
+    ],
+    "status": "complete",
+    "bytes": 18177943
+  }
+]

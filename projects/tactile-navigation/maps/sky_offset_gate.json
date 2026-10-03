@@ -1,0 +1,15 @@
+{
+  "format": "tactile-navigation/map_gen v1",
+  "name": "sky_offset_gate",
+  "source": "Sky evaluation map, based on the team's manifest format",
+  "experiment": "An offset opening requires a detour and changes in heading.",
+  "room": {"width_m": 6.0, "depth_m": 4.0},
+  "start_xy": [0.8, 0.8],
+  "start_heading_deg": 90.0,
+  "goal_xy": [5.2, 3.2],
+  "goal_radius_m": 0.3,
+  "free_space_rects": [[0.0, 0.0, 6.0, 4.0]],
+  "obstacles": [
+    {"id": "offset_divider", "kind": "wall", "pts": [[3.0, 0.0], [3.0, 2.2]]}
+  ]
+}

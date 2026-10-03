@@ -1,0 +1,10 @@
+{
+  "source_files": 10101,
+  "source_bytes": 1590881755,
+  "lfs_files": 29,
+  "lfs_bytes": 1387260209,
+  "all_source_copy_hashes_verified": true,
+  "secret_pattern_findings": [],
+  "exclusions": "Git histories, credentials/key files, virtualenvs, caches, transient build output",
+  "scanner_limit": "Known credential patterns in text and Office XML; not a guarantee of absence of all secrets"
+}

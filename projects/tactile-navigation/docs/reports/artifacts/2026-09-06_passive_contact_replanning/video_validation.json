@@ -1,0 +1,27 @@
+{
+  "physical_source_revision": "3d53adc",
+  "width": 1680,
+  "height": 720,
+  "fps": 25,
+  "speedup": 5,
+  "videos": [
+    {
+      "room": "demo_room",
+      "path": "out/punch/passive_contact_3d53adc/demo_room/demo_room_full_s30.mp4",
+      "duration_s": 115.96,
+      "frames": 2899,
+      "full_decode_exit_code": 0,
+      "sha256": "f03a5418b77bbd44261113b449a08e8cf8d61544bec7d1aa025c83631fb65f65",
+      "run_json_sha256": "d0c691469e0c8f23bca0bebc8781486725ccaab79cc971ee50f99d69a193ed13"
+    },
+    {
+      "room": "room830",
+      "path": "out/punch/passive_contact_3d53adc/room830/room830_full_s30.mp4",
+      "duration_s": 60.84,
+      "frames": 1521,
+      "full_decode_exit_code": 0,
+      "sha256": "c57a42137d87d4969332e73f6ee84074d4461de547229907c677a7aff66c54be",
+      "run_json_sha256": "733b66d9677d1d6eaf442afe8fc1f9a5a207ba9f81f0c352bd7bc1e27b817757"
+    }
+  ]
+}

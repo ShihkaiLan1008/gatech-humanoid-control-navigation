@@ -1,0 +1,21 @@
+[
+  "/home/sky/.venvs/tactile_controller/bin/python",
+  "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/scripts/punch_demo.py",
+  "--room",
+  "sky_offset_gate",
+  "--controller",
+  "footstep",
+  "--seed",
+  "0",
+  "--out",
+  "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_offset_gate/seed_0",
+  "--no-video",
+  "--policy",
+  "global",
+  "--override",
+  "checkpoint=models/sky_local/model_35500.pt",
+  "--probe-reach-profile",
+  "configs/probe_reach_ee_qpos_v1.json",
+  "--max-s",
+  "900"
+]

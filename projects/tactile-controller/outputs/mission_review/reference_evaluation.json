@@ -1,0 +1,11 @@
+{
+  "checkpoint": "checkpoints/decoupled_footplacement/0907/foot_mimic_noforce_model_34000.pt",
+  "task": "Mjlab-Decoupled-Joint-Foot-Mimic-Arm-G1",
+  "seed": 42,
+  "num_envs": 32,
+  "steps": 500,
+  "mean_reference_foot_error_m": 0.09622298926115036,
+  "p90_reference_foot_error_m": 0.18367448449134827,
+  "episode_end_count_including_timeouts": 32,
+  "limitations": "Single-seed screening; reference tracking over all frames, not landing accuracy. Resets can cause command trajectories to diverge. Not a matched-training ablation."
+}

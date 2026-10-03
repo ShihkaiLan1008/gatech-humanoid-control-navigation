@@ -1,0 +1,38 @@
+[
+  {
+    "room": "room2",
+    "video": "out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.mp4",
+    "decoded_frames": 943,
+    "fps": 5.0,
+    "duration_s": 188.6,
+    "bytes": 18177943,
+    "contact_sheet": "outputs/room2_video_review.jpg"
+  },
+  {
+    "room": "sky_island_choice",
+    "video": "out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4",
+    "decoded_frames": 645,
+    "fps": 2.5,
+    "duration_s": 258.0,
+    "bytes": 13915380,
+    "contact_sheet": "outputs/sky_island_choice_video_review.jpg"
+  },
+  {
+    "room": "sky_offset_gate",
+    "video": "out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.mp4",
+    "decoded_frames": 774,
+    "fps": 2.5,
+    "duration_s": 309.6,
+    "bytes": 19351422,
+    "contact_sheet": "outputs/sky_offset_gate_video_review.jpg"
+  },
+  {
+    "room": "sky_staggered_baffles",
+    "video": "out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.mp4",
+    "decoded_frames": 1063,
+    "fps": 2.5,
+    "duration_s": 425.2,
+    "bytes": 24568834,
+    "contact_sheet": "outputs/sky_staggered_baffles_video_review.jpg"
+  }
+]

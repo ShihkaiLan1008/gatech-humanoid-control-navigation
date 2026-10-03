@@ -1,0 +1,82 @@
+[project]
+name = "tactile-controller"
+version = "0.1.0"
+description = "G1 wall-contact whole-body references: Crocoddyl trajectory optimization (mpc) + mjlab mimic-policy training (rl)"
+readme = "README.md"
+authors = [
+    { name = "ZhenyuWu323", email = "wzy2575765661@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    # --- RL side (mjlab / MuJoCo / torch) ---
+    "mjlab>=1.5.0",
+    # --- MPC side (Crocoddyl trajectory optimization) ---
+    # pin is PINNED: libcrocoddyl 3.2.1 is built against libpinocchio 4.0.0 and only
+    # declares an unbounded `libpinocchio` dep. With pin 4.1.0 the ABI mismatch makes
+    # crocoddyl.ShootingProblem(...) raise MemoryError. Bump both together, never one.
+    "crocoddyl==3.2.1",
+    "pin==4.0.0",
+    "example-robot-data>=5.0",
+    "meshcat>=0.3.2",
+    "pyyaml>=6.0",
+    "scipy>=1.14",
+    # --- online / training-loop reduced-order MPC (mpc_online, mpc_training) ---
+    # CUDA jax: the jax_pimpc training solver ingests torch CUDA tensors via
+    # dlpack — CPU jax cannot ("Unknown backend cuda").
+    "jax[cuda12]>=0.4.30",
+    "osqp>=0.6.7",
+    # leg FK/IK inside the 1-step QP action term (rl/mpc_online_one_step/kin.py)
+    "pytorch-kinematics>=0.7",
+    # --- retargeted-motion ingest (src/retarget_motion) ---
+    # Pulls the pre-retargeted G1 motion datasets off the Hub (resumable, parallel).
+    # Pure python -- adding it re-resolved nothing: crocoddyl/pin/torch/mjlab/jax/osqp
+    # all stayed put (verified against the lock).
+    "huggingface-hub>=1.26.0",
+    # --- PyRoki (JAX robot kinematics: URDF FK, collision capsules, IK costs) ---
+    # Not on PyPI: both it and its solver `jaxls` come from git (pinned in
+    # [tool.uv.sources]); pure python on top of the jax already required above,
+    # so `uv sync` needs nothing but network. Offline reach-pool / IK-anchor
+    # generation targets this, not cuRobo.
+    "pyroki",
+    "jaxls",
+]
+
+[project.optional-dependencies]
+# cuRobo (GPU kinematics / IK / motion planning) is OPTIONAL: the trainer reads
+# the reach pool from the shipped `reach_pool/*.npz` artifacts, so only the
+# artifact generator (`data_gen.ee_target_curobo.reach_pool_export`), the `data_gen.ee_target_curobo.reach_boundary` explorer
+# and the paused mpc_online_tracking line need it. `uv sync --extra curobo`.
+# The `cu13` extra matches torch's CUDA build (2.13.0+cu130): it pulls cuda-core
+# + nvidia-cuda-runtime>=13. Kernels are JIT-compiled at RUNTIME via cuda.core /
+# NVRTC, so the system nvcc never needs to match.
+curobo = ["nvidia-curobo[cu13]"]
+
+[project.entry-points."mjlab.tasks"]
+g1_mpc_offline_tracking = "rl.mpc_offline_tracking"
+g1_mpc_online_tracking = "rl.mpc_online_tracking"
+g1_mpc_online_one_step = "rl.mpc_online_one_step"
+g1_decoupled = "rl.decoupled"
+g1_eval = "rl.eval"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+# `src/assets` is the repo's single robot-asset tree (see src/assets/__init__.py);
+# it must ship with the wheel or none of the other packages can load a model.
+packages = ["src/assets", "src/rl", "src/retarget_motion", "src/data_gen"]
+
+[tool.uv.sources]
+# All three are git-only packages (no usable PyPI release); uv fetches them into
+# its cache at sync time, so a fresh clone needs no sibling checkouts.
+nvidia-curobo = { git = "https://github.com/NVlabs/curobo.git", rev = "8e734f3ced1df898990bcd92de40abce475907db" }
+pyroki = { git = "https://github.com/chungmin99/pyroki.git", rev = "388e43e1fc0d0ee382968d3dd72970fd62a0450c" }
+jaxls = { git = "https://github.com/brentyi/jaxls.git", rev = "50a58be88c5ef74532f09e3f55268b4f02c490e3" }
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+quote-style = "double"

@@ -1,0 +1,25 @@
+{
+  "room": "room2",
+  "controller": "footstep",
+  "seed": 0,
+  "directory": "/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0",
+  "started_unix": 1791015114.1071107,
+  "cpu_affinity": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14
+  ],
+  "rss_limit_gb": 0,
+  "rss_limit_kind": "polled process-group RSS",
+  "peak_rss_bytes": 3801202688,
+  "state": "finished",
+  "pid": 385,
+  "returncode": 0,
+  "ended_unix": 1791015502.6700835,
+  "wall_clock_s": 388.507398314
+}

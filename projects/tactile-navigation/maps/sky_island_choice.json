@@ -1,0 +1,16 @@
+{
+  "format": "tactile-navigation/map_gen v1",
+  "name": "sky_island_choice",
+  "source": "Sky evaluation map, based on the team's manifest format",
+  "experiment": "A central island presents two routes and removes direct line-of-sight to the goal.",
+  "room": {"width_m": 5.0, "depth_m": 4.0},
+  "start_xy": [0.7, 2.0],
+  "start_heading_deg": 0.0,
+  "goal_xy": [4.3, 2.0],
+  "goal_radius_m": 0.3,
+  "free_space_rects": [[0.0, 0.0, 5.0, 4.0]],
+  "obstacles": [
+    {"id": "central_island", "kind": "box", "center": [2.5, 2.0],
+     "half_along_m": 0.7, "half_out_m": 0.55, "yaw_deg": 0.0}
+  ]
+}

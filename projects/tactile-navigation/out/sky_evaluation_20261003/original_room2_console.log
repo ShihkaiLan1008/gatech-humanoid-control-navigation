@@ -1,0 +1,53 @@
+START {'room': 'room2', 'controller': 'footstep', 'seed': 0, 'directory': '/mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0', 'started_unix': 1791015114.1071107, 'cpu_affinity': [0, 2, 4, 6, 8, 10, 12, 14], 'rss_limit_gb': 0, 'rss_limit_kind': 'polled process-group RSS', 'peak_rss_bytes': 0, 'state': 'running', 'pid': 385}
+DONE seed=0 exit=0
+{
+  "runs": 1,
+  "successes": 0,
+  "success_evaluable_runs": 1,
+  "unknown_success_runs": 0,
+  "success_rate": 0.0,
+  "outcomes": {
+    "arrival_uncertain": 1
+  },
+  "mean": {
+    "position_error_mean_m": 0.030906258392734785,
+    "position_error_rmse_m": 0.034759107834493985,
+    "yaw_error_mean_deg": 1.5434683600476273,
+    "yaw_error_rmse_deg": 1.9999529457119172,
+    "wall_clock_s": 378.61028385162354,
+    "duration_s": 187.52000000002212,
+    "path_length_m": 16.033874719562867,
+    "probe_attempts": 17.0,
+    "touch_contacts": 13.0,
+    "touch_hit_rate": 0.7647058823529411,
+    "estimation_coverage": 1.0
+  },
+  "sample_std": {
+    "position_error_mean_m": null,
+    "position_error_rmse_m": null,
+    "yaw_error_mean_deg": null,
+    "yaw_error_rmse_deg": null,
+    "wall_clock_s": null,
+    "duration_s": null,
+    "path_length_m": null,
+    "probe_attempts": null,
+    "touch_contacts": null,
+    "touch_hit_rate": null,
+    "estimation_coverage": null
+  },
+  "metric_run_counts": {
+    "position_error_mean_m": 1,
+    "position_error_rmse_m": 1,
+    "yaw_error_mean_deg": 1,
+    "yaw_error_rmse_deg": 1,
+    "wall_clock_s": 1,
+    "duration_s": 1,
+    "path_length_m": 1,
+    "probe_attempts": 1,
+    "touch_contacts": 1,
+    "touch_hit_rate": 1,
+    "estimation_coverage": 1
+  },
+  "successful_runs_mean_duration_s": null
+}
+Report: /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/summary.json and /mnt/c/Users/gigabyte/Documents/ChatGPT/tactile-navigation/out/sky_evaluation_20261003/original_room2/runs.csv

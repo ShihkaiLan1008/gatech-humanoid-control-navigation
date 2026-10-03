@@ -1,0 +1,21 @@
+diff --git a/src/rl/decoupled/tasks/joint_foot_mimic_arm/env_configs/reward_cfgs.py b/src/rl/decoupled/tasks/joint_foot_mimic_arm/env_configs/reward_cfgs.py
+index 0836415..4cbead3 100644
+--- a/src/rl/decoupled/tasks/joint_foot_mimic_arm/env_configs/reward_cfgs.py
++++ b/src/rl/decoupled/tasks/joint_foot_mimic_arm/env_configs/reward_cfgs.py
+@@ -56,6 +56,16 @@ for _grp, (_links, _reduce) in TRACK_BODY_GROUPS.items():
+ # Base Rewards
+ # ============================================================
+ LOWER_REWARDS.update({
++    # A second, narrower foot-position kernel preserves the original 0.2 m
++    # coarse signal while increasing the incentive below roughly 5 cm.  This
++    # is the only reward change in the foot-accuracy experiment.
++    "track_feet_pos_precise": RewardGroupTermCfg(
++        func=mdp.track_body_pos,
++        weight=1.0,
++        params={"command_name": "step_cmd", "body_names": _FEET,
++                "std": 0.05, "reduce": "sum"},
++        group="lower_body",
++    ),
+     # task-space trunk attitude (the clip trunk is level); the pelvis's own
+     # attitude is priced by track_pelvis_ori
+     "torso_flat_orientation": RewardGroupTermCfg(
