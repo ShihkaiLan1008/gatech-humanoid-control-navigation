@@ -1,0 +1,56 @@
+{
+  "checked_at_utc": "2026-10-04T00:37:29.600282+00:00",
+  "source_files_verified": 10101,
+  "source_bytes_verified": 1590881755,
+  "all_source_hashes_match": true,
+  "credential_pattern_scanned_files": 932,
+  "credential_pattern_findings": [],
+  "scanner_limit": "Known credential patterns in selected text and Office XML; excludes PDF/image text, binary models and unknown patterns.",
+  "calculation_checks": [
+    {
+      "room": "room2",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 7.310106716318381,
+      "localization_rmse_cm": 3.4759107834493985,
+      "arrival_belief_pct": 93.3497299941425
+    },
+    {
+      "room": "sky_island_choice",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 6.409861863308522,
+      "localization_rmse_cm": 6.568192454875822,
+      "arrival_belief_pct": 92.41460558722426
+    },
+    {
+      "room": "sky_offset_gate",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 4.073638322349707,
+      "localization_rmse_cm": 6.643408674529032,
+      "arrival_belief_pct": 91.89116935977027
+    },
+    {
+      "room": "sky_staggered_baffles",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": true,
+      "fallen": false,
+      "goal_error_cm": 4.158805411026263,
+      "localization_rmse_cm": 6.832591646244109,
+      "arrival_belief_pct": 96.03814786867414
+    }
+  ],
+  "completed_trials": 4,
+  "physical_arrivals": 4,
+  "formal_successes": 1,
+  "interrupted_attempts_excluded": 1,
+  "verification_limit": "Artifact integrity and calculations do not independently certify personal mastery, mentor endorsement, or sharing permission."
+}

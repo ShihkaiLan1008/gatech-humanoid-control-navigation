@@ -4,7 +4,7 @@
 
 # Why I care, and where I want to go
 
-Personal narrative prepared from Sky's account of their interests and experience. The event description follows that account rather than asserting a separately verified official event title or award record. No award or prize is claimed for Sky.
+*A personal reflection by Shih-Kai Lan (Sky), prepared with AI writing assistance from my account of the experience.*
 
 ## Where the interest began
 
@@ -42,6 +42,6 @@ Cleaner energy is another long-term motivation. A first measurable connection to
 
 The reason I want to keep doing this work is that it connects curiosity with something physical and potentially useful. My ambition is broad, but the research path should be specific: ask a question, make a controlled change, measure what happened, acknowledge what is still uncertain and continue.
 
-## Before using this narrative in an application
+## How I am learning to direct the work
 
-Read it in your own voice and adjust wording to reflect your actual experience. Add one specific example of an input you personally changed, a design you reviewed or a result you explained. Keep the distinction between personal work, team work and AI assistance. The technical record supports the study; it does not by itself prove every personal contribution or future ambition.
+I used the mentor's assignment to give AI tools a clear goal, asked where testing had happened, and restated the need to create and test new maps using the team's work as a reference. I also asked for explanations of the research's meaning and future possibilities. Those directions connect my curiosity to a specific task and a record that others can examine. [Examples of my directions and the resulting work](HOW_I_DIRECTED_AI.md) describe my contribution alongside the team's foundation and AI assistance.

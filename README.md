@@ -21,6 +21,7 @@ Their time, guidance, and generosity have meant a great deal to me. This portfol
 
 <p align="center">
   <a href="docs/ADMISSIONS_RESEARCH_OVERVIEW.md"><strong>START HERE</strong></a> &nbsp; / &nbsp;
+  <a href="docs/HOW_I_DIRECTED_AI.md"><strong>MY ROLE</strong></a> &nbsp; / &nbsp;
   <a href="docs/VIDEOS.md">WATCH THE ROBOT</a> &nbsp; / &nbsp;
   <a href="docs/TECHNICAL_DEPTH.md">GO DEEPER</a> &nbsp; / &nbsp;
   <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a>
@@ -29,6 +30,8 @@ Their time, guidance, and generosity have meant a great deal to me. This portfol
 ---
 
 ## Can a robot know when it has arrived?
+
+*Shih-Kai Lan (Sky) · Personal student research portfolio · Work supported by Georgia Tech LIDAR mentors*
 
 A robot has a map and a destination—but its estimate of its own position can drift as it walks. Touching a wall can help it correct that estimate. The challenge is to move successfully **and gather enough evidence to confirm arrival**.
 
@@ -138,6 +141,7 @@ Adaptive walking, broad transfer and cleaner energy are future directions. The c
 
 - [Full navigation report](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md) · [Numeric audit](projects/tactile-navigation/outputs/sky_validation.json) · [Video audit](projects/tactile-navigation/outputs/sky_video_validation.json)
 - [Source inventory and hashes](SOURCE_MANIFEST.json) · [Source revisions](PROVENANCE.json) · [Graphic sources](assets/SOURCES.md)
+- [Portfolio review and sharing caveats](docs/PORTFOLIO_REVIEW.md) · [Repeatable content audit](presentation/audit_portfolio.py)
 - [College-application report and conclusion guide](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
 - Scope: one seed per map, simulation only, team model 35500 substituted for the missing default 34000. The original room and new maps had different time caps; the system-interrupted attempt remains separate.
 - The earlier controller screening did not demonstrate improvement. The independent G1 package does not establish guaranteed fall prevention or energy-efficiency gains.
