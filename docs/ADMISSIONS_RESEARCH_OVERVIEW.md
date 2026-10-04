@@ -6,7 +6,7 @@
 
 ## Acknowledgments
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to **Zhenyu Wu**.
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, advice, and guidance on becoming a good engineer. His influence has meant a great deal to my development, and his introduction to **Zhenyu Wu** opened the opportunity to learn with the team.
 
 **Zhenyu was my main source of practical guidance throughout the project.** He provided detailed instructions, extensive setup help, and the code and research resources I needed. His support was central to my participation and learning, and I am deeply grateful for the time and effort he devoted to helping me. He also introduced me to **Huaze Liu**, whom I sincerely thank for generously sharing his maps and research work as references for my experiments. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
 
@@ -18,9 +18,11 @@ The study extends that testing to three newly authored layouts. It is an evaluat
 
 ## My role: turning the assignment into directions
 
+My path to this study included learning environment setup and robot training with AI assistance, losing work after a computer board failure, and trying again on a better laptop. I used earlier conversations and the context I could reconstruct to direct the rebuild and request settings suited to the available resources. This is my personal account; the hardware cause is unconfirmed. [The setback and rebuild](SETBACK_AND_REBUILD.md) connects that experience to the surviving training records and a separate, documented navigation restart.
+
 I understood Zhenyu's assignment as a question about an existing system: how would it behave on new maps? I provided the team's repository and mentor context to AI tools, asked where testing had been done, and restated that new-map evaluation was the task. This kept the requested work tied to the research assignment.
 
-When the computer restarted unexpectedly, I asked for investigation and continuation, then decided when to pause and resume. I also directed the report to explain the study's purpose, results, significance, and future questions in language an admissions reader could understand while retaining technical depth. I requested explicit credit for the team's support and AI assistance.
+During the later navigation evaluation, when the computer restarted unexpectedly, I asked for investigation and continuation, then decided when to pause and resume. I also directed the report to explain the study's purpose, results, significance, and future questions in language an admissions reader could understand while retaining technical depth. I requested explicit credit for the team's support and AI assistance.
 
 This role required communicating the goal, clarifying scope, asking follow-up questions, and refining the output. The resulting study used substantial AI assistance for implementation and analysis. [Concrete examples of my directions →](HOW_I_DIRECTED_AI.md)
 
@@ -54,6 +56,16 @@ A more complicated-looking map did not necessarily produce a worse completion ou
 It can serve as a new-map evaluation suite and a reproducible diagnostic case study. The saved maps, recordings, contact events and metric definitions let a researcher examine how the same framework behaves on different layouts. Replay videos show the executed behavior rather than a hand-animated successful route.
 
 Potential longer-term value is better navigation when position estimates drift or sensing is uncertain. Application to dark spaces, visually difficult environments or assistive robots would require further evidence; it is not demonstrated by these trials.
+
+## The difficult questions underneath the demonstration
+
+Three examples show why this work goes beyond drawing a room and playing a robot animation:
+
+- **Geometry must agree across systems.** The island map's authored start heading is rotated into the navigation frame. Its goal changes from an authored displacement of `(3.6, 0)` to `(0, 3.6)`. The planner and simulated obstacles must still represent the same room.
+- **A plausible training idea can fail to establish improvement.** Earlier work added a narrower foot-position reward, but later screening measured 33.02 cm error for the tuned checkpoint versus 9.62 cm for the reference. Different training histories prevent a causal conclusion about the reward; a matched experiment is needed.
+- **Closeness is not certainty.** The offset-opening robot finished slightly closer to its goal than the staggered-baffle robot, yet only the latter passed the joint position-and-heading belief threshold. The next question is what evidence the system lacked, rather than whether the final video looked successful.
+
+[Technical depth](TECHNICAL_DEPTH.md) explains the mechanisms, measurements, source evidence, and controlled follow-up experiments. These explanations were developed with AI assistance; the team supplied the underlying methods.
 
 ## What it has taught at the project level
 

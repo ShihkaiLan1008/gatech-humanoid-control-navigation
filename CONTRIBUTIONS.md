@@ -2,7 +2,7 @@
 
 ## Acknowledgments
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his advice and for introducing me to his student **Zhenyu Wu**, opening the door for me to learn from the team.
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, thoughtful advice, and guidance on becoming a good engineer. He has strongly influenced how I think about my development in engineering. His introduction to **Zhenyu Wu** also made it possible for me to learn with the team.
 
 **Zhenyu Wu was my main source of practical guidance throughout this project.** He provided detailed instructions, extensive help with setting up the research environment, and the code and resources I needed to begin. His guidance and support were central to my participation and learning. I am especially grateful for the time and effort he devoted to helping me. He also introduced me to Huaze Liu.
 
@@ -14,11 +14,13 @@ Their guidance and generosity made this learning experience possible. I am grate
 
 ## My role in directing the research workflow
 
-I interpreted Zhenyu's assignment as an evaluation task: build on the team's existing navigation work and test it on new maps. I supplied the repository and mentor context to AI tools, asked where testing had occurred, and explicitly brought the work back to the new-map mission. When the computer restarted unexpectedly, I requested investigation and continuation, then chose when to pause and resume the research.
+My participation began with using AI to learn environment setup and undertake robot training. As described in my [personal account of the setback and rebuild](docs/SETBACK_AND_REBUILD.md), I later lost work after an internal computer failure and used earlier conversations and reconstructed context to direct a fresh installation on a better laptop. I asked for resource-conscious settings so that I could continue. The hardware cause remains unconfirmed; the surviving artifacts do not establish the full chronology or recover every lost file.
+
+I interpreted Zhenyu's assignment as an evaluation task: build on the team's existing navigation work and test it on new maps. I supplied the repository and mentor context to AI tools, asked where testing had occurred, and explicitly brought the work back to the new-map mission. During the later navigation evaluation, when the computer restarted unexpectedly, I requested investigation and continuation, then chose when to pause and resume the research.
 
 I also directed how the results should be communicated: explain what the experiments mean, make the work accessible to admissions readers while retaining technical depth, connect it with my motivation and future interests, and clearly credit the mentors, team resources, and AI tools involved.
 
-My contribution here is task interpretation, scope clarification, direction of AI assistance, and research communication. [Examples of my instructions and the work they guided](docs/HOW_I_DIRECTED_AI.md) make that role concrete.
+My contribution here is AI-assisted learning and training, directing reconstruction after a setback, interpreting the assignment, clarifying scope, and communicating the research. [Examples of my instructions and the work they guided](docs/HOW_I_DIRECTED_AI.md) make that role concrete. The detailed technical explanations describe the project and my developing research questions; they do not imply that I independently invented the team's methods or implemented every component.
 
 ## AI-assisted learning and implementation
 

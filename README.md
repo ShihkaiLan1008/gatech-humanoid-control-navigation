@@ -1,6 +1,6 @@
 # With gratitude
 
-I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his generous advice and for introducing me to his student, Zhenyu Wu. His guidance opened the door for me to learn from the team's research.
+I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, thoughtful advice, and guidance on becoming a good engineer. His influence has shaped how I think about my development in engineering. By introducing me to Zhenyu Wu, he also opened the door to learning with the research team.
 
 I owe particular thanks to **Zhenyu Wu**, who was my main source of practical guidance throughout this project. He gave me detailed instructions for approaching the work, provided extensive help with setting up the research environment, and shared the code and resources I needed to begin. His support was central to my ability to take part in the research and continue learning. He also introduced me to Huaze Liu. I am deeply grateful for the time and effort he devoted to helping me through this experience.
 
@@ -70,7 +70,7 @@ The threshold requires enough localization belief to satisfy **both position and
 
 My contribution included interpreting the research assignment and giving AI tools a clear purpose. When I needed clarity about the testing, I asked where it had been performed and restated the goal: use the team's existing work as a reference, create new maps, and test the navigation system on them.
 
-I also asked for investigation after the computer restarted unexpectedly, decided when to pause and resume the work, and requested an explanation of the experiments, their significance, and future possibilities. For this portfolio, I specified that readers should understand both the research and my role, with clear credit for my mentors and AI assistance.
+I also asked for investigation after the later navigation-run restart, decided when to pause and resume the work, and requested an explanation of the experiments, their significance, and future possibilities. For this portfolio, I specified that readers should understand both the research and my role, with clear credit for my mentors and AI assistance.
 
 These decisions show how I used AI deliberately: defining the task, questioning whether the work matched it, communicating what I needed, and refining the deliverable. [Concrete examples of my directions and the resulting work →](docs/HOW_I_DIRECTED_AI.md)
 
@@ -78,13 +78,13 @@ These decisions show how I used AI deliberately: defining the task, questioning 
 
 | Contributor | Role in this study |
 | :--- | :--- |
-| **Professor Zhao and the research team** | Advice, the new-map assignment, research resources, existing algorithms, maps, trained controller and simulator integration |
-| **Me — Shih-Kai Lan (Sky)** | Task interpretation, direction of the AI-assisted workflow, scope clarification, questions about testing, and decisions about presentation and attribution |
+| **Professor Zhao and the research team** | Timely feedback and engineering guidance; practical mentorship, the new-map assignment, research resources, algorithms, maps, trained controller and simulator integration |
+| **Me — Shih-Kai Lan (Sky)** | AI-assisted learning and training, direction of rebuilding after a setback, task interpretation, scope clarification, questions about testing, and decisions about presentation and attribution |
 | **ChatGPT and Codex** | Concept explanations and resource organization; substantial code/map implementation, simulation operation, analysis, visualization and drafting |
 
 Together, this work produced three new map layouts and a documented simulation case study with recordings, quantitative results, and open questions.
 
-**Credit:** Professor Ye Zhao provided advice and connected me with the team. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
+**Credit:** Professor Ye Zhao provided quick feedback, advice on becoming a good engineer, and an introduction to the team. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
 
 **Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the assignment, context, priorities, and follow-up directions that guided the assistance. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu.
 
@@ -99,6 +99,14 @@ That connection between an input and a physical movement drew me toward mechanic
 [My story and the questions I want to pursue →](docs/MY_RESEARCH_DIRECTION.md)
 
 ## A growing research journey
+
+### The work I had to rebuild
+
+Before the new-map study, I used AI tools to learn how to set up a simulation environment and begin robot training. My computer later suffered an internal board failure, and I lost the training work on that machine. I suspected the workload might have contributed, but its cause was never established. On a better laptop, I used previous conversations and the context I could reconstruct to direct AI through rebuilding the environment and finding settings that better fit the available resources.
+
+This setback is part of my personal account. The surviving records show training, checkpoints, and a separate later navigation restart; they do not establish the cause of the earlier hardware failure. Rebuilding the environment also did not mean recovering every lost file. The experience gives me a concrete engineering goal: make the process understandable, measurable, and recoverable.
+
+[Read the setback, recovery, and lessons →](docs/SETBACK_AND_REBUILD.md)
 
 <table>
 <tr>
@@ -122,6 +130,12 @@ That connection between an input and a physical movement drew me toward mechanic
 </td>
 </tr>
 </table>
+
+### Where the technical difficulty lies
+
+The work raises questions beyond making a robot move. A map must mean the same thing to the planner and the simulator. A narrower foot-tracking reward needs a fair comparison before anyone can claim it helps. A robot that ends **4.07 cm** from its target can still fail the arrival-confidence test while another **4.16 cm** away passes. These examples connect geometry, learning, measurement, and uncertainty to specific evidence in the archive.
+
+[Five technical challenges, their evidence, and the next experiments →](docs/TECHNICAL_DEPTH.md#five-challenges-behind-the-results)
 
 ## Turning ambition into experiments
 

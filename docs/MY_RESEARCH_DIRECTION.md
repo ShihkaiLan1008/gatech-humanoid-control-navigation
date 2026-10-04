@@ -16,7 +16,17 @@ That experience made me want to pursue mechanical engineering and create things 
 
 In the robotics work, I became especially excited by the connection between data inputs and physical behavior: changing what was provided to a robot and then watching it find a route and walk. The feeling was like a parent watching a child learn to walk. A line of code or an input was no longer just an abstraction; it had become movement.
 
-That excitement is my personal reaction, not a claim that the current model was trained from scratch by me or that every change improved performance. The team supplied the trained controller, and AI assisted implementation and experiment operation. The portfolio's contribution statement keeps that foundation visible.
+I did undertake earlier robot-training work with AI assistance. The featured new-map study then used the team's already-trained controller; I did not train that navigation controller from scratch. My excitement about movement is not a claim that every change improved performance. The portfolio's contribution statement keeps those phases and the assistance visible.
+
+## When continuing meant starting again
+
+My early work involved asking AI to teach me how to install the tools, set up the training environment, and begin training robots. After my computer suffered an internal board failure, I lost the training work I had on that machine. I wondered whether the workload was too demanding, but the cause was never established.
+
+I kept trying. On a better laptop, I used previous conversations and whatever context I could reconstruct to direct AI through installing the tools again. I also wanted settings that better respected the computer's resources. An old conversation could help rebuild the setup; it could not bring back exact training weights that had been lost.
+
+This experience gives a practical meaning to the engineer I want to become. I want to understand the conditions under which work can run, know what has actually been saved, and make it possible to resume after an interruption. [The full recovery reflection](SETBACK_AND_REBUILD.md) separates my early experience from the later documented navigation crash and explains what the surviving records show.
+
+Professor Ye Zhao's quick feedback and advice about becoming a good engineer have strongly influenced me. Zhenyu Wu's extensive practical guidance helped me work through setup and begin participating in the research. I value both the opportunity they gave me and the example of taking engineering seriously while continuing to learn.
 
 ## How the experiment deepens that interest
 
