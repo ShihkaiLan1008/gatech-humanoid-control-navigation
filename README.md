@@ -150,7 +150,7 @@ Adaptive walking, broad transfer and cleaner energy are future directions. The c
 This repository preserves source snapshots, models, datasets, logs, reports and recordings. Large artifacts use Git LFS:
 
 ```bash
-git clone https://github.com/azureowl372/ShihKai-Lan-Research-Project-with-Georgia-Tech-LIDAR-LAB..git research-retrospective
+git clone https://github.com/ShihkaiLan1008/gatech-lidar-research-assistant.git research-retrospective
 cd research-retrospective
 git lfs pull
 ```
