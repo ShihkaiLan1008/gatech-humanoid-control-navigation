@@ -1,9 +1,9 @@
 {
-  "checked_at_utc": "2026-10-04T00:37:29.600282+00:00",
+  "checked_at_utc": "2026-10-10T03:16:59.404562+00:00",
   "source_files_verified": 10101,
   "source_bytes_verified": 1590881755,
   "all_source_hashes_match": true,
-  "credential_pattern_scanned_files": 932,
+  "credential_pattern_scanned_files": 938,
   "credential_pattern_findings": [],
   "scanner_limit": "Known credential patterns in selected text and Office XML; excludes PDF/image text, binary models and unknown patterns.",
   "calculation_checks": [

@@ -1,0 +1,23 @@
+{
+  "source": "projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.eval.json",
+  "source_sha256": "93973a083a6cf5564d5c128fa11d6b93c77c61b50dd52efa0d7baa6c73078255",
+  "samples": 15483,
+  "probe_attempts": 29,
+  "contacts": 12,
+  "misses": 17,
+  "simulation_duration_s": 308.40000000000947,
+  "scored_duration_s": 308.40000000000947,
+  "actual_planar_path_length_m": 24.359610174087617,
+  "planned_route_distance_m": 9.8,
+  "requested_planner_strategy": "seed_refine",
+  "executed_planner_strategy": "belief_astar",
+  "planner_used_fallback": true,
+  "plan_log": "projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/run.log",
+  "plan_log_sha256": "145fc0990da0faaec8c670bd69367f0bde5c29f411a1da72f68141c4757ec75c",
+  "localization_rmse_cm": 6.64340867452903,
+  "final_goal_error_cm": 4.073638322349707,
+  "final_arrival_belief": 0.9189116935977028,
+  "no_new_simulation": true,
+  "all_samples_plotted": true,
+  "note": "Event alignment is descriptive, not an estimate of a probe's causal effect."
+}

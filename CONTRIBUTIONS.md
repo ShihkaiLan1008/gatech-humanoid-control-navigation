@@ -2,7 +2,7 @@
 
 ## Acknowledgments
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, thoughtful advice, and guidance on becoming a good engineer. He has strongly influenced how I think about my development in engineering. His introduction to **Zhenyu Wu** also made it possible for me to learn with the team.
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, engineering advice, and active help finding a suitable research direction. He arranged learning resources, helped connect my humanoid interests to the team's work, and introduced me to **Zhenyu Wu**. His guidance has strongly influenced the engineer I want to become.
 
 **Zhenyu Wu was my main source of practical guidance throughout this project.** He provided detailed instructions, extensive help with setting up the research environment, and the code and resources I needed to begin. His guidance and support were central to my participation and learning. I am especially grateful for the time and effort he devoted to helping me. He also introduced me to Huaze Liu.
 
@@ -10,9 +10,13 @@ I also thank **Huaze Liu** for generously sharing his maps and research work as 
 
 Their guidance and generosity made this learning experience possible. I am grateful for their time and support, and I credit their research contributions throughout this portfolio.
 
+I also appreciate the early onboarding and evaluation guidance from **Rui Yan, Feiyang, and Junnosuke** in the research group. The [dated mentor-alignment record](docs/MENTOR_ALIGNMENT.md) describes these distinct forms of support.
+
 *Shih-Kai Lan (Sky)*
 
 ## My role in directing the research workflow
+
+The research conversations document more than my use of AI. I asked how to interpret training quality and curves on July 23, requested a meaningful experimental role on August 24 and September 6, sent a weekly report to both mentors on September 14, and asked on September 25 that changing tasks stay within a coherent research area. These actions support initiative, communication, and developing experimental judgment. [Dated examples and their meaning](docs/HOW_I_DIRECTED_AI.md) connect that role to the preserved work.
 
 My participation began with using AI to learn environment setup and undertake robot training. As described in my [personal account of the setback and rebuild](docs/SETBACK_AND_REBUILD.md), I later lost work after an internal computer failure and used earlier conversations and reconstructed context to direct a fresh installation on a better laptop. I asked for resource-conscious settings so that I could continue. The hardware cause remains unconfirmed; the surviving artifacts do not establish the full chronology or recover every lost file.
 

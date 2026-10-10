@@ -6,6 +6,8 @@
 
 Videos replay saved executed robot states with a trajectory/localization panel. They are simulation evidence; no real robot is shown. All four files were decoded completely and start/middle/end frames visually checked. Walls occasionally occlude the robot; the plot panel helps track the motion.
 
+[Read one run alongside its map, measurements, and sensing events →](RESEARCH_WALKTHROUGH.md#open-one-experiment-the-offset-opening-run)
+
 ## A glimpse of the recorded runs
 
 | Original room | Central island |

@@ -1,0 +1,45 @@
+[← Portfolio home](../README.md) · [My contribution](HOW_I_DIRECTED_AI.md) · [Inside the research](RESEARCH_WALKTHROUGH.md)
+
+# How this portfolio connects to the team's work
+
+*Updated October 10, 2026, Asia/Taipei, following an October 9 review of research-related messages visible in Sky's Georgia Tech Slack group and the Zhenyu Wu and Ye Zhao direct conversations. Dates below follow the Slack display. This is a paraphrased source record, not a mentor endorsement of the portfolio.*
+
+## The research direction developed over time
+
+| When and where | What the discussion established | What belongs in this portfolio |
+| :--- | :--- | :--- |
+| **July 2–3 · research group** | Professor Zhao arranged introductions and requested Isaac Sim / reinforcement-learning learning resources. Rui Yan shared onboarding notes. | The work began with guided learning and access to a research community. |
+| **July 22 · research group** | Sky described an interest in learned locomotion and behavior beyond familiar training conditions, asked for a manageable starting project, and reported reading the onboarding material. Professor Zhao asked the team for an accessible RL pipeline. | A specific interest and a request to move from reading into experiments. |
+| **July 23–24 · research group** | Sky reported setting up Isaac Sim / Isaac Lab and posted training visuals, then asked what good training and learning curves should look like. Rui advised beginning with defaults; Feiyang emphasized task-specific tracking metrics. Junnosuke supplied setup guidance. | Early setup, a running-training report, and the beginning of a question about measurement. The message itself does not validate a trained policy's quality. |
+| **August 24 · research group** | Sky shared an independent G1 package and requested a small, complete contribution involving controlled experiments, comparisons, and reporting. | The [rough-terrain package](../projects/independent-g1-rough-terrain/README.md) is prior exploration. Its energy-related intent is not evidence of measured energy savings. |
+| **August 25–26 · research group** | Professor Zhao brought Zhenyu into the conversation, asked for a manageable topic, and steered the introduction toward humanoid/tactile-navigation work in response to Sky's interests. | Professor Zhao helped shape the opportunity and research fit, beyond making an introduction. |
+| **September 4 · research group** | Zhenyu supplied access to `feat/playground`, setup documentation, and pretrained examples, and recommended learning the MJLab tracking workflow. | Practical onboarding and team-provided infrastructure, credited to Zhenyu and the team. |
+| **September 9–12 · Zhenyu DM** | An initial upper-body orientation-tracking topic evolved into concrete instructions for foot-tracking reward tuning, a reference-checkpoint comparison, and AI-assisted use of the README. | The foot-tracking study is a separate earlier task. Do not present it as completed upper-body tracking research or as the later navigation assignment. |
+| **September 14 · both mentor DMs** | Sky sent a weekly report and disclosed AI help with preparing it. Zhenyu acknowledged the training work and offered to review it; Professor Zhao acknowledged the report and asked whether the mentoring interaction was helpful. | Communication and follow-through are evidenced. Receipt or an encouraging response does not certify the report's technical claims. |
+| **September 19 · Zhenyu DM** | Zhenyu said he and Professor Zhao had discussed a suitable task: run tactile navigation on different maps, building beyond the team's existing four maps. | The featured study evaluates an existing team system on new layouts. |
+| **September 25 · Zhenyu DM** | Sky asked to keep changing tasks within a coherent research area so the work could accumulate depth. Zhenyu described new-map testing as a way to examine generality and robustness. | Evidence of scope negotiation and a research purpose beyond collecting demonstrations. |
+| **September 26 · Zhenyu DM** | Zhenyu supplied `sky/evaluation` and specified the order: run an existing map with a visible UI/video, then create new maps and run experiments. | The current baseline replay, three new maps, saved videos, and result records address the concrete assignment. |
+
+The available conversations reviewed span July–September; this review does not establish approval of the October evaluation results. Raw chat screenshots and unrelated personal details are not reproduced here. These dated descriptions allow Sky to locate the source messages without distributing the conversations themselves.
+
+## Does the completed work fit the assignment?
+
+**Yes, as an initial simulation evaluation.** The archive contains an existing-map trial, three newly authored layouts, geometry checks, executed simulation recordings, and a quantitative account of the outcomes. Those deliverables fit the run-existing-then-test-new-maps sequence. The custom maps were implemented with Codex assistance in response to Sky's direction.
+
+**The broader robustness question remains open.** Four completed seed-0 trials do not establish a general success rate or demonstrate performance across a randomized map distribution. Zhenyu mentioned customized/random maps; this pilot uses three deliberately authored layouts. It exercises new geometry, but is not a randomized-map benchmark. Only one of the four completed trials met the framework's formal completion criterion.
+
+| Assignment or ambition | Present status | Next evidence needed |
+| :--- | :--- | :--- |
+| Run the existing framework and see its behavior | Completed simulation with replay and logs | Mentor review of whether the chosen checkpoint/settings are the preferred baseline |
+| Add different maps | Three authored layouts and geometry checks | Systematic variation or a reproducible map generator to test broader generality |
+| Evaluate robustness | Pilot observations and identifiable uncertain arrivals | Repeated seeds, matched budgets, and explicit failure categories |
+| Improve foot tracking | Earlier reward experiment; later screening did not establish improvement | Matched starting conditions and repeated controlled comparisons |
+| Adaptive walking across robots / energy efficiency | Personal future directions | New experiments and suitable transfer/energy metrics |
+
+## Contribution boundaries that make the portfolio credible
+
+Professor Zhao's guidance and help shaping an appropriate research opportunity are distinct from Zhenyu's sustained practical mentoring. Huaze Liu's maps and shared research work provide a reference foundation. The group's earlier onboarding help also matters: Rui Yan, Feiyang, and Junnosuke helped orient Sky toward the tools and evaluation questions.
+
+Sky's documented actions include asking for meaningful work, reporting progress, asking how to evaluate training, keeping the task coherent, and directing AI-assisted implementation and reporting. The team's algorithms and trained models remain team work. ChatGPT and Codex assistance is described in [Contributions](../CONTRIBUTIONS.md).
+
+This review supports a student research portfolio with clear limits. It does not establish an official appointment, paper authorship, a recommendation from the mentors, or permission to make private team material public.

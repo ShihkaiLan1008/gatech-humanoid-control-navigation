@@ -6,6 +6,8 @@
 
 The technical difficulty spans representation, learning, and evaluation: making several systems describe the same physical task, choosing a training signal, and deciding what a recorded run actually proves. This page explains five concrete challenges using preserved code and results. The team supplied the underlying research methods; map extensions, implementation, and analysis received substantial Codex assistance under Sky's direction.
 
+For the complete system diagram, the role of contact and miss information, the execution-policy tradeoff, and a recorded episode timeline, start with [Inside the research](RESEARCH_WALKTHROUGH.md).
+
 ## How the parts work together
 
 1. The authored map loader transforms room geometry and endpoints into the navigation frame. The island layout exercises a different authored initial heading.

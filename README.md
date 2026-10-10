@@ -1,12 +1,14 @@
 # With gratitude
 
-I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, thoughtful advice, and guidance on becoming a good engineer. His influence has shaped how I think about my development in engineering. By introducing me to Zhenyu Wu, he also opened the door to learning with the research team.
+I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, engineering advice, and active help in finding a suitable research direction. He arranged learning resources, helped connect my interest in humanoids to the team's work, and introduced me to Zhenyu Wu. His guidance has strongly influenced the engineer I want to become.
 
 I owe particular thanks to **Zhenyu Wu**, who was my main source of practical guidance throughout this project. He gave me detailed instructions for approaching the work, provided extensive help with setting up the research environment, and shared the code and resources I needed to begin. His support was central to my ability to take part in the research and continue learning. He also introduced me to Huaze Liu. I am deeply grateful for the time and effort he devoted to helping me through this experience.
 
 I also sincerely thank **Huaze Liu** for generously sharing his maps and research work as references for my learning and experiments. These materials gave me a foundation from which to explore new maps and questions.
 
 Their time, guidance, and generosity have meant a great deal to me. This portfolio reflects both what I have learned and my respect for the people whose support helped me get here.
+
+I also appreciate the early onboarding and evaluation guidance from **Rui Yan, Feiyang, and Junnosuke** in the research group.
 
 *With sincere thanks and respect, Shih-Kai Lan (Sky)*
 
@@ -21,9 +23,9 @@ Their time, guidance, and generosity have meant a great deal to me. This portfol
 
 <p align="center">
   <a href="docs/ADMISSIONS_RESEARCH_OVERVIEW.md"><strong>START HERE</strong></a> &nbsp; / &nbsp;
-  <a href="docs/HOW_I_DIRECTED_AI.md"><strong>MY ROLE</strong></a> &nbsp; / &nbsp;
+  <a href="docs/HOW_I_DIRECTED_AI.md"><strong>MY CONTRIBUTION</strong></a> &nbsp; / &nbsp;
+  <a href="docs/RESEARCH_WALKTHROUGH.md"><strong>INSIDE THE RESEARCH</strong></a> &nbsp; / &nbsp;
   <a href="docs/VIDEOS.md">WATCH THE ROBOT</a> &nbsp; / &nbsp;
-  <a href="docs/TECHNICAL_DEPTH.md">GO DEEPER</a> &nbsp; / &nbsp;
   <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a>
 </p>
 
@@ -35,9 +37,21 @@ Their time, guidance, and generosity have meant a great deal to me. This portfol
 
 A robot has a map and a destination—but its estimate of its own position can drift as it walks. Touching a wall can help it correct that estimate. The challenge is to move successfully **and gather enough evidence to confirm arrival**.
 
-Zhenyu's assignment was to test the team's navigation framework on new layouts. This extension introduced three maps, checked their geometry, ran the existing humanoid controller and preserved the results for analysis.
+Zhenyu's assignment, developed in consultation with Professor Zhao, was to test the team's navigation framework on new layouts. This extension introduced three maps, checked their geometry, ran the existing humanoid controller and preserved the results for analysis. [How the assignment developed and what this pilot fulfills →](docs/MENTOR_ALIGNMENT.md)
 
-**My role:** I directed the AI-assisted workflow around that assignment: clarifying the goal, keeping the work focused on new-map testing, asking for an account of what had been done, and shaping how the research would be explained. [How I turned the task into directions for AI tools →](docs/HOW_I_DIRECTED_AI.md)
+**My role:** I sought a meaningful experimental task, asked how to judge training quality, kept changing tasks connected to a coherent research direction, and directed AI assistance toward the assigned testing. The mentor conversations and saved work make these actions concrete. [My contribution, with dated examples →](docs/HOW_I_DIRECTED_AI.md)
+
+## What I brought to the research
+
+| Action | Evidence | Strength it makes visible |
+| :--- | :--- | :--- |
+| **Ask how to judge progress** | July 23: I asked the group what good training and learning curves should look like. | Curiosity about evidence and evaluation |
+| **Seek useful, bounded work** | August 24 / September 6: I requested meaningful experiments, comparisons, or reporting within my available time. | Initiative and awareness of scope |
+| **Keep the work coherent** | September 25: I asked that changing tasks stay within a related research area. | Developing judgment about research direction |
+
+I also reported progress to both mentors with AI assistance disclosed, and directed rebuilding and continuation after setbacks. [The full contribution record →](docs/HOW_I_DIRECTED_AI.md)
+
+## The completed navigation pilot
 
 ![Pilot study: three new maps, four completed trials, four physical arrivals, one formal success. One seed per map.](assets/pilot-at-a-glance.svg)
 
@@ -66,16 +80,6 @@ The threshold requires enough localization belief to satisfy **both position and
 
 ## My contribution within the team project
 
-### How I directed the work
-
-My contribution included interpreting the research assignment and giving AI tools a clear purpose. When I needed clarity about the testing, I asked where it had been performed and restated the goal: use the team's existing work as a reference, create new maps, and test the navigation system on them.
-
-I also asked for investigation after the later navigation-run restart, decided when to pause and resume the work, and requested an explanation of the experiments, their significance, and future possibilities. For this portfolio, I specified that readers should understand both the research and my role, with clear credit for my mentors and AI assistance.
-
-These decisions show how I used AI deliberately: defining the task, questioning whether the work matched it, communicating what I needed, and refining the deliverable. [Concrete examples of my directions and the resulting work →](docs/HOW_I_DIRECTED_AI.md)
-
-### How the contributions fit together
-
 | Contributor | Role in this study |
 | :--- | :--- |
 | **Professor Zhao and the research team** | Timely feedback and engineering guidance; practical mentorship, the new-map assignment, research resources, algorithms, maps, trained controller and simulator integration |
@@ -84,9 +88,19 @@ These decisions show how I used AI deliberately: defining the task, questioning 
 
 Together, this work produced three new map layouts and a documented simulation case study with recordings, quantitative results, and open questions.
 
-**Credit:** Professor Ye Zhao provided quick feedback, advice on becoming a good engineer, and an introduction to the team. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
+**Credit:** Professor Ye Zhao provided feedback, engineering advice, and help finding a suitable research direction. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
 
 **Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the assignment, context, priorities, and follow-up directions that guided the assistance. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu.
+
+## Follow one recorded experiment
+
+The system connects a known map, a global route, a learned walking controller, a particle-filter position estimate, and hand probes selected for information. A failed touch attempt can still constrain the estimate. Final completion then requires enough belief to satisfy position and heading together.
+
+![Recorded localization error and contact/miss events during the completed offset-opening trial](assets/offset-opening-trace.png)
+
+*One executed seed-0 trial, using the team checkpoint. The figure shows recorded localization error and probe outcomes; temporal association alone does not establish a probe's effect.*
+
+The offset-opening robot ended **4.07 cm** from its goal but failed the 95% joint-arrival criterion. The [complete walkthrough](docs/RESEARCH_WALKTHROUGH.md) follows that trial through the system diagram, map design, raw records, measurements, unanswered questions, and a controlled next experiment.
 
 ## The curiosity behind the work
 
@@ -147,6 +161,8 @@ The work raises questions beyond making a robot move. A map must mean the same t
 | **Measure** · energy alongside stability | What tradeoffs connect useful movement and energy consumption? |
 
 Adaptive walking, broad transfer and cleaner energy are future directions. The current evidence establishes a simulation case study and a starting point for those questions.
+
+[A concrete next study: repeated trials, paired sensing comparisons, and final-belief diagnostics →](docs/RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test)
 
 ---
 

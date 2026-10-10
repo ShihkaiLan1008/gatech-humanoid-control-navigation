@@ -1,5 +1,5 @@
 {
-  "description": "Shih-Kai Lan's student research portfolio: AI-assisted humanoid navigation experiments, research direction, team contributions, and mentor acknowledgments.",
+  "description": "Shih-Kai Lan's student research portfolio: humanoid locomotion learning, foot-tracking experiments, and tactile-navigation evaluation, with contributions and AI assistance documented.",
   "topics": [
     "robotics",
     "humanoid-robotics",
@@ -11,6 +11,9 @@
     "simulation",
     "student-research",
     "research-portfolio",
-    "ai-assisted-research"
+    "ai-assisted-research",
+    "reinforcement-learning",
+    "isaac-lab",
+    "experiment-design"
   ]
 }

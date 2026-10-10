@@ -6,7 +6,7 @@
 
 ## Acknowledgments
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, advice, and guidance on becoming a good engineer. His influence has meant a great deal to my development, and his introduction to **Zhenyu Wu** opened the opportunity to learn with the team.
+I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his feedback, engineering advice, and help finding a suitable research direction. He arranged learning resources, helped connect my humanoid interests to the team's work, and introduced me to **Zhenyu Wu**. His influence has meant a great deal to my development.
 
 **Zhenyu was my main source of practical guidance throughout the project.** He provided detailed instructions, extensive setup help, and the code and research resources I needed. His support was central to my participation and learning, and I am deeply grateful for the time and effort he devoted to helping me. He also introduced me to **Huaze Liu**, whom I sincerely thank for generously sharing his maps and research work as references for my experiments. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
 
@@ -16,7 +16,11 @@ This team-supported simulation study explores a robot-navigation problem that is
 
 The study extends that testing to three newly authored layouts. It is an evaluation contribution to an existing research framework, with AI assistance in implementation, execution and reporting. The team's algorithms and trained model remain credited team work.
 
+[How the assignment evolved and what this pilot fulfills](MENTOR_ALIGNMENT.md) records the mentor conversations. Earlier setup/training and foot-tracking work are connected learning stages, with separate results. The three new maps are deliberately authored cases; the pilot does not yet fulfill the broader goal of a randomized, repeated robustness benchmark.
+
 ## My role: turning the assignment into directions
+
+My role is also visible in the questions I brought to the team. I asked what good training and learning curves should look like, sought meaningful experimental work within a realistic scope, and asked that changing tasks stay in a related research area. I communicated progress through a weekly report, with AI assistance disclosed. These dated actions show initiative, follow-through, and developing research judgment. [Examples grounded in the mentor conversations](HOW_I_DIRECTED_AI.md) distinguish those strengths from the team's algorithms and AI implementation.
 
 My path to this study included learning environment setup and robot training with AI assistance, losing work after a computer board failure, and trying again on a better laptop. I used earlier conversations and the context I could reconstruct to direct the rebuild and request settings suited to the available resources. This is my personal account; the hardware cause is unconfirmed. [The setback and rebuild](SETBACK_AND_REBUILD.md) connects that experience to the surviving training records and a separate, documented navigation restart.
 
@@ -58,6 +62,8 @@ It can serve as a new-map evaluation suite and a reproducible diagnostic case st
 Potential longer-term value is better navigation when position estimates drift or sensing is uncertain. Application to dark spaces, visually difficult environments or assistive robots would require further evidence; it is not demonstrated by these trials.
 
 ## The difficult questions underneath the demonstration
+
+[Inside the research](RESEARCH_WALKTHROUGH.md) explains the system as a whole and opens one recorded trial, including the timeline of error, contacts, and misses. It also gives a concrete plan for a controlled next comparison.
 
 Three examples show why this work goes beyond drawing a room and playing a robot animation:
 
