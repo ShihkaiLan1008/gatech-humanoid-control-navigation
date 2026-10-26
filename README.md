@@ -27,6 +27,12 @@ I worked with the group on how to judge training and experiments, shared a weekl
 
 **The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
 
+## Why this research matters
+
+A navigation system needs to handle different room layouts and judge reliably when a task is complete. Testing new maps helps reveal where the team's existing system works and where it needs further investigation. In this pilot, all four completed trials physically reached the goal, but only one met the system's arrival-confidence requirement. My contribution was to help document that gap under my mentors' guidance, giving the team concrete cases for studying how movement, sensing and uncertainty affect completion.
+
+[Why test new layouts, and why does arrival confidence matter? →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md#why-study-this)
+
 ## The completed navigation pilot
 
 ![Pilot study: three new maps, four completed trials, four physical arrivals, one formal success. One seed per map.](assets/pilot-at-a-glance.svg)

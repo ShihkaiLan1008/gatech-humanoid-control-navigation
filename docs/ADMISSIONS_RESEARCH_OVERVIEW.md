@@ -6,6 +6,14 @@
 
 In plain terms, I tested whether the team's robot could navigate new layouts and whether its software could tell when it had reached the goal.
 
+## Why study this?
+
+**Different layouts test the limits of an existing system.** A successful run in one room does not establish how the same robot will behave around different obstacles, openings and turns. Testing the system on additional layouts lets the team examine whether planning, walking and position estimation continue to work together. My assigned evaluation contributes a small set of recorded cases to that larger research question.
+
+**The robot must also judge when it has finished.** A viewer can see that a robot is near its goal, while the robot's own estimate of position and heading remains uncertain. The team's framework uses touch as a source of information about its surroundings. Studying movement alongside sensing and arrival confidence helps identify when further information may be needed before the system can declare completion.
+
+**An uncertain outcome can guide the next experiment.** In this pilot, physical arrival occurred in all four completed trials, but formal confirmation occurred only once. The value of documenting this gap is that it gives the team specific maps, recordings and measurements to investigate. Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I helped turn the assigned tests into evidence for that discussion. More reliable navigation is the longer-term motivation; this small simulation study identifies questions for further testing.
+
 ## Assignment, research question and my role
 
 I participated as a student member of an ongoing Georgia Tech LIDAR research project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. Zhenyu assigned me the navigation evaluation presented here. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Dated task record →](MENTOR_ALIGNMENT.md)
