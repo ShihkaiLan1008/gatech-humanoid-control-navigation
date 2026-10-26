@@ -4,7 +4,7 @@
 
 *Shih-Kai Lan (Sky) · assignment, participation, evidence and contribution boundaries*
 
-I worked as a student research assistant in an ongoing humanoid robotics team. After preliminary G1 simulation training, I led the AI-assisted work on Zhenyu Wu's assigned navigation evaluation, working with mentors and team members rather than building their framework anew. I brought the task and team code into the workflow, participated in discussions, examined results and shared reports. The [dated mentor record](MENTOR_ALIGNMENT.md) and artifacts below show the basis and limits of these claims.
+I participated as a student member of an ongoing humanoid robotics project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. After preliminary G1 simulation training, I worked on the navigation evaluation Zhenyu assigned to me, directing AI tools to help with my tasks and collaborating with the team. I brought the task and team code into the workflow, participated in discussions, examined results and shared reports. The [dated mentor record](MENTOR_ALIGNMENT.md) and artifacts below show the basis and limits of these claims.
 
 ## Work I contributed
 
@@ -35,7 +35,7 @@ The learning process connects to three tangible stages: an [earlier G1 task pack
 - [Setback and rebuild](SETBACK_AND_REBUILD.md): my early experience, the surviving training artifacts, and the separate later recovery record.
 - [Full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md): settings, provenance, measurements, and the interrupted attempt.
 
-The team's trained controller and navigation algorithms provided the research foundation. I led my assigned evaluation workstream through three new-map trials, recordings and measurements, using Codex for substantial map implementation, simulation execution, validation and calculations. My contribution also included the research context, discussions, questions, review of results and reporting described above. This division records my research direction and participation alongside the tool's technical contribution.
+The team's trained controller and navigation algorithms provided the research foundation. For my mentor-assigned evaluation, I helped carry out and document three new-map trials with recordings and measurements, using Codex for substantial map implementation, simulation execution, validation and calculations. My contribution also included the research context, discussions, questions, review of results and reporting described above. This division records my participation under my mentors' guidance alongside the tool's technical contribution.
 
 ## The research question behind the directions
 
@@ -43,7 +43,7 @@ The purpose of the assignment was to explore how an existing navigation framewor
 
 The reports explain the distinction between physical arrival and the system's belief about arrival. One seed per map provides an initial case study; repeated trials are needed to support broader claims about robustness. These findings came from the AI-assisted analysis and are presented with their limits.
 
-The next step in developing my ability is to make more of my understanding directly visible: explain one complete run in my own words, predict what a controlled change should do, and compare that prediction with the result. The [follow-up study outline](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test) provides a concrete opportunity. These are proposed next actions, not completed achievements.
+The [short result interpretation](ADMISSIONS_RESEARCH_OVERVIEW.md#reading-one-result-and-planning-the-next-test) connects two recorded trials to a concrete follow-up proposal. My next step would be to discuss that proposal with my mentors, record a prediction before testing, and compare it with repeated results. The [follow-up study outline](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test) provides a concrete opportunity. These are proposed next actions, not completed achievements.
 
 ## AI assistance and attribution
 
@@ -51,7 +51,7 @@ As a student still learning the tools, I used ChatGPT for explanations and setup
 
 ## A concise account of my contribution
 
-> As a student member of an ongoing Georgia Tech robotics project, I began by setting up and training a preliminary G1 simulation model with AI assistance, then joined discussions about how to evaluate the work and shared a weekly report. For Zhenyu Wu's navigation assignment, I used the team's system and AI-assisted tools to test new maps, calculate and examine results, and shape a documented pilot. Four completed trials physically reached their goals, but only one met the system's formal arrival criterion. That gap led me to ask what evidence a robot needs to know it has succeeded. The team's methods and models, mentor guidance and substantial AI implementation are credited separately.
+> As a student participant in a Georgia Tech robotics project, mentored by Professor Ye Zhao and directly guided by Zhenyu Wu, I began by setting up and training a preliminary G1 simulation model with AI assistance, then joined discussions about how to evaluate the work and shared a weekly report. For Zhenyu Wu's navigation assignment, I used the team's system and AI-assisted tools to test new maps, calculate and examine results, and shape a documented pilot. Four completed trials physically reached their goals, but only one met the system's formal arrival criterion. That gap led me to ask what evidence a robot needs to know it has succeeded. The team's methods and models, mentor guidance and substantial AI implementation are credited separately.
 
 *This paragraph is an AI-assisted draft based on the record. It should be used in an application only in wording that I can personally explain and stand behind.*
 

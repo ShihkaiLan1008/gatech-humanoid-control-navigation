@@ -1,8 +1,8 @@
 # Contributions and provenance
 
-This portfolio records my work as a student research assistant in an ongoing Georgia Tech LIDAR team project. I led the AI-assisted work on the navigation evaluation assigned to me and collaborated with the group on questions, results and reporting. The existing framework, navigation model and reference materials remain credited to their authors.
+This portfolio records my participation as a student member of an ongoing Georgia Tech LIDAR research project. Professor Ye Zhao was my research mentor; Zhenyu Wu was my direct mentor and assigned the navigation evaluation. Under their guidance, I used and directed AI tools to help carry out my assigned work and collaborated with the group on questions, results and reporting. The existing framework, navigation model and reference materials remain credited to their authors.
 
-## My role in directing the research workflow
+## My contribution within the mentor-guided project
 
 The research conversations document more than my use of AI. I asked how to interpret training quality and curves on July 23, requested a meaningful experimental role on August 24 and September 6, sent a weekly report to both mentors on September 14, and asked on September 25 that changing tasks stay within a coherent research area. These actions support initiative, communication, and developing experimental judgment. [Dated examples and their meaning](docs/HOW_I_DIRECTED_AI.md) connect that role to the preserved work.
 
@@ -12,7 +12,7 @@ I interpreted Zhenyu's assignment as an evaluation task: build on the team's exi
 
 I also directed how the results should be communicated: explain what the experiments mean, make the work accessible to admissions readers while retaining technical depth, connect it with my motivation and future interests, and clearly credit the mentors, team resources, and AI tools involved.
 
-My contribution includes preliminary model training, team discussions, a shared weekly report, leadership of my assigned AI-assisted evaluation workstream, examination of its quantitative results, and communication of the research. [Examples of my instructions and the work they guided](docs/HOW_I_DIRECTED_AI.md) make that role concrete. The detailed technical explanations describe the project and my developing research questions; they do not imply that I independently invented the team's methods or implemented every component.
+My contribution includes preliminary model training, team discussions, a shared weekly report, carrying out my assigned navigation evaluation with AI assistance, examination of its quantitative results, and communication of the research. [Examples of my instructions and the work they guided](docs/HOW_I_DIRECTED_AI.md) make that role concrete. The detailed technical explanations describe the project and my developing research questions; they do not imply that I independently invented the team's methods or implemented every component.
 
 ## Preliminary independent exploration
 
@@ -20,7 +20,7 @@ The G1 rough-terrain package contains custom Isaac Lab task configuration, rewar
 
 ## Team foundation and extensions
 
-Zhenyu Wu, Huaze Liu and the research team provided the tactile-controller and tactile-navigation foundations, learned checkpoints, localization, global planner, sensing strategy and existing maps. Their source snapshots remain team work. The extension directed by Sky concerns three new map layouts, experiment execution, geometry checks, recordings, quantitative analysis and reporting. Codex performed substantial map/script implementation, code inspection, experiment operation, analysis, visualization and writing in response to that direction. Sky led the assigned evaluation workstream and participated in interpreting and reporting its results, using AI as a substantial technical tool; the artifacts retain the team and AI attribution stated here.
+Zhenyu Wu, Huaze Liu and the research team provided the tactile-controller and tactile-navigation foundations, learned checkpoints, localization, global planner, sensing strategy and existing maps. Their source snapshots remain team work. Sky's assigned extension concerns three new map layouts, experiment execution, geometry checks, recordings, quantitative analysis and reporting. Codex performed substantial map/script implementation, code inspection, experiment operation, analysis, visualization and writing in response to that direction. Sky participated in the mentor-guided evaluation, directed AI tools for his assigned tasks, and helped interpret and report the results, using AI as a substantial technical tool; the artifacts retain the team and AI attribution stated here.
 
 The foot-reference screening is a separate earlier experiment, not Zhenyu's new-map assignment. The reference checkpoint measured about 9.62 cm mean reference foot error; the local tuned checkpoint measured about 33.02 cm in that screening. It did not demonstrate improvement. Single-seed screening and different training histories prevent a matched-training causal conclusion. The unfavorable result is retained in this portfolio.
 

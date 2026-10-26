@@ -82,7 +82,7 @@
 
 - **團隊**：導航演算法、定位與感測流程、原有地圖、訓練模型、模擬整合。
 - **本次擴充**：三張地圖、地圖註冊、幾何驗證、執行紀錄、影片、量化整理與分析。
-- **本人工作與 AI 協助**：Sky 主導獲指派的新地圖評估流程，參與團隊討論、數據檢視與報告；Codex 對地圖實作、程式檢查、實驗操作、計算及文字整理提供大量協助。具體歸屬以[現行貢獻說明](../../../CONTRIBUTIONS.md)為準，不把團隊既有演算法或 AI 實作稱為自己獨立完成。
+- **本人工作與 AI 協助**：Sky 是整個研究項目的學生參與者，在趙教授的研究指導與直接導師 Zhenyu Wu 的帶領下，運用並指導 AI 協助自己獲指派的新地圖評估，參與團隊討論、數據檢視與報告；Codex 對地圖實作、程式檢查、實驗操作、計算及文字整理提供大量協助。具體歸屬以[現行貢獻說明](../../../CONTRIBUTIONS.md)為準，不把團隊既有演算法或 AI 實作稱為自己獨立完成。
 
 引用團隊 repository 的確切 commit、採用的模型、研究背景來源和你實際閱讀過的文獻。來源基礎為 [HuazeLiu/tactile-navigation](https://github.com/HuazeLiu/tactile-navigation)，branch `sky/evaluation`、base commit `f6ba1df1ed45f6f482eadfe2f84b2182692abd60`；完整資料來源與 SHA-256 保存在 `sky_results.json`。私人 repository 的連結不一定能讓審查者讀取，GitHub 展示應使用你已有授權範圍內的材料。
 

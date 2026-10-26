@@ -6,7 +6,7 @@
 
 ## Overall assessment: share with research caveats
 
-This is suitable as **Shih-Kai Lan's private student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's leadership of that AI-assisted evaluation workstream as a student research assistant, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
+This is suitable as **Shih-Kai Lan's private student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's participation in that evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
 
 ## What the portfolio shows
 
@@ -45,7 +45,7 @@ The new figure is reproduced by [build_navigation_trace.py](../presentation/buil
 ## Presentation and attribution review
 
 - Professor Ye Zhao's feedback, engineering advice, personal influence, and active help matching research opportunities to Sky's interests remain prominent in concise acknowledgments. The group record supports his requests for resources, an accessible pipeline, and a suitable humanoid topic. Zhenyu remains the main practical mentor, and Huaze is thanked for reference maps/work. Early guidance from other group members is also acknowledged.
-- Student contribution statements distinguish Sky's leadership of the assigned AI-assisted evaluation from the team's underlying algorithms and the substantial tool-assisted implementation. The dated record and artifacts support the stated participation without assigning Sky sole authorship of the code or methods.
+- Student contribution statements distinguish Sky's participation in the assigned evaluation and direction of AI tools for his tasks from the team's underlying algorithms and the substantial tool-assisted implementation. The dated record and artifacts support the stated participation without assigning Sky sole authorship of the code or methods.
 - The main navigation includes **My contribution** and **Inside the research**. The personal narrative presents Sky's account of the motivating event without claiming that Sky won an award.
 - The cover trajectory and numerical chart derive from saved records. The arrival chart starts at zero, shows the common threshold, and identifies the single-seed scope. Its percentages are internal beliefs, not confidence intervals or population success rates.
 - Original reports are preserved as historical artifacts. The earlier foot-tracking retrospective explains the unfavorable later screening and prevents the old report from serving as proof of improvement.

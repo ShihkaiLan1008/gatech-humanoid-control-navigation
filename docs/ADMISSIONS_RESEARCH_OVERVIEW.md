@@ -8,11 +8,11 @@ In plain terms, I tested whether the team's robot could navigate new layouts and
 
 ## Assignment, research question and my role
 
-I worked as a student research assistant within an ongoing Georgia Tech LIDAR team project and led the AI-assisted evaluation Zhenyu Wu assigned to me. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Dated task record →](MENTOR_ALIGNMENT.md)
+I participated as a student member of an ongoing Georgia Tech LIDAR research project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. Zhenyu assigned me the navigation evaluation presented here. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Dated task record →](MENTOR_ALIGNMENT.md)
 
 I discussed training and evaluation with the group, shared a weekly report, and organized the assigned study into an existing-map run and three new-map tests. I directed AI tools to help with map code, geometry checks, simulation runs and calculations; I worked through the saved recordings and metrics to examine final distance, arrival confidence and the limits of each comparison. I shaped the report around the research question. When a run was interrupted by a computer restart, I requested investigation and continuation and decided when to pause and resume. [My work and dated evidence →](HOW_I_DIRECTED_AI.md)
 
-The resulting question is whether physical arrival and confidence in arrival agree. In four completed single-seed simulations, the robot entered the goal region each time, but the navigation system formally confirmed arrival only once. My role was to lead this evaluation workstream within the team, using AI as a substantial technical aid. The underlying algorithms and trained navigation model remain team work. [Detailed attribution →](../CONTRIBUTIONS.md)
+The resulting question is whether physical arrival and confidence in arrival agree. In four completed single-seed simulations, the robot entered the goal region each time, but the navigation system formally confirmed arrival only once. My role was to contribute to this mentor-guided evaluation, using AI as a substantial technical aid and directing its use for my assigned tasks. The underlying algorithms and trained navigation model remain team work. [Detailed attribution →](../CONTRIBUTIONS.md)
 
 Earlier, I set up and trained a preliminary G1 simulation model with AI assistance and preserved its configuration, log and checkpoint. The independent rough-terrain package and later foot-tracking work were separate stages of my participation; they did not constitute this new-map assignment. The three new layouts were deliberately authored cases, not a randomized or repeated robustness benchmark. [Research timeline →](MENTOR_ALIGNMENT.md) · [Setback and rebuild →](SETBACK_AND_REBUILD.md)
 
@@ -38,6 +38,14 @@ A more complicated-looking map did not necessarily produce a worse completion ou
 ![Executed simulation paths](../projects/tactile-navigation/outputs/sky_navigation_trajectories.png)
 
 *True and estimated trajectories from the four completed seed-0 trials. Axes are in metres; obstacles and goal disks are shown. These are executed simulation records.*
+
+## Reading one result and planning the next test
+
+For my assigned evaluation, I compared physical movement with the system's recorded completion decision. The offset-opening trial ended 4.07 cm from the goal, inside the allowed 30 cm radius, but its joint arrival belief was 91.89%, below the required 95%. The staggered-dividers trial ended slightly farther away, at 4.16 cm, and passed with 96.04% belief. Distance alone therefore does not explain the different completion outcomes: the system also evaluates uncertainty in position and heading.
+
+This comparison gives the team a concrete case to investigate. The saved maps, videos and measurements make it possible to inspect where physical arrival and the software's completion decision diverged. My contribution was to help carry the assigned testing through to this documented evaluation, working with the team's system and AI tools under my mentors' guidance. The current records do not isolate which source of uncertainty caused the offset-opening result.
+
+A follow-up I would discuss with my mentors is to repeat the offset-opening case with five predefined random seeds and a consistent time limit, keeping the controller and scoring rules fixed. Recording position, heading and joint arrival confidence separately would help identify which condition prevents completion. A later comparison could test whether a different sensing strategy improves confirmation under the same conditions. These are proposed experiments; the portfolio reports the completed pilot only.
 
 ## What the work can do now
 

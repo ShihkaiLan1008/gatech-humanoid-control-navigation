@@ -4,7 +4,7 @@
 
 The supplied September Slack screenshots ask Sky to first run the existing navigation framework on its original maps with a UI or video, then create new maps to test generality and robustness. This is a navigation experiment, separate from the earlier foot-tracking reward task.
 
-The navigation framework, planner, particle filter, EIG sensing, robot controller, and map manifest format are the team's foundation. This extension adds three authored JSON maps, registry entries, geometry checks, a local evaluation launcher, and a report of experiments. It does not modify or retrain the team's navigation policy or tune a different controller for each room. Sky led this assigned evaluation workstream and participated in interpreting and reporting its results, using Codex for substantial map/script implementation, simulation operation and calculations. The team's underlying framework remains credited to its authors.
+The navigation framework, planner, particle filter, EIG sensing, robot controller, and map manifest format are the team's foundation. This extension adds three authored JSON maps, registry entries, geometry checks, a local evaluation launcher, and a report of experiments. It does not modify or retrain the team's navigation policy or tune a different controller for each room. Sky participated in this evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, helping interpret and report its results, using Codex for substantial map/script implementation, simulation operation and calculations. The team's underlying framework remains credited to its authors.
 
 | Map | New geometry | Research question |
 |---|---|---|

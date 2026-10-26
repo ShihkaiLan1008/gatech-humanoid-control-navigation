@@ -19,7 +19,7 @@
 
 ## The assignment and my role
 
-A humanoid can reach a destination while its estimate of its own position remains uncertain. I worked as a student research assistant within an ongoing Georgia Tech LIDAR team project, and **led the AI-assisted evaluation Zhenyu Wu assigned to me**: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
+A humanoid can reach a destination while its estimate of its own position remains uncertain. I participated as a student member of an ongoing Georgia Tech LIDAR research project, **under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. My assigned contribution was to evaluate navigation on new maps: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
 
 Before this assignment, I set up and trained a preliminary G1 simulation model with AI assistance, preserving its configuration, log and checkpoint.
 
@@ -58,8 +58,10 @@ The threshold requires enough localization belief to satisfy **both position and
 
 | Contributor | Role across the work shown here |
 | :--- | :--- |
-| **Me — Shih-Kai Lan (Sky)** | As a student research assistant, set up and trained a preliminary G1 simulation model, joined team discussions and shared a weekly report. I led the AI-assisted work on my assigned navigation evaluation: test the team system on new maps, examine the recorded data, and shape the analysis and report. |
-| **Professor Zhao, Zhenyu Wu, Huaze Liu and the research team** | Research direction and mentorship; the existing navigation algorithms, trained controller, resources and reference maps. |
+| **Me — Shih-Kai Lan (Sky)** | As a student participant, set up and trained a preliminary G1 simulation model, joined team discussions and shared a weekly report. Under my mentors' guidance, I used AI tools to carry out my assigned navigation evaluation: test the team system on new maps, examine the recorded data, and shape the analysis and report. |
+| **Professor Ye Zhao — research mentor** | Guidance on research direction, learning resources and a suitable opportunity within the team. |
+| **Zhenyu Wu — direct mentor** | Assigned the navigation evaluation and provided practical instructions, setup guidance and research resources. |
+| **Huaze Liu and the research team** | The existing navigation framework, trained controller, shared code and reference maps. |
 | **AI tools I used** | Technical assistance with setup, map/script implementation, simulation operation, calculations, visualization and drafting. Codex performed substantial implementation and operation under my task direction. |
 
 The new layouts, recordings and measurements extend the team's existing system. I used AI to bridge gaps in my experience as a student, while staying involved in the research questions, interpretation and communication; the team's foundation and the tools' substantial implementation help remain credited. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
@@ -72,7 +74,7 @@ The system connects a known map, a global route, a learned walking controller, a
 
 *One executed seed-0 trial, using the team checkpoint. The figure shows recorded localization error and probe outcomes; temporal association alone does not establish a probe's effect.*
 
-The offset-opening robot ended **4.07 cm** from its goal but failed the 95% joint-arrival criterion. The [complete walkthrough](docs/RESEARCH_WALKTHROUGH.md) follows that trial through the system diagram, map design, raw records, measurements, unanswered questions, and a controlled next experiment.
+The offset-opening robot ended **4.07 cm** from its goal but failed the 95% joint-arrival criterion. In everyday terms, it arrived physically, but its estimate of position and direction was not confident enough for the software to declare success. Comparing the video with these measurements makes the evaluation useful: it identifies a case the team can investigate further. See the [short interpretation and proposed follow-up](docs/ADMISSIONS_RESEARCH_OVERVIEW.md#reading-one-result-and-planning-the-next-test). The [complete walkthrough](docs/RESEARCH_WALKTHROUGH.md) follows that trial through the system diagram, map design, raw records, measurements, unanswered questions, and a controlled next experiment.
 
 ## The curiosity behind the work
 
