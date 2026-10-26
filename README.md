@@ -1,24 +1,10 @@
-# With gratitude
-
-I am deeply grateful to **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his quick feedback, engineering advice, and active help in finding a suitable research direction. He arranged learning resources, helped connect my interest in humanoids to the team's work, and introduced me to Zhenyu Wu. His guidance has strongly influenced the engineer I want to become.
-
-I owe particular thanks to **Zhenyu Wu**, who was my main source of practical guidance throughout this project. He gave me detailed instructions for approaching the work, provided extensive help with setting up the research environment, and shared the code and resources I needed to begin. His support was central to my ability to take part in the research and continue learning. He also introduced me to Huaze Liu. I am deeply grateful for the time and effort he devoted to helping me through this experience.
-
-I also sincerely thank **Huaze Liu** for generously sharing his maps and research work as references for my learning and experiments. These materials gave me a foundation from which to explore new maps and questions.
-
-Their time, guidance, and generosity have meant a great deal to me. This portfolio reflects both what I have learned and my respect for the people whose support helped me get here.
-
-I also appreciate the early onboarding and evaluation guidance from **Rui Yan, Feiyang, and Junnosuke** in the research group.
-
-*With sincere thanks and respect, Shih-Kai Lan (Sky)*
-
----
+# Evaluating humanoid navigation on new maps
 
 ![Sky Lan — Walking toward understanding. Robotics research portfolio with a recorded simulation trajectory.](assets/research-cover.svg)
 
 <p align="center">
   <strong>Humanoid robotics &nbsp;·&nbsp; Mechanical engineering &nbsp;·&nbsp; Research in simulation</strong><br>
-  <sub>Private portfolio · team-supported work · AI assistance disclosed</sub>
+  <sub>Shih-Kai Lan (Sky) · student team member · simulation research portfolio</sub>
 </p>
 
 <p align="center">
@@ -31,25 +17,13 @@ I also appreciate the early onboarding and evaluation guidance from **Rui Yan, F
 
 ---
 
-## Can a robot know when it has arrived?
+## The assignment and my role
 
-*Shih-Kai Lan (Sky) · Personal student research portfolio · Work supported by Georgia Tech LIDAR mentors*
+I joined an ongoing Georgia Tech LIDAR team project as a student member. The team's humanoid controller, tactile-navigation framework, existing maps and research resources were already in place. **Zhenyu Wu assigned me to run that system on an existing map, then test it on new maps** to explore how it behaved beyond the original layouts. Huaze Liu shared maps and research work that I could use as references. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
 
-A robot has a map and a destination—but its estimate of its own position can drift as it walks. Touching a wall can help it correct that estimate. The challenge is to move successfully **and gather enough evidence to confirm arrival**.
+I brought the assignment and team repository into an AI-assisted workflow, kept the work focused on new-map evaluation, and directed the continuation and explanation of the experiments. The resulting pilot includes a baseline run, three newly authored layouts, geometry checks, four completed simulation recordings, and a quantitative report. My earlier G1 training and controller work helped me reach this task; they are documented separately below. [My role and the supporting record →](docs/HOW_I_DIRECTED_AI.md)
 
-Zhenyu's assignment, developed in consultation with Professor Zhao, was to test the team's navigation framework on new layouts. This extension introduced three maps, checked their geometry, ran the existing humanoid controller and preserved the results for analysis. [How the assignment developed and what this pilot fulfills →](docs/MENTOR_ALIGNMENT.md)
-
-**My role:** I sought a meaningful experimental task, asked how to judge training quality, kept changing tasks connected to a coherent research direction, and directed AI assistance toward the assigned testing. The mentor conversations and saved work make these actions concrete. [My contribution, with dated examples →](docs/HOW_I_DIRECTED_AI.md)
-
-## What I brought to the research
-
-| Action | Evidence | Strength it makes visible |
-| :--- | :--- | :--- |
-| **Ask how to judge progress** | July 23: I asked the group what good training and learning curves should look like. | Curiosity about evidence and evaluation |
-| **Seek useful, bounded work** | August 24 / September 6: I requested meaningful experiments, comparisons, or reporting within my available time. | Initiative and awareness of scope |
-| **Keep the work coherent** | September 25: I asked that changing tasks stay within a related research area. | Developing judgment about research direction |
-
-I also reported progress to both mentors with AI assistance disclosed, and directed rebuilding and continuation after setbacks. [The full contribution record →](docs/HOW_I_DIRECTED_AI.md)
+**The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
 
 ## The completed navigation pilot
 
@@ -78,19 +52,15 @@ The threshold requires enough localization belief to satisfy **both position and
 
 [Methods and metric definitions →](docs/TECHNICAL_DEPTH.md) &nbsp; · &nbsp; [Full report and limitations →](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md)
 
-## My contribution within the team project
+## Who contributed what
 
-| Contributor | Role in this study |
+| Contributor | Contribution to this portfolio's featured study |
 | :--- | :--- |
-| **Professor Zhao and the research team** | Timely feedback and engineering guidance; practical mentorship, the new-map assignment, research resources, algorithms, maps, trained controller and simulator integration |
-| **Me — Shih-Kai Lan (Sky)** | AI-assisted learning and training, direction of rebuilding after a setback, task interpretation, scope clarification, questions about testing, and decisions about presentation and attribution |
-| **ChatGPT and Codex** | Concept explanations and resource organization; substantial code/map implementation, simulation operation, analysis, visualization and drafting |
+| **Me — Shih-Kai Lan (Sky)** | Participated in the team research, brought Zhenyu's assignment and the team's code into the evaluation workflow, kept the new-map question in scope, directed the AI-assisted continuation and reporting, and communicated progress and questions to mentors. |
+| **Professor Zhao, Zhenyu Wu, Huaze Liu and the research team** | Research direction and mentorship; the existing algorithms, trained controller, navigation system, resources and reference maps. |
+| **ChatGPT and Codex** | Learning support and substantial assistance with map/script implementation, simulation operation, analysis, visualization and drafting. |
 
-Together, this work produced three new map layouts and a documented simulation case study with recordings, quantitative results, and open questions.
-
-**Credit:** Professor Ye Zhao provided feedback, engineering advice, and help finding a suitable research direction. Zhenyu Wu provided extensive practical guidance, instructions, setup help, and research resources; Huaze Liu generously shared maps and research work as references. The framework and models remain credited to their team authors. Codex assisted with code inspection, map/script implementation, experiment operation, analysis and writing. [Detailed attribution →](CONTRIBUTIONS.md)
-
-**Learning with ChatGPT:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the assignment, context, priorities, and follow-up directions that guided the assistance. This support complemented the guidance I received from Professor Zhao, Zhenyu Wu, and Huaze Liu.
+The new layouts, recordings and measurements are an evaluation of the team's system, with this division of work stated openly. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
 
 ## Follow one recorded experiment
 
@@ -163,6 +133,12 @@ The work raises questions beyond making a robot move. A map must mean the same t
 Adaptive walking, broad transfer and cleaner energy are future directions. The current evidence establishes a simulation case study and a starting point for those questions.
 
 [A concrete next study: repeated trials, paired sensing comparisons, and final-belief diagnostics →](docs/RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test)
+
+---
+
+## Acknowledgments
+
+I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his feedback, engineering advice and help finding a research direction. Zhenyu Wu gave me sustained practical guidance, setup help, instructions and access to the team's resources; he also introduced me to Huaze Liu, who generously shared maps and research work as references. Rui Yan, Feiyang and Junnosuke helped with early onboarding and evaluation questions. Their support made my participation possible. [Full credits →](CONTRIBUTIONS.md)
 
 ---
 

@@ -4,33 +4,15 @@
 
 # Can a humanoid know when it has arrived?
 
-## Acknowledgments
+## Assignment, research question and my role
 
-I sincerely thank **[Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) at Georgia Tech** for his feedback, engineering advice, and help finding a suitable research direction. He arranged learning resources, helped connect my humanoid interests to the team's work, and introduced me to **Zhenyu Wu**. His influence has meant a great deal to my development.
+As a student member of an ongoing Georgia Tech LIDAR team project, I took on a navigation evaluation assigned by Zhenyu Wu. The team had already developed the humanoid walking controller, map-based planner, localization and touch-sensing framework. Zhenyu asked me to run the existing navigation code with visible evidence, then test it on new maps to explore generality and robustness. Huaze Liu's shared maps and research work provided references. [Dated task record →](MENTOR_ALIGNMENT.md)
 
-**Zhenyu was my main source of practical guidance throughout the project.** He provided detailed instructions, extensive setup help, and the code and research resources I needed. His support was central to my participation and learning, and I am deeply grateful for the time and effort he devoted to helping me. He also introduced me to **Huaze Liu**, whom I sincerely thank for generously sharing his maps and research work as references for my experiments. [Full acknowledgments and contribution details →](../CONTRIBUTIONS.md)
+I supplied the team's repository and assignment to AI tools, clarified that new-map testing was the task, and directed the evaluation and its explanation. The pilot preserved a run on an existing map and tested three newly authored layouts with geometry checks, simulation recordings and numerical results. When a later run was interrupted by a computer restart, I requested investigation and continuation, then chose when to pause and resume. I also asked for the report to explain the purpose, results and limits in accessible language. [My role and dated evidence →](HOW_I_DIRECTED_AI.md)
 
-## Question and context
+The resulting question is whether physical arrival and confidence in arrival agree. In four completed single-seed simulations, the robot entered the goal region each time, but the navigation system formally confirmed arrival only once. The team's algorithms and trained model remain team work; AI tools provided substantial implementation, operation, analysis and writing support. [Detailed attribution →](../CONTRIBUTIONS.md)
 
-This team-supported simulation study explores a robot-navigation problem that is easy to overlook: reaching a destination and knowing that it has reached it are not the same. The team's system combines a trained humanoid walking controller, a map-based route planner, an estimate of the robot's position and touch observations. Zhenyu's assignment was to run the existing navigation code with visible evidence, then create new maps to explore generality and robustness.
-
-The study extends that testing to three newly authored layouts. It is an evaluation contribution to an existing research framework, with AI assistance in implementation, execution and reporting. The team's algorithms and trained model remain credited team work.
-
-[How the assignment evolved and what this pilot fulfills](MENTOR_ALIGNMENT.md) records the mentor conversations. Earlier setup/training and foot-tracking work are connected learning stages, with separate results. The three new maps are deliberately authored cases; the pilot does not yet fulfill the broader goal of a randomized, repeated robustness benchmark.
-
-## My role: turning the assignment into directions
-
-My role is also visible in the questions I brought to the team. I asked what good training and learning curves should look like, sought meaningful experimental work within a realistic scope, and asked that changing tasks stay in a related research area. I communicated progress through a weekly report, with AI assistance disclosed. These dated actions show initiative, follow-through, and developing research judgment. [Examples grounded in the mentor conversations](HOW_I_DIRECTED_AI.md) distinguish those strengths from the team's algorithms and AI implementation.
-
-My path to this study included learning environment setup and robot training with AI assistance, losing work after a computer board failure, and trying again on a better laptop. I used earlier conversations and the context I could reconstruct to direct the rebuild and request settings suited to the available resources. This is my personal account; the hardware cause is unconfirmed. [The setback and rebuild](SETBACK_AND_REBUILD.md) connects that experience to the surviving training records and a separate, documented navigation restart.
-
-I understood Zhenyu's assignment as a question about an existing system: how would it behave on new maps? I provided the team's repository and mentor context to AI tools, asked where testing had been done, and restated that new-map evaluation was the task. This kept the requested work tied to the research assignment.
-
-During the later navigation evaluation, when the computer restarted unexpectedly, I asked for investigation and continuation, then decided when to pause and resume. I also directed the report to explain the study's purpose, results, significance, and future questions in language an admissions reader could understand while retaining technical depth. I requested explicit credit for the team's support and AI assistance.
-
-This role required communicating the goal, clarifying scope, asking follow-up questions, and refining the output. The resulting study used substantial AI assistance for implementation and analysis. [Concrete examples of my directions →](HOW_I_DIRECTED_AI.md)
-
-**AI-assisted learning:** As a high-school student, I used ChatGPT to organize research resources, clarify unfamiliar concepts, and get quick advice on small questions while learning. I supplied the context, priorities, and follow-up directions. Codex also assisted with implementation, experiment operation, analysis, visualization, and writing. [Full AI-use and contribution disclosure →](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation)
+Earlier G1 setup and training, an independent rough-terrain package, and foot-tracking work were separate stages of my participation. They did not constitute this new-map assignment. The three new layouts were deliberately authored cases, not a randomized or repeated robustness benchmark. [Research timeline →](MENTOR_ALIGNMENT.md) · [Setback and rebuild →](SETBACK_AND_REBUILD.md)
 
 ## What was changed and why
 
@@ -86,3 +68,7 @@ Only one seed was run per layout, all trials were simulation, and a team model-3
 The next study should match budgets and repeat seeds before making robustness claims. Then vary opening widths, compare sensing policies or final confirmation probes, and inspect whether confidence improvements also remain calibrated against simulator truth. Real-hardware transfer is a future team research step.
 
 For mathematical definitions and the particle-filter/planner/controller relationship, see [Technical depth](TECHNICAL_DEPTH.md). For records, exact settings, checkpoint identity and hashes, see the [full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md).
+
+## Acknowledgments
+
+I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his feedback and help finding a suitable research direction. Zhenyu Wu provided sustained practical mentorship, instructions, setup help and research resources. Huaze Liu generously shared maps and research work as references. I also appreciate the early guidance of Rui Yan, Feiyang and Junnosuke. [Full credits and contribution boundaries →](../CONTRIBUTIONS.md)
