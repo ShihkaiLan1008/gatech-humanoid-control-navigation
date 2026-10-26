@@ -19,11 +19,11 @@
 
 ## The assignment and my role
 
-I joined an ongoing Georgia Tech LIDAR team project as a student member. The team's humanoid controller, tactile-navigation framework, existing maps and research resources were already in place. **Zhenyu Wu assigned me to run that system on an existing map, then test it on new maps** to explore how it behaved beyond the original layouts. Huaze Liu shared maps and research work that I could use as references. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
+A humanoid can reach a destination while its estimate of its own position remains uncertain. I worked as a student research assistant within an ongoing Georgia Tech LIDAR team project, and **led the AI-assisted evaluation Zhenyu Wu assigned to me**: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
 
 Before this assignment, I set up and trained a preliminary G1 simulation model with AI assistance, preserving its configuration, log and checkpoint.
 
-In the team project, I discussed how to judge training and experiments, shared a weekly report, and carried Zhenyu's request into a baseline and new-map evaluation. I used AI-assisted code and analysis tools to run and document tests, calculate and examine metrics, and develop the report. I supplied the research context, kept the task in scope, asked follow-up questions, and worked through what the results did and did not show. [My work and its supporting record →](docs/HOW_I_DIRECTED_AI.md)
+I worked with the group on how to judge training and experiments, shared a weekly report, and turned Zhenyu's instructions into a documented baseline and new-map study. I directed AI tools to help implement and run the tests, used the resulting records to calculate and examine metrics, and shaped the analysis and report through follow-up questions. This was my assigned evaluation within a larger team effort; the tools expanded what I could do while learning. [My work and its supporting record →](docs/HOW_I_DIRECTED_AI.md)
 
 **The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
 
@@ -58,9 +58,9 @@ The threshold requires enough localization belief to satisfy **both position and
 
 | Contributor | Role across the work shown here |
 | :--- | :--- |
-| **Me — Shih-Kai Lan (Sky)** | Set up and trained a preliminary G1 simulation model; participated in team discussions and shared a weekly report; carried out Zhenyu's assigned navigation evaluation by directing the tests, working with tools to calculate and examine results, and shaping the analysis and report. |
+| **Me — Shih-Kai Lan (Sky)** | As a student research assistant, set up and trained a preliminary G1 simulation model, joined team discussions and shared a weekly report. I led the AI-assisted work on my assigned navigation evaluation: test the team system on new maps, examine the recorded data, and shape the analysis and report. |
 | **Professor Zhao, Zhenyu Wu, Huaze Liu and the research team** | Research direction and mentorship; the existing navigation algorithms, trained controller, resources and reference maps. |
-| **AI tools I used** | Substantial help with setup, map/script implementation, simulation operation, calculations, visualization and drafting under my task direction. |
+| **AI tools I used** | Technical assistance with setup, map/script implementation, simulation operation, calculations, visualization and drafting. Codex performed substantial implementation and operation under my task direction. |
 
 The new layouts, recordings and measurements extend the team's existing system. I used AI to bridge gaps in my experience as a student, while staying involved in the research questions, interpretation and communication; the team's foundation and the tools' substantial implementation help remain credited. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
 
@@ -150,7 +150,7 @@ I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his 
 - [Full navigation report](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md) · [Numeric audit](projects/tactile-navigation/outputs/sky_validation.json) · [Video audit](projects/tactile-navigation/outputs/sky_video_validation.json)
 - [Source inventory and hashes](SOURCE_MANIFEST.json) · [Source revisions](PROVENANCE.json) · [Graphic sources](assets/SOURCES.md)
 - [Portfolio review and sharing caveats](docs/PORTFOLIO_REVIEW.md) · [Repeatable content audit](presentation/audit_portfolio.py)
-- [College-application report and conclusion guide](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
+- [Historical application-writing guide (October 3; see the current contribution record above)](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
 - Scope: one seed per map, simulation only, team model 35500 substituted for the missing default 34000. The original room and new maps had different time caps; the system-interrupted attempt remains separate.
 - The earlier controller screening did not demonstrate improvement. The independent G1 package does not establish guaranteed fall prevention or energy-efficiency gains.
 

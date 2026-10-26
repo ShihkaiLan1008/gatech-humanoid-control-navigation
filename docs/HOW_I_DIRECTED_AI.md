@@ -4,7 +4,7 @@
 
 *Shih-Kai Lan (Sky) · assignment, participation, evidence and contribution boundaries*
 
-I participated in an ongoing humanoid robotics project, beginning with a preliminary G1 simulation training setup and later taking on Zhenyu Wu's navigation-evaluation assignment. I used tools to help me build, test and analyze while learning; I remained involved in team discussions, the questions being tested, the meaning of the results and the reports I shared. The [dated mentor record](MENTOR_ALIGNMENT.md) and linked artifacts below show the basis and limits of these claims.
+I worked as a student research assistant in an ongoing humanoid robotics team. After preliminary G1 simulation training, I led the AI-assisted work on Zhenyu Wu's assigned navigation evaluation, working with mentors and team members rather than building their framework anew. I brought the task and team code into the workflow, participated in discussions, examined results and shared reports. The [dated mentor record](MENTOR_ALIGNMENT.md) and artifacts below show the basis and limits of these claims.
 
 ## Work I contributed
 
@@ -35,7 +35,7 @@ The learning process connects to three tangible stages: an [earlier G1 task pack
 - [Setback and rebuild](SETBACK_AND_REBUILD.md): my early experience, the surviving training artifacts, and the separate later recovery record.
 - [Full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md): settings, provenance, measurements, and the interrupted attempt.
 
-The team's trained controller and navigation algorithms provided the research foundation. The three new-map trials, recordings and measurements are the featured evaluation. Codex developed the map variants and carried out substantial implementation, execution, validation and analysis in response to the requested scope; my role was to direct the task, context, questions, priorities and revisions described above.
+The team's trained controller and navigation algorithms provided the research foundation. I led my assigned evaluation workstream through three new-map trials, recordings and measurements, using Codex for substantial map implementation, simulation execution, validation and calculations. My contribution also included the research context, discussions, questions, review of results and reporting described above. This division records my research direction and participation alongside the tool's technical contribution.
 
 ## The research question behind the directions
 

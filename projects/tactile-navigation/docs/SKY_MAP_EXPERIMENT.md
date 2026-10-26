@@ -4,7 +4,7 @@
 
 The supplied September Slack screenshots ask Sky to first run the existing navigation framework on its original maps with a UI or video, then create new maps to test generality and robustness. This is a navigation experiment, separate from the earlier foot-tracking reward task.
 
-The navigation framework, planner, particle filter, EIG sensing, robot controller, and map manifest format are the team's foundation. This extension adds three authored JSON maps, registry entries, geometry checks, a local evaluation launcher, and a report of experiments. It does not modify or retrain the team's navigation policy or tune a different controller for each room. These materials were prepared with Codex assistance for Sky's review.
+The navigation framework, planner, particle filter, EIG sensing, robot controller, and map manifest format are the team's foundation. This extension adds three authored JSON maps, registry entries, geometry checks, a local evaluation launcher, and a report of experiments. It does not modify or retrain the team's navigation policy or tune a different controller for each room. Sky led this assigned evaluation workstream and participated in interpreting and reporting its results, using Codex for substantial map/script implementation, simulation operation and calculations. The team's underlying framework remains credited to its authors.
 
 | Map | New geometry | Research question |
 |---|---|---|
@@ -52,4 +52,4 @@ After a Windows kernel crash interrupted offset gate, the remaining two maps res
 
 ## College application presentation
 
-Use a `tactile-navigation-map-study` case study with the research question, original versus new map images, actual navigation videos, comparable settings, measured outcomes, and an explanation of failures. Credit Huaze Liu, Zhenyu Wu, and the team for the underlying framework. Describe your own contribution as map design, experiment execution, analysis, and reporting only to the extent that you have reviewed and can explain the work. Disclose AI assistance. The screenshot grants inclusion of team work in a report; the user separately reports permission to show it on GitHub. Preserve authorship and document the actual scope before publishing team source.
+Use a `tactile-navigation-map-study` case study with the research question, original versus new map images, actual navigation videos, comparable settings, measured outcomes, and an explanation of failures. Credit Huaze Liu, Zhenyu Wu, and the team for the underlying framework. Describe Sky's direction of the assigned evaluation, team discussions, work with the recorded data, and reporting alongside the substantial AI implementation and operation assistance. Do not claim independent authorship of code or analyses that Sky cannot explain. The screenshot grants inclusion of team work in a report; the user separately reports permission to show it on GitHub. Preserve authorship and document the actual scope before publishing team source.

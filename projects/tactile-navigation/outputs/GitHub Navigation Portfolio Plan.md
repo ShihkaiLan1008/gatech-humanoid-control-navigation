@@ -1,5 +1,7 @@
 # GitHub portfolio: tactile navigation on new maps
 
+*Historical planning document from before the current private portfolio. For the present contribution statement, see the [README](../../../README.md) and [role record](../../../docs/HOW_I_DIRECTED_AI.md); suggested wording below is a draft, not a claim that Sky contributed nothing.*
+
 ## Main idea
 
 Present a focused research case study: **Can a humanoid navigation framework using touch generalize to layouts beyond the team's original maps?** Show the question, your map designs, the experiment, results, and what you learned. Keep the first screen readable for an admissions reviewer, with links to technical evidence for readers who want more detail.

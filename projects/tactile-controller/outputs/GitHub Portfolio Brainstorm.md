@@ -2,7 +2,7 @@
 
 > Updated scope, 3 October 2026: The current mission is tactile-navigation generalization on newly authored simulation maps. Use a `tactile-navigation-map-study` case study as the main portfolio project: show the team's existing framework, your three new maps, unchanged evaluation settings, physical navigation videos, success/failure results, and analysis. The foot-tracking ideas below describe an earlier project and are optional supporting work. The screenshots authorize inclusion of team work in a report; they do not explicitly establish public redistribution permission for the entire codebase. The user separately reports GitHub permission, which should be recorded with its actual scope before publishing team source.
 
-Prepared 3 October 2026. This is a local plan, not a published repository.
+Prepared 3 October 2026 as a historical plan. The portfolio was later published privately and revised; use the current [README](../../../README.md) and [contribution record](../../../CONTRIBUTIONS.md) for Sky's role and AI attribution. The placeholders below are draft prompts, not current contribution statements.
 
 ## The story to tell
 

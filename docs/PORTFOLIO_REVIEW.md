@@ -2,18 +2,18 @@
 
 # Portfolio review
 
-*Updated October 10, 2026 · Asia/Taipei · AI-assisted content and evidence audit; research conversations reviewed October 9*
+*Evidence audit completed October 10, 2026 · research conversations reviewed October 9. Presentation note added October 26; the numerical audit was not rerun for the wording changes.*
 
 ## Overall assessment: share with research caveats
 
-This is suitable as **Shih-Kai Lan's private student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's direction of the AI-assisted workflow, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
+This is suitable as **Shih-Kai Lan's private student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's leadership of that AI-assisted evaluation workstream as a student research assistant, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
 
 ## What the portfolio shows
 
 | Reader's question | Where to look |
 | :--- | :--- |
-| Who helped, and how? | The acknowledgments at the very top of the [README](../README.md) and the [contribution record](../CONTRIBUTIONS.md) |
-| What did Sky contribute? | [Questions, initiative, and follow-through](HOW_I_DIRECTED_AI.md): dated examples of seeking useful work, asking evaluation questions, reporting progress, and maintaining scope |
+| Who helped, and how? | The acknowledgments later in the [README](../README.md) and the [contribution record](../CONTRIBUTIONS.md) |
+| What did Sky contribute? | [My role in the team research](HOW_I_DIRECTED_AI.md): preliminary G1 training, the assigned navigation evaluation, data review, team discussions and reports, with dated evidence |
 | What did the team provide? | [Contributions and provenance](../CONTRIBUTIONS.md): advice, practical guidance, maps, research code, models, and resources |
 | What did AI tools do? | The [AI-use disclosure](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation): learning support and substantial implementation, execution, analysis, and drafting |
 | What was tested and why? | The [research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) |
@@ -45,7 +45,7 @@ The new figure is reproduced by [build_navigation_trace.py](../presentation/buil
 ## Presentation and attribution review
 
 - Professor Ye Zhao's feedback, engineering advice, personal influence, and active help matching research opportunities to Sky's interests remain prominent in concise acknowledgments. The group record supports his requests for resources, an accessible pipeline, and a suitable humanoid topic. Zhenyu remains the main practical mentor, and Huaze is thanked for reference maps/work. Early guidance from other group members is also acknowledged.
-- Student contribution statements use examples of Sky's actual directions. They credit interpretation of the assignment and direction of the AI-assisted workflow. Team algorithms and AI-generated implementation remain attributed.
+- Student contribution statements distinguish Sky's leadership of the assigned AI-assisted evaluation from the team's underlying algorithms and the substantial tool-assisted implementation. The dated record and artifacts support the stated participation without assigning Sky sole authorship of the code or methods.
 - The main navigation includes **My contribution** and **Inside the research**. The personal narrative presents Sky's account of the motivating event without claiming that Sky won an award.
 - The cover trajectory and numerical chart derive from saved records. The arrival chart starts at zero, shows the common threshold, and identifies the single-seed scope. Its percentages are internal beliefs, not confidence intervals or population success rates.
 - Original reports are preserved as historical artifacts. The earlier foot-tracking retrospective explains the unfavorable later screening and prevents the old report from serving as proof of improvement.
