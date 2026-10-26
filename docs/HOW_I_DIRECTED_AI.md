@@ -4,7 +4,13 @@
 
 *Shih-Kai Lan (Sky) · assignment, participation, evidence and contribution boundaries*
 
-I participated in an ongoing humanoid robotics project, beginning with simulation setup and training and later taking on Zhenyu Wu's navigation-evaluation assignment. My role was to bring that assignment into a documented experiment, keep the new-map question in scope, communicate progress, and direct the AI-assisted workflow and explanation. The [dated mentor record](MENTOR_ALIGNMENT.md) and linked artifacts below show the basis and limits of these claims.
+I participated in an ongoing humanoid robotics project, beginning with a preliminary G1 simulation training setup and later taking on Zhenyu Wu's navigation-evaluation assignment. I used tools to help me build, test and analyze while learning; I remained involved in team discussions, the questions being tested, the meaning of the results and the reports I shared. The [dated mentor record](MENTOR_ALIGNMENT.md) and linked artifacts below show the basis and limits of these claims.
+
+## Work I contributed
+
+- **Model and training work:** With AI assistance, I set up and trained a preliminary G1 simulation model. The [archived package](../projects/independent-g1-rough-terrain/README.md) preserves the configuration, training log, checkpoint and edge-return command. I did not build the team's later navigation controller from scratch.
+- **Experiments and data:** I took on Zhenyu's new-map evaluation, supplied the team's code and task context, and used AI-assisted scripts to run tests and calculate and inspect outcomes such as final goal distance and arrival belief. The [study](ADMISSIONS_RESEARCH_OVERVIEW.md) keeps the baseline, three new layouts, recordings, numerical results and limits together.
+- **Team communication:** I discussed training quality and experimental scope with the group, shared a weekly report with mentors, and asked for the results to be explained clearly. The [dated record](MENTOR_ALIGNMENT.md) distinguishes those conversations from validation of every technical claim.
 
 ## My participation and its evidence
 
@@ -41,11 +47,11 @@ The next step in developing my ability is to make more of my understanding direc
 
 ## AI assistance and attribution
 
-ChatGPT helped me organize resources, clarify unfamiliar concepts and work through setup questions. I gave AI tools the mentor's repository and assignment, corrected the scope when necessary, and requested explanations of the results and limitations. Zhenyu explicitly encouraged AI-assisted reading of the README and parameter experimentation. Codex provided substantial map/script implementation, simulation operation, analysis, visualization and drafting. [Full contribution boundaries →](../CONTRIBUTIONS.md)
+As a student still learning the tools, I used ChatGPT for explanations and setup guidance and Codex for substantial help with map/script implementation, simulation runs, calculations, visualization and drafting. I supplied the mentor's assignment and repository, corrected the scope when needed, examined the outputs and asked what the results could support. Zhenyu also encouraged AI-assisted reading of the README and parameter experimentation. These tools extended my ability to participate; their technical work and the team's original methods remain credited. [Full contribution boundaries →](../CONTRIBUTIONS.md)
 
 ## A concise account of my contribution
 
-> With guidance from Professor Ye Zhao and extensive practical mentoring from Zhenyu Wu, I progressed from learning simulation tools to participating in an evaluation of humanoid tactile navigation. I asked how to judge training quality, sought a useful experimental role, and kept changing tasks focused on a coherent research direction. Using team resources and substantial AI assistance, the work produced new maps and a documented simulation pilot. Four trials physically reached their goals, but only one met the system's completion criterion. The experience gives me a sharper research question: what evidence does a robot need to know that its action succeeded? I want to continue by making controlled comparisons, explaining their limits, and developing more of the technical work myself.
+> As a student member of an ongoing Georgia Tech robotics project, I began by setting up and training a preliminary G1 simulation model with AI assistance, then joined discussions about how to evaluate the work and shared a weekly report. For Zhenyu Wu's navigation assignment, I used the team's system and AI-assisted tools to test new maps, calculate and examine results, and shape a documented pilot. Four completed trials physically reached their goals, but only one met the system's formal arrival criterion. That gap led me to ask what evidence a robot needs to know it has succeeded. The team's methods and models, mentor guidance and substantial AI implementation are credited separately.
 
 *This paragraph is an AI-assisted draft based on the record. It should be used in an application only in wording that I can personally explain and stand behind.*
 

@@ -21,7 +21,9 @@
 
 I joined an ongoing Georgia Tech LIDAR team project as a student member. The team's humanoid controller, tactile-navigation framework, existing maps and research resources were already in place. **Zhenyu Wu assigned me to run that system on an existing map, then test it on new maps** to explore how it behaved beyond the original layouts. Huaze Liu shared maps and research work that I could use as references. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
 
-I brought the assignment and team repository into an AI-assisted workflow, kept the work focused on new-map evaluation, and directed the continuation and explanation of the experiments. The resulting pilot includes a baseline run, three newly authored layouts, geometry checks, four completed simulation recordings, and a quantitative report. My earlier G1 training and controller work helped me reach this task; they are documented separately below. [My role and the supporting record →](docs/HOW_I_DIRECTED_AI.md)
+Before this assignment, I set up and trained a preliminary G1 simulation model with AI assistance, preserving its configuration, log and checkpoint.
+
+In the team project, I discussed how to judge training and experiments, shared a weekly report, and carried Zhenyu's request into a baseline and new-map evaluation. I used AI-assisted code and analysis tools to run and document tests, calculate and examine metrics, and develop the report. I supplied the research context, kept the task in scope, asked follow-up questions, and worked through what the results did and did not show. [My work and its supporting record →](docs/HOW_I_DIRECTED_AI.md)
 
 **The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
 
@@ -54,13 +56,13 @@ The threshold requires enough localization belief to satisfy **both position and
 
 ## Who contributed what
 
-| Contributor | Contribution to this portfolio's featured study |
+| Contributor | Role across the work shown here |
 | :--- | :--- |
-| **Me — Shih-Kai Lan (Sky)** | Participated in the team research, brought Zhenyu's assignment and the team's code into the evaluation workflow, kept the new-map question in scope, directed the AI-assisted continuation and reporting, and communicated progress and questions to mentors. |
-| **Professor Zhao, Zhenyu Wu, Huaze Liu and the research team** | Research direction and mentorship; the existing algorithms, trained controller, navigation system, resources and reference maps. |
-| **ChatGPT and Codex** | Learning support and substantial assistance with map/script implementation, simulation operation, analysis, visualization and drafting. |
+| **Me — Shih-Kai Lan (Sky)** | Set up and trained a preliminary G1 simulation model; participated in team discussions and shared a weekly report; carried out Zhenyu's assigned navigation evaluation by directing the tests, working with tools to calculate and examine results, and shaping the analysis and report. |
+| **Professor Zhao, Zhenyu Wu, Huaze Liu and the research team** | Research direction and mentorship; the existing navigation algorithms, trained controller, resources and reference maps. |
+| **AI tools I used** | Substantial help with setup, map/script implementation, simulation operation, calculations, visualization and drafting under my task direction. |
 
-The new layouts, recordings and measurements are an evaluation of the team's system, with this division of work stated openly. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
+The new layouts, recordings and measurements extend the team's existing system. I used AI to bridge gaps in my experience as a student, while staying involved in the research questions, interpretation and communication; the team's foundation and the tools' substantial implementation help remain credited. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
 
 ## Follow one recorded experiment
 
