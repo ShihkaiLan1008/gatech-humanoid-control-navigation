@@ -34,6 +34,12 @@ The new-map study shows why robotics asks for more than excitement about visible
 
 That distinction gives me a concrete direction for further study: how can a robot connect useful action with enough evidence to trust that action? The next step is to understand the saved belief and contact records, repeat trials, and test whether additional final sensing improves correctly justified completion. These are future research tasks, not work already completed.
 
+## The future contribution that motivates me
+
+I want to help build robots that can offer practical physical assistance in the spaces where people live and work. I can imagine them carrying supplies, helping with everyday tasks, or inspecting places that are difficult or dangerous for people to enter. The possibility of reducing physical burdens and human exposure to hazardous work gives my interest in robot movement a purpose.
+
+That ambition draws me toward the less visible questions behind a walking robot: can it handle a different layout, estimate where it is, and recognize when it needs more information? My participation in the team's navigation evaluation lets me begin working on those questions under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. The new-map experiments are a small simulation-based contribution to a much longer research path. I want to keep developing the ability to connect careful testing with technology that people can eventually depend on.
+
 ## The longer-term questions I want to pursue
 
 I would like robot walking to become more adaptive, with less need to train again for every new situation. The present study reused a trained walking controller across different maps without per-map retraining. It did not remove the original training requirement or demonstrate training-free locomotion. Investigating how feedback, planning and reusable movement knowledge can reduce retraining is a direction I want to explore.

@@ -29,9 +29,9 @@ I worked with the group on how to judge training and experiments, shared a weekl
 
 ## Why this research matters
 
-A navigation system needs to handle different room layouts and judge reliably when a task is complete. Testing new maps helps reveal where the team's existing system works and where it needs further investigation. In this pilot, all four completed trials physically reached the goal, but only one met the system's arrival-confidence requirement. My contribution was to help document that gap under my mentors' guidance, giving the team concrete cases for studying how movement, sensing and uncertainty affect completion.
+I want to contribute to a future in which robots can help people with everyday physical tasks and take on work in places that are difficult or dangerous to reach. Possible applications include carrying supplies through buildings and assisting with inspections in hazardous environments. For that future to be useful, robots need to move through different layouts and recognize when their own position estimates are uncertain. This is why I am interested in navigation research: under my mentors' guidance, I can contribute to testing a small but necessary part of that larger goal. The current work is a simulation pilot toward that ambition.
 
-[Why test new layouts, and why does arrival confidence matter? →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md#why-study-this)
+[The future contribution that motivates this work →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md#why-study-this)
 
 ## The completed navigation pilot
 

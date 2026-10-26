@@ -8,11 +8,11 @@ In plain terms, I tested whether the team's robot could navigate new layouts and
 
 ## Why study this?
 
-**Different layouts test the limits of an existing system.** A successful run in one room does not establish how the same robot will behave around different obstacles, openings and turns. Testing the system on additional layouts lets the team examine whether planning, walking and position estimation continue to work together. My assigned evaluation contributes a small set of recorded cases to that larger research question.
+I want to study robotics because I hope it can expand the physical help available to people. In the future, robots could carry supplies through buildings, assist with everyday tasks, or help inspect places that are difficult or dangerous for people to enter. These are the kinds of practical contributions that make mechanical engineering meaningful to me.
 
-**The robot must also judge when it has finished.** A viewer can see that a robot is near its goal, while the robot's own estimate of position and heading remains uncertain. The team's framework uses touch as a source of information about its surroundings. Studying movement alongside sensing and arrival confidence helps identify when further information may be needed before the system can declare completion.
+For those possibilities to become dependable, robots need to cope with different room layouts and uncertainty about their own position. A robot that moves successfully in one demonstration still needs evidence that it can handle other conditions and recognize when it lacks enough information to confirm completion. The team's use of touch to inform navigation gives me a concrete way to explore how physical interaction and sensing can support that goal.
 
-**An uncertain outcome can guide the next experiment.** In this pilot, physical arrival occurred in all four completed trials, but formal confirmation occurred only once. The value of documenting this gap is that it gives the team specific maps, recordings and measurements to investigate. Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I helped turn the assigned tests into evidence for that discussion. More reliable navigation is the longer-term motivation; this small simulation study identifies questions for further testing.
+My role in this larger ambition is as a student participant under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. By helping test the existing system on new maps, examine the recorded results and document uncertain arrivals, I contribute cases that the team can investigate further. The immediate outcome is a small simulation study; the reason I want to continue is the possibility of helping robots become more dependable and useful to people.
 
 ## Assignment, research question and my role
 
