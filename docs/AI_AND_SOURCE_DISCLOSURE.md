@@ -6,7 +6,7 @@
 
 ## At a glance
 
-**I supplied the prompts and research direction; ChatGPT helped integrate the materials and generated much of this portfolio's explanatory and presentation text.** I provided the mentor's assignment, research context, source materials, questions and revision requests, examined outputs, and asked for changes. Codex provided substantial assistance with implementation, simulation operation, calculations, figures and documentation.
+**I directed the workflow and reporting for my mentor-assigned evaluation; ChatGPT helped integrate the materials and generated much of this portfolio's explanatory and presentation text in response to my prompts.** I provided the mentor's assignment, research context, source materials, questions and revision requests, examined outputs, and asked for changes. Codex provided substantial assistance with implementation, simulation operation, calculations, figures and documentation.
 
 **Team data, reference content and images supplied through Zhenyu Wu are included with his permission, as confirmed by me, for this public GitHub research portfolio.** Original authorship and existing notices remain credited to the team and upstream creators. Permission to display shared work is separate from authorship.
 

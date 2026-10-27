@@ -4,7 +4,13 @@ This portfolio records my participation as a student member of an ongoing Georgi
 
 ## My contribution within the mentor-guided project
 
-My participation combined implementation, evaluation and communication. I discussed training quality and learning curves with the group, asked for a meaningful experimental contribution, shared a weekly report with my mentors, and worked to keep the assigned tasks connected to a coherent research question. The code changes, training measurements and reports linked below show the concrete work behind that participation.
+**I directed the workflow and reporting for my assigned evaluation under my mentors' guidance.** My responsibilities connected three parts of the work:
+
+- **Keeping the task coherent:** I asked for a meaningful experimental contribution, clarified the new-map assignment and supplied its context, priorities and constraints to the AI-assisted workflow.
+- **Examining what the results supported:** I discussed training quality and learning curves with the group, identified the unequal training sample budget, examined navigation recordings and measurements, and kept unproven improvement claims open.
+- **Following through and communicating:** I shared a weekly report, requested explanations and corrections, and shaped a documented account of the results and limitations.
+
+The mentor defined the assigned study and the team supplied its methods and models. The code changes, training measurements and reports linked below connect my participation to inspectable artifacts; substantial AI implementation, analysis and drafting are credited in the sections that follow.
 
 My participation began with setting up and training a preliminary G1 simulation model with AI assistance; the archived configuration, log and checkpoint document that work. As described in my [personal account of the setback and rebuild](docs/SETBACK_AND_REBUILD.md), I later lost work after an internal computer failure and used earlier conversations and reconstructed context to direct a fresh installation on a better laptop. I asked for resource-conscious settings so that I could continue. The hardware cause remains unconfirmed; the surviving artifacts do not establish the full chronology or recover every lost file.
 

@@ -22,37 +22,30 @@
 
 **Summer 2026–present · Ongoing research and experiments.**
 
-I began participating in the research in summer 2026 and continue conducting experiments. This repository documents the implementation and recorded results of this project within my ongoing research. I plan to continue with further projects and experiments as the work develops; the results presented here refer to the runs preserved in this repository.
+I am a student participant in Georgia Tech's LIDAR research group under **Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. This portfolio records the experiments preserved so far; my research continues.
 
 ## The assignment and my role
 
-A humanoid can reach a destination while its estimate of its own position remains uncertain. I participate as a student member of an ongoing Georgia Tech LIDAR research project, **under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. My assigned contribution was to evaluate navigation on new maps: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [Team guidance and assignment →](docs/MENTOR_ALIGNMENT.md)
+**How can a humanoid reach a destination and know that it has arrived?** My assigned navigation study tested the team's existing system on an original map and three new layouts.
 
-My research participation also included preliminary G1 training, rebuilding the software environment, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run and preserved its model and measurements.
+**I directed the workflow and reporting for my assigned evaluation under my mentors' guidance.** I kept the work focused on the assignment, supplied the research context and constraints, examined the recordings and measurements, and requested follow-up explanations and corrections. I discussed training quality and research scope with the group and shared a weekly report. [Assignment and participation record →](docs/MENTOR_ALIGNMENT.md)
 
-I worked with the group on how to judge training and experiments, shared a weekly report, and turned Zhenyu's instructions into a documented baseline and new-map study. I directed AI tools to help implement and run the tests, used the resulting records to calculate and examine metrics, and shaped the analysis and report through follow-up questions. This was my assigned evaluation within a larger team effort; the tools expanded what I could do while learning.
+Earlier, I rebuilt the training environment, worked on a foot-tracking reward modification and completed a 500-iteration diagnostic run. I identified an unequal training sample budget and proposed matched conditions before claiming improvement. These contributions combined implementation with experimental judgment, using mentor guidance and AI assistance. [Contribution evidence →](CONTRIBUTIONS.md)
 
-**The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
+The team supplied the controller, navigation methods, trained models and reference materials. ChatGPT and Codex provided substantial writing and technical assistance; their specific roles are stated in the [AI and source disclosure](docs/AI_AND_SOURCE_DISCLOSURE.md).
 
 ## My research contributions and why they matter
 
-- **Making experiments runnable:** I rebuilt a failed software environment, worked through CUDA, compiler and library compatibility problems, and checked the command and data pipelines with guidance and AI assistance. This restored a working basis for training and evaluation. [Environment and recovery record →](docs/SETBACK_AND_REBUILD.md)
-- **Turning a technical idea into a test:** I implemented an additional, narrower foot-position reward and completed a 500-iteration diagnostic run within an 8 GB GPU constraint. The archive preserves the [reward change](projects/tactile-controller/local-reward-change.patch), [training measurements](projects/tactile-controller/report-evidence/experiment_evidence.json) and saved model. This made a proposed change inspectable and testable.
-- **Judging what the result supports:** I identified that 1,024 parallel environments provided one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed a comparison with matched training conditions. This matters because a completed run alone cannot show that a reward change improved the controller. [Experimental reasoning and evidence →](CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
-
-Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I used AI to accelerate reading, implementation and troubleshooting, and checked suggestions against source code, system behavior and measured results. My contribution combines technical implementation with careful evaluation and communication of its limits.
-
-## How this portfolio was produced
-
-**My research participation, AI-generated presentation, and the team's research foundation are credited separately.** I supplied the research context, prompts, priorities and follow-up directions. **ChatGPT helped integrate the source material and generated much of the explanatory and presentation text in response to my prompts.** Codex provided substantial assistance with code, experiment operation, analysis, figures and documentation. I examined outputs and requested revisions; directing these tools does not mean I independently wrote every passage or implemented every component.
-
-Team data, reference content and images supplied through **Zhenyu Wu** are included with his permission, as confirmed by me, for this public GitHub research portfolio. Original authorship, Huaze Liu's contributions and upstream notices remain credited. This permission does not establish sole authorship or a blanket reuse license.
-
-[Who contributed what, evidence, AI workflow and material permissions →](docs/AI_AND_SOURCE_DISCLOSURE.md)
+- **Turning an assignment into a documented evaluation:** I took on Zhenyu's existing-map-then-new-maps task, directed the AI-assisted workflow, examined the outcomes and shaped the report. The resulting baseline and three new-map trials provide specific cases for further investigation. [Study and recorded results →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md)
+- **Making experiments runnable:** I rebuilt a failed software environment, worked through compatibility issues and checked command and data pipelines with guidance and AI assistance. This restored a working basis for training and evaluation. [Environment and recovery record →](docs/SETBACK_AND_REBUILD.md)
+- **Implementing a testable change:** I added a narrower foot-position reward and completed a diagnostic training run within an 8 GB GPU constraint. The [reward change](projects/tactile-controller/local-reward-change.patch), [training measurements](projects/tactile-controller/report-evidence/experiment_evidence.json) and saved model make the experiment inspectable.
+- **Judging what the evidence supports:** I recognized that 1,024 parallel environments supplied one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed matched training conditions. [Experimental reasoning and evidence →](CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
 
 ## Why this research matters
 
-I want to contribute to a future in which robots can help people with everyday physical tasks and take on work in places that are difficult or dangerous to reach. Possible applications include carrying supplies through buildings and assisting with inspections in hazardous environments. For that future to be useful, robots need to move through different layouts and recognize when their own position estimates are uncertain. This is why I am interested in navigation research: under my mentors' guidance, I can contribute to testing a small but necessary part of that larger goal. The current work is a simulation pilot toward that ambition.
+I want to contribute to a future in which robots can help people with everyday physical tasks and take on work in places that are difficult or dangerous to reach. For that future to be useful, robots need to move through different layouts and recognize when their position estimates are uncertain. My current contribution is a simulation pilot toward that ambition.
+
+This research has reaffirmed my love for mechanical engineering by connecting mechanics, control, sensing and computation. I continue conducting experiments and want to develop the knowledge and judgment to contribute more deeply to robotics.
 
 [The future contribution that motivates this work →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md#why-study-this)
 
@@ -60,9 +53,9 @@ I want to contribute to a future in which robots can help people with everyday p
 
 ![Pilot study: three new maps, four completed trials, four physical arrivals, one formal success. One seed per map.](assets/pilot-at-a-glance.svg)
 
-**The finding:** all four completed trials entered the physical goal region, but three ended with insufficient arrival confidence. That gap between motion and certainty is the research question worth pursuing.
+**The finding:** all four completed trials entered the physical goal region, but three ended with insufficient arrival confidence. The study raised a question about what evidence the system needs to confirm arrival; four single-seed runs do not establish general robustness.
 
-[Read the accessible research overview →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md)
+[Read the research overview →](docs/ADMISSIONS_RESEARCH_OVERVIEW.md)
 
 ## From code to movement
 
@@ -87,13 +80,17 @@ The threshold requires enough localization belief to satisfy **both position and
 
 | Contributor | Role across the work shown here |
 | :--- | :--- |
-| **Me — Shih-Kai Lan (Sky)** | Student participant: environment reconstruction, preliminary G1 training, foot-tracking reward modification and a 500-iteration diagnostic run; identification of unequal training sample budgets; new-map navigation evaluation, data analysis, team discussions and reporting. These contributions were made under my mentors' guidance with AI assistance. |
+| **Me — Shih-Kai Lan (Sky)** | Directed the workflow and reporting for my assigned evaluation under mentor guidance; contributed environment reconstruction, preliminary G1 training, a foot-tracking reward modification and diagnostic run, unequal-sample-budget analysis, result review and team communication. Implementation and analysis used AI assistance. |
 | **Professor Ye Zhao — research mentor** | Guidance on research direction, learning resources and a suitable opportunity within the team. |
-| **Zhenyu Wu — direct mentor** | Guided controller training and foot-tracking evaluation, assigned the new-map navigation study, and provided practical instructions, setup help and research resources. |
+| **Zhenyu Wu — direct mentor** | Guided controller training and foot-tracking evaluation, assigned the new-map study, and provided practical instructions, setup help and research resources. |
 | **Huaze Liu and the research team** | The existing navigation framework, trained controller, shared code and reference maps. |
-| **AI tools I used** | Technical assistance with setup, map/script implementation, simulation operation, calculations, visualization and drafting. Codex performed substantial implementation and operation under my task direction. |
+| **ChatGPT and Codex — tools I directed** | ChatGPT integrated source material and generated much of the explanatory text from my prompts. Codex performed substantial map/script implementation, code inspection, simulation operation, quantitative analysis, visualization and documentation. |
 
-The new layouts, recordings and measurements extend the team's existing system. I used AI to bridge gaps in my experience as a student, while staying involved in the research questions, interpretation and communication; the team's foundation and the tools' substantial implementation help remain credited. [Detailed contribution and AI-use record →](CONTRIBUTIONS.md)
+## How this portfolio was produced
+
+I supplied the task context, prompts, priorities and revision requests, examined outputs and shaped the reporting. **The portfolio's narrative was substantially generated with ChatGPT assistance; its technical work also received substantial Codex assistance.** The [detailed contribution and source record](docs/AI_AND_SOURCE_DISCLOSURE.md) explains this workflow alongside my documented participation.
+
+Team data, reference content and images supplied through **Zhenyu Wu** are included with his permission, as confirmed by me, for this public GitHub portfolio. Original authorship and upstream notices remain credited. [Permission and attribution →](CONFIDENTIALITY.md)
 
 ## Follow one recorded experiment
 

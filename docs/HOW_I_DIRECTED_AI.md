@@ -2,9 +2,13 @@
 
 # My role in the team research
 
-*Shih-Kai Lan (Sky) · assignment, participation, evidence and contribution boundaries*
+*Shih-Kai Lan (Sky) · directing my assigned evaluation under mentor guidance*
 
-I participate as a student member of an ongoing humanoid robotics project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. I began participating in summer 2026 and continue conducting experiments, with further projects planned as my research develops. This repository records the implementation and results of this project. After preliminary G1 simulation training, I worked on the navigation evaluation Zhenyu assigned to me, directing AI tools to help with my tasks and collaborating with the team. I brought the task and team code into the workflow, participated in discussions, examined results and shared reports. The [mentor guidance record](MENTOR_ALIGNMENT.md) and artifacts below show the basis and limits of these claims.
+**I directed the workflow and reporting for my assigned evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance.** I began participating in summer 2026 and continue conducting experiments.
+
+Zhenyu assigned the navigation study; I kept the work focused on that assignment, supplied its context and constraints, examined recordings and measurements, asked follow-up questions and shaped reporting. I also discussed training and evaluation with the team and shared a weekly report. My earlier work included environment reconstruction, preliminary G1 training and foot-tracking reward evaluation.
+
+The team supplied the underlying methods and models. I directed AI tools for substantial implementation, experiment operation, analysis and presentation support. The [assignment record](MENTOR_ALIGNMENT.md), contribution evidence below and [AI disclosure](AI_AND_SOURCE_DISCLOSURE.md) explain the respective roles.
 
 ## Work I contributed
 
