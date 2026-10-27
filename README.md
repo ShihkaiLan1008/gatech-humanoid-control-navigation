@@ -21,11 +21,19 @@
 
 A humanoid can reach a destination while its estimate of its own position remains uncertain. I participated as a student member of an ongoing Georgia Tech LIDAR research project, **under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. My assigned contribution was to evaluate navigation on new maps: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
 
-Before this assignment, I set up and trained a preliminary G1 simulation model with AI assistance, preserving its configuration, log and checkpoint.
+My research participation also included preliminary G1 training, rebuilding the software environment, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run and preserved its model and measurements.
 
 I worked with the group on how to judge training and experiments, shared a weekly report, and turned Zhenyu's instructions into a documented baseline and new-map study. I directed AI tools to help implement and run the tests, used the resulting records to calculate and examine metrics, and shaped the analysis and report through follow-up questions. This was my assigned evaluation within a larger team effort; the tools expanded what I could do while learning. [My work and its supporting record →](docs/HOW_I_DIRECTED_AI.md)
 
 **The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
+
+## My research contributions and why they matter
+
+- **Making experiments runnable:** I rebuilt a failed software environment, worked through CUDA, compiler and library compatibility problems, and checked the command and data pipelines with guidance and AI assistance. This restored a working basis for training and evaluation. [Environment and recovery record →](docs/SETBACK_AND_REBUILD.md)
+- **Turning a technical idea into a test:** I implemented an additional, narrower foot-position reward and completed a 500-iteration diagnostic run within an 8 GB GPU constraint. The archive preserves the [reward change](projects/tactile-controller/local-reward-change.patch), [training measurements](projects/tactile-controller/report-evidence/experiment_evidence.json) and saved model. This made a proposed change inspectable and testable.
+- **Judging what the result supports:** I identified that 1,024 parallel environments provided one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed a comparison with matched training conditions. This matters because a completed run alone cannot show that a reward change improved the controller. [Experimental reasoning and evidence →](docs/HOW_I_DIRECTED_AI.md#technical-work-and-experimental-judgment)
+
+Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I used AI to accelerate reading, implementation and troubleshooting, and checked suggestions against source code, system behavior and measured results. My contribution combines technical implementation with careful evaluation and communication of its limits.
 
 ## Why this research matters
 
@@ -64,9 +72,9 @@ The threshold requires enough localization belief to satisfy **both position and
 
 | Contributor | Role across the work shown here |
 | :--- | :--- |
-| **Me — Shih-Kai Lan (Sky)** | As a student participant, set up and trained a preliminary G1 simulation model, joined team discussions and shared a weekly report. Under my mentors' guidance, I used AI tools to carry out my assigned navigation evaluation: test the team system on new maps, examine the recorded data, and shape the analysis and report. |
+| **Me — Shih-Kai Lan (Sky)** | Student participant: environment reconstruction, preliminary G1 training, foot-tracking reward modification and a 500-iteration diagnostic run; identification of unequal training sample budgets; new-map navigation evaluation, data analysis, team discussions and reporting. These contributions were made under my mentors' guidance with AI assistance. |
 | **Professor Ye Zhao — research mentor** | Guidance on research direction, learning resources and a suitable opportunity within the team. |
-| **Zhenyu Wu — direct mentor** | Assigned the navigation evaluation and provided practical instructions, setup guidance and research resources. |
+| **Zhenyu Wu — direct mentor** | Guided controller training and foot-tracking evaluation, assigned the new-map navigation study, and provided practical instructions, setup help and research resources. |
 | **Huaze Liu and the research team** | The existing navigation framework, trained controller, shared code and reference maps. |
 | **AI tools I used** | Technical assistance with setup, map/script implementation, simulation operation, calculations, visualization and drafting. Codex performed substantial implementation and operation under my task direction. |
 

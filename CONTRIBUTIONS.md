@@ -14,6 +14,12 @@ I also directed how the results should be communicated: explain what the experim
 
 My contribution includes preliminary model training, team discussions, a shared weekly report, carrying out my assigned navigation evaluation with AI assistance, examination of its quantitative results, and communication of the research. [Examples of my instructions and the work they guided](docs/HOW_I_DIRECTED_AI.md) make that role concrete. The detailed technical explanations describe the project and my developing research questions; they do not imply that I independently invented the team's methods or implemented every component.
 
+## Controller implementation and experimental judgment
+
+Under Professor Ye Zhao's supervision and Zhenyu Wu's direct guidance, I reconstructed the training environment, resolved CUDA, compiler and library compatibility issues, checked command and data pipelines, and implemented an additional foot-position reward with AI assistance. I completed a 500-iteration diagnostic run within an 8 GB GPU constraint and saved the trained model. The [reward diff](projects/tactile-controller/local-reward-change.patch) and [training record](projects/tactile-controller/report-evidence/experiment_evidence.json) preserve the implemented change and its measurements.
+
+I identified that the local run's 1,024 environments supplied one eighth of the samples of an 8,192-environment setup at the same iteration count. I therefore kept the accuracy claim open and proposed matched training conditions. My contribution was both technical and analytical: implement a testable change, inspect the evidence, and explain why it did not yet establish an improvement. AI helped with implementation and troubleshooting; I checked suggestions against source code, system behavior and measured results. [Detailed contribution-to-evidence mapping →](docs/HOW_I_DIRECTED_AI.md#technical-work-and-experimental-judgment)
+
 ## Preliminary independent exploration
 
 The G1 rough-terrain package contains custom Isaac Lab task configuration, rewards, edge-return commands, a saved model and scripts from Sky's earlier independent exploration. It builds on Isaac Lab, Unitree assets and the RL framework; it is not an original general-purpose simulator or robot controller. Implementation and setup received AI assistance. The historical task package is preserved as found; no new training or playback validation was performed during archiving.

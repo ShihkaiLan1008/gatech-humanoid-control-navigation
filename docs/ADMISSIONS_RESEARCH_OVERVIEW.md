@@ -24,6 +24,12 @@ The resulting question is whether physical arrival and confidence in arrival agr
 
 Earlier, I set up and trained a preliminary G1 simulation model with AI assistance and preserved its configuration, log and checkpoint. The independent rough-terrain package and later foot-tracking work were separate stages of my participation; they did not constitute this new-map assignment. The three new layouts were deliberately authored cases, not a randomized or repeated robustness benchmark. [Research timeline →](MENTOR_ALIGNMENT.md) · [Setback and rebuild →](SETBACK_AND_REBUILD.md)
 
+## Research skills behind the evaluation
+
+My work in the team also involved reconstructing a failed software environment, working through CUDA, compiler and library compatibility issues, checking command and data pipelines, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run within an 8 GB GPU constraint and preserved the trained model and measurements.
+
+A central part of my contribution was interpreting that run responsibly. I identified that 1,024 parallel environments supplied only one eighth of the samples of an 8,192-environment setup at the same iteration count, kept the improvement question open, and proposed matching training conditions. This gave the team a concrete modification and diagnostic record to inspect, together with an explanation of the comparison still needed. The navigation work extends that emphasis on testing and evidence: recorded movement and numerical results must support the conclusions we draw. [Technical contributions and supporting artifacts →](HOW_I_DIRECTED_AI.md#technical-work-and-experimental-judgment)
+
 ## What was changed and why
 
 The offset-opening map forces an indirect route through an opening at one end of a divider. The staggered-baffle map adds repeated turns around alternating dividers. The island map presents two possible routes around a central solid obstacle and exercises the map-coordinate transformation with a different starting heading.
