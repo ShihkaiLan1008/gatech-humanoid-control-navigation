@@ -1,102 +1,88 @@
-![Research portfolio section](../assets/section-study.svg)
+![Research study](../assets/section-study.svg)
 
-[← Portfolio home](../README.md) · [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) · [Technical depth](TECHNICAL_DEPTH.md) · [Video gallery](VIDEOS.md)
+[Portfolio home](../README.md) · [My contribution](../CONTRIBUTIONS.md) · [Recorded runs](VIDEOS.md) · [Technical methods](TECHNICAL_DEPTH.md)
 
 # Can a humanoid know when it has arrived?
 
-In plain terms, I tested whether the team's robot could navigate new layouts and whether its software could tell when it had reached the goal.
+**A student research case study · Summer 2026–present · Ongoing work**
 
-## Ongoing research
-
-**Summer 2026–present.** I began participating in the research in summer 2026 and continue conducting experiments. This repository documents the implementation and recorded results of this project within my ongoing research. I plan to continue with further projects and experiments as the work develops; the results presented here refer to the runs preserved in this repository.
+The team's system combines learned walking, tactile sensing, localization and planning. My assigned evaluation asked how it behaved on new layouts. The recorded pilot showed that physical arrival and the system's confidence in arrival could disagree.
 
 ## Why study this?
 
-I want to study robotics because I hope it can expand the physical help available to people. In the future, robots could carry supplies through buildings, assist with everyday tasks, or help inspect places that are difficult or dangerous for people to enter. These are the kinds of practical contributions that make mechanical engineering meaningful to me.
-
-For those possibilities to become dependable, robots need to cope with different room layouts and uncertainty about their own position. A robot that moves successfully in one demonstration still needs evidence that it can handle other conditions and recognize when it lacks enough information to confirm completion. The team's use of touch to inform navigation gives me a concrete way to explore how physical interaction and sensing can support that goal.
-
-My role in this larger ambition is as a student participant under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. By helping test the existing system on new maps, examine the recorded results and document uncertain arrivals, I contribute cases that the team can investigate further. The immediate outcome is a small simulation study; the reason I want to continue is the possibility of helping robots become more dependable and useful to people.
+I want to contribute to robots that can help with everyday physical tasks or work in hazardous spaces. Dependable movement requires a robot to recognize when its estimate of its surroundings is uncertain. Testing that problem under Professor Ye Zhao's mentorship and Zhenyu Wu's guidance gives me a concrete starting point in mechanical engineering and robotics.
 
 ## Assignment, research question and my role
 
-I participate as a student member of an ongoing Georgia Tech LIDAR research project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. Zhenyu assigned me the navigation evaluation presented here. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Team guidance and assignment →](MENTOR_ALIGNMENT.md)
+Zhenyu assigned me to run an existing map with visible evidence, then create and test new maps. The team supplied the controller, navigation framework and pretrained model; Huaze Liu shared maps and research materials as references.
 
-**I directed the workflow and reporting for this assigned evaluation under my mentors' guidance.** I organized the work around the existing-map run and three new-map tests, kept its scope aligned with Zhenyu's instructions, examined the saved recordings and measurements, and shaped the report around the research question. I discussed training and evaluation with the group and shared a weekly report. Codex provided substantial map/script implementation, geometry checks, simulation operation and calculations in response to my directions. When a run was interrupted by a computer restart, I requested investigation and continuation and decided when to pause and resume.
+**I directed the workflow and reporting for my assigned evaluation under mentor guidance.** I kept the task aligned with the instructions, supplied context and constraints, examined recordings and measurements, requested explanations and corrections, discussed evaluation with the group and shared a weekly report.
 
-The resulting question is whether physical arrival and confidence in arrival agree. In four completed single-seed simulations, the robot entered the goal region each time, but the navigation system formally confirmed arrival only once. My role was to contribute to this mentor-guided evaluation, using AI as a substantial technical aid and directing its use for my assigned tasks. The underlying algorithms and trained navigation model remain team work. [Detailed attribution →](../CONTRIBUTIONS.md)
-
-Earlier, I set up and trained a preliminary G1 simulation model with AI assistance and preserved its configuration, log and checkpoint. The independent rough-terrain package and later foot-tracking work were separate stages of my participation; they did not constitute this new-map assignment. The three new layouts were deliberately authored cases, not a randomized or repeated robustness benchmark. [Research timeline →](MENTOR_ALIGNMENT.md) · [Setback and rebuild →](SETBACK_AND_REBUILD.md)
+Codex provided substantial map/script implementation, geometry checks, simulation operation and calculations. ChatGPT helped integrate source material and draft explanations from my prompts. [Contribution evidence](../CONTRIBUTIONS.md) · [Detailed division of work](AI_AND_SOURCE_DISCLOSURE.md)
 
 ## Research skills behind the evaluation
 
-My work in the team also involved reconstructing a failed software environment, working through CUDA, compiler and library compatibility issues, checking command and data pipelines, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run within an 8 GB GPU constraint and preserved the trained model and measurements.
+Earlier, I rebuilt a training environment, implemented a foot-tracking reward modification and completed a 500-iteration diagnostic run with guidance and AI assistance. I identified that the local setup supplied one eighth of the samples of the larger reference configuration at the same iteration count and proposed matched training conditions.
 
-A central part of my contribution was interpreting that run responsibly. I identified that 1,024 parallel environments supplied only one eighth of the samples of an 8,192-environment setup at the same iteration count, kept the improvement question open, and proposed matching training conditions. This gave the team a concrete modification and diagnostic record to inspect, together with an explanation of the comparison still needed. The navigation work extends that emphasis on testing and evidence: recorded movement and numerical results must support the conclusions we draw. [Technical contributions and supporting artifacts →](../CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
+A later screening did not demonstrate improved tracking: the tuned checkpoint's mean reference-foot error was 33.02 cm versus 9.62 cm for the reference. Different training histories prevented a causal conclusion about the reward change. That experience informed how I approached the navigation study: preserve the result and explain what comparison is still needed.
+
+[Controller experiment and evidence](../CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
 
 ## What was changed and why
 
-The offset-opening map forces an indirect route through an opening at one end of a divider. The staggered-baffle map adds repeated turns around alternating dividers. The island map presents two possible routes around a central solid obstacle and exercises the map-coordinate transformation with a different starting heading.
+| New layout | Purpose |
+| :--- | :--- |
+| Offset opening | Require an indirect route through an opening away from the direct path |
+| Staggered baffles | Introduce repeated turns and examine behavior as movement and uncertainty accumulate |
+| Central island | Require routing around an obstacle and exercise the existing map-coordinate transformation |
 
-These layouts introduce different navigation demands while leaving the underlying controller and navigation settings shared. Twelve focused checks passed for loading, endpoints, clearance and obstacle representation. All three planned routes passed the framework's feasibility checks; actual physical-simulation execution was assessed separately.
+All three maps passed planner feasibility checks. Twelve focused geometry/import checks covered loading, endpoints, clearance and obstacle representation. Those checks are separate from evaluating actual movement with the learned controller. The layouts were deliberately authored cases, not a randomized-map benchmark.
 
 ## What the experiments showed
 
-| Layout | Physical goal reached | Fell | Formal completion | Final distance to goal | Arrival belief |
-|---|---|---|---|---:|---:|
-| Original room2 | Yes | No | Arrival uncertain | 7.31 cm | 93.35% |
-| Central island | Yes | No | Arrival uncertain | 6.41 cm | 92.41% |
-| Offset opening | Yes | No | Arrival uncertain | 4.07 cm | 91.89% |
-| Staggered dividers | Yes | No | Route complete | 4.16 cm | 96.04% |
+Four completed seed-0 trials entered the physical goal region without a reported fall.
 
-The system requires at least 95% of its localization belief to satisfy both final position and heading conditions before declaring arrival. The simulator's true final position was inside the goal region in all four trials; that ground truth was used to evaluate execution. Three internal beliefs remained insufficiently confident. The distinction exposes a meaningful research question about how sensing, uncertainty and completion interact.
+| Layout | Goal distance | Arrival belief | Framework decision |
+| :--- | ---: | ---: | :--- |
+| Original room | 7.31 cm | 93.35% | Arrival uncertain |
+| Central island | 6.41 cm | 92.41% | Arrival uncertain |
+| Offset opening | 4.07 cm | 91.89% | Arrival uncertain |
+| Staggered baffles | 4.16 cm | 96.04% | Complete |
 
-A more complicated-looking map did not necessarily produce a worse completion outcome. One trial per layout cannot explain why the staggered map passed or establish which geometry is easier. Contact count alone also does not establish that more touches cause higher confidence.
+The framework requires at least 95% of its particle-filter weight to jointly satisfy the final position region and heading bound. Three trials ended as `arrival_uncertain`; the staggered-baffle trial reported completion.
 
-![Executed simulation paths](../projects/tactile-navigation/outputs/sky_navigation_trajectories.png)
+Simulator truth was used to evaluate movement rather than supplied to high-level navigation. Arrival belief is an internal filter quantity, not a validated probability of real-world success.
 
-*True and estimated trajectories from the four completed seed-0 trials. Axes are in metres; obstacles and goal disks are shown. These are executed simulation records.*
+![True and estimated trajectories from the four completed simulation trials.](../projects/tactile-navigation/outputs/sky_navigation_trajectories.png)
+
+[Recorded runs and frame sheets](VIDEOS.md) · [Canonical result records](../projects/tactile-navigation/outputs/sky_results.json)
 
 ## Reading one result and planning the next test
 
-For my assigned evaluation, I compared physical movement with the system's recorded completion decision. The offset-opening trial ended 4.07 cm from the goal, inside the allowed 30 cm radius, but its joint arrival belief was 91.89%, below the required 95%. The staggered-dividers trial ended slightly farther away, at 4.16 cm, and passed with 96.04% belief. Distance alone therefore does not explain the different completion outcomes: the system also evaluates uncertainty in position and heading.
+The offset-opening trial ended **4.07 cm** from its target with **91.89%** arrival belief. The staggered-baffle trial ended slightly farther away, at **4.16 cm**, but passed with **96.04%** belief. Final distance alone does not explain the different decisions.
 
-This comparison gives the team a concrete case to investigate. The saved maps, videos and measurements make it possible to inspect where physical arrival and the software's completion decision diverged. My contribution was to help carry the assigned testing through to this documented evaluation, working with the team's system and AI tools under my mentors' guidance. The current records do not isolate which source of uncertainty caused the offset-opening result.
+This gives the team a specific case to inspect: what uncertainty remained when the robot physically reached the goal? The present records do not isolate position spread, heading spread, missed contacts or model assumptions as the cause. More contacts alone do not establish better localization.
 
-A follow-up I would discuss with my mentors is to repeat the offset-opening case with five predefined random seeds and a consistent time limit, keeping the controller and scoring rules fixed. Recording position, heading and joint arrival confidence separately would help identify which condition prevents completion. A later comparison could test whether a different sensing strategy improves confirmation under the same conditions. These are proposed experiments; the portfolio reports the completed pilot only.
+A proposed next study is to repeat the offset-opening case using predefined seeds and a common time budget, recording position, heading and joint arrival confidence separately. A paired test could then compare an additional final sensing action with the unchanged policy. These follow-ups remain unrun in this preserved pilot.
 
-## What the work can do now
-
-It can serve as a new-map evaluation suite and a reproducible diagnostic case study. The saved maps, recordings, contact events and metric definitions let a researcher examine how the same framework behaves on different layouts. Replay videos show the executed behavior rather than a hand-animated successful route.
-
-Potential longer-term value is better navigation when position estimates drift or sensing is uncertain. Application to dark spaces, visually difficult environments or assistive robots would require further evidence; it is not demonstrated by these trials.
-
-## The difficult questions underneath the demonstration
-
-[Inside the research](RESEARCH_WALKTHROUGH.md) explains the system as a whole and opens one recorded trial, including the timeline of error, contacts, and misses. It also gives a concrete plan for a controlled next comparison.
-
-Three examples show why this work goes beyond drawing a room and playing a robot animation:
-
-- **Geometry must agree across systems.** The island map's authored start heading is rotated into the navigation frame. Its goal changes from an authored displacement of `(3.6, 0)` to `(0, 3.6)`. The planner and simulated obstacles must still represent the same room.
-- **A plausible training idea can fail to establish improvement.** Earlier work added a narrower foot-position reward, but later screening measured 33.02 cm error for the tuned checkpoint versus 9.62 cm for the reference. Different training histories prevent a causal conclusion about the reward; a matched experiment is needed.
-- **Closeness is not certainty.** The offset-opening robot finished slightly closer to its goal than the staggered-baffle robot, yet only the latter passed the joint position-and-heading belief threshold. The next question is what evidence the system lacked, rather than whether the final video looked successful.
-
-[Technical depth](TECHNICAL_DEPTH.md) explains the mechanisms, measurements, source evidence, and controlled follow-up experiments. These explanations were developed with AI assistance; the team supplied the underlying methods.
-
-## What it has taught at the project level
-
-Useful robotics results include unsuccessful criteria and uncertainty, not just an appealing video. Here, a robot can finish close to its target while the system still declines to certify arrival. A careful evaluation separates geometry feasibility, physical movement, localization accuracy and confidence. It also preserves an unfavorable earlier foot-tracking result rather than reporting improvement without support.
-
-Sky describes a forum experience as the origin of their interest in mechanical engineering, and the sight of robot movement emerging from changed inputs as a source of excitement. Their longer-term interests are more adaptive walking, transferable robot knowledge and cleaner energy. [Personal motivation and research path](MY_RESEARCH_DIRECTION.md) connects those interests to concrete next experiments while keeping untested ambitions distinct from results.
+[Open the full experiment and follow-up outline](RESEARCH_WALKTHROUGH.md)
 
 ## Limits and next questions
 
-Only one seed was run per layout, all trials were simulation, and a team model-35500 checkpoint replaced the absent README default model 34000. The original map had a 240 s cap while new maps had 900 s caps. A Windows-interrupted attempt was recorded separately and restarted; it is not counted as an extra independent completed trial. These are pilot observations, not a population success-rate estimate or an exact replication of the team's default experiments.
+- **Replication:** One seed per map cannot establish a general success rate or broad robustness.
+- **Time budgets:** The original room had a 240-second cap; new maps had 900-second caps.
+- **Model:** All local navigation trials used available team checkpoint 35500 because documented default 34000 was absent. This was not an exact default-checkpoint replication.
+- **Recovery:** One interrupted attempt was preserved separately as `system_restart` and excluded from the four completed trials.
+- **Transfer:** All results are in simulation. Hardware reliability, energy efficiency and cross-robot transfer remain unestablished.
 
-The next study should match budgets and repeat seeds before making robustness claims. Then vary opening widths, compare sensing policies or final confirmation probes, and inspect whether confidence improvements also remain calibrated against simulator truth. Real-hardware transfer is a future team research step.
+[Exact settings and recovery record](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md) · [Metric definitions](TECHNICAL_DEPTH.md)
 
-For mathematical definitions and the particle-filter/planner/controller relationship, see [Technical depth](TECHNICAL_DEPTH.md). For records, exact settings, checkpoint identity and hashes, see the [full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md).
+## What it has taught me
 
-## Acknowledgments
+I learned to distinguish a runnable implementation from a supported research conclusion, and physical success from the evidence needed to certify it. This work has further affirmed my love for mechanical engineering. Research is ongoing, and I want to continue developing the technical knowledge and experimental judgment to contribute in this field.
 
-I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his feedback and help finding a suitable research direction. Zhenyu Wu provided sustained practical mentorship, instructions, setup help and research resources. Huaze Liu generously shared maps and research work as references. I also appreciate the early guidance of Rui Yan, Feiyang and Junnosuke. [Full credits and contribution boundaries →](../CONTRIBUTIONS.md)
+[Personal motivation and future direction](MY_RESEARCH_DIRECTION.md)
+
+## Sources and credits
+
+Professor Zhao guided the research opportunity; Zhenyu provided direct mentorship and the assignment; Huaze Liu and the team supplied the research foundation. Team data, content and images supplied through Zhenyu are included with permission confirmed by me. AI implementation and drafting remain disclosed. [Roles, sources and permission](AI_AND_SOURCE_DISCLOSURE.md)

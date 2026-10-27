@@ -1,0 +1,135 @@
+{
+  "checked_at_utc": "2026-10-27T14:47:08Z",
+  "review_kind": "AI-assisted verification of the presentation and selected preserved research records; not an independent mentor assessment.",
+  "source_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
+  "navigation_verification": {
+    "source_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
+    "source_blob_checks": 8,
+    "calculation_checks": [
+      {
+        "room": "room2",
+        "seed": 0,
+        "samples": 9417,
+        "goal_error_cm": 7.310106716318381,
+        "localization_rmse_cm": 3.4759107834493985,
+        "arrival_belief_pct": 93.3497299941425,
+        "physical_arrival": true,
+        "formal_success": false,
+        "fallen": false,
+        "contacts": 13
+      },
+      {
+        "room": "sky_island_choice",
+        "seed": 0,
+        "samples": 12884,
+        "goal_error_cm": 6.409861863308522,
+        "localization_rmse_cm": 6.568192454875822,
+        "arrival_belief_pct": 92.41460558722426,
+        "physical_arrival": true,
+        "formal_success": false,
+        "fallen": false,
+        "contacts": 12
+      },
+      {
+        "room": "sky_offset_gate",
+        "seed": 0,
+        "samples": 15483,
+        "goal_error_cm": 4.073638322349707,
+        "localization_rmse_cm": 6.643408674529032,
+        "arrival_belief_pct": 91.89116935977027,
+        "physical_arrival": true,
+        "formal_success": false,
+        "fallen": false,
+        "contacts": 12
+      },
+      {
+        "room": "sky_staggered_baffles",
+        "seed": 0,
+        "samples": 21281,
+        "goal_error_cm": 4.158805411026263,
+        "localization_rmse_cm": 6.832591646244109,
+        "arrival_belief_pct": 96.03814786867414,
+        "physical_arrival": true,
+        "formal_success": true,
+        "fallen": false,
+        "contacts": 17
+      }
+    ],
+    "completed_trials": 4,
+    "physical_arrivals": 4,
+    "formal_successes": 1,
+    "interrupted_attempts_excluded": 1
+  },
+  "controller_screening_summary_check": {
+    "reference_mean_reference_foot_error_m": 0.09622298926115036,
+    "tuned_mean_reference_foot_error_m": 0.3301679193973541,
+    "result": "Tuned checkpoint did not demonstrate improvement; different training histories and single-seed screening retained as limitations.",
+    "scope": "Checked existing summaries; no new controller evaluation or training."
+  },
+  "presentation_links": {
+    "pages_checked": 14,
+    "relative_links_checked": 193,
+    "heading_links_checked": 8,
+    "broken_links": []
+  },
+  "video_access": [
+    {
+      "room": "room2",
+      "status": 200,
+      "bytes": 18177943,
+      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.mp4",
+      "anonymous_request": true
+    },
+    {
+      "room": "sky_island_choice",
+      "status": 200,
+      "bytes": 13915380,
+      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4",
+      "anonymous_request": true
+    },
+    {
+      "room": "sky_offset_gate",
+      "status": 200,
+      "bytes": 19351422,
+      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.mp4",
+      "anonymous_request": true
+    },
+    {
+      "room": "sky_staggered_baffles",
+      "status": 200,
+      "bytes": 24568834,
+      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.mp4",
+      "anonymous_request": true
+    }
+  ],
+  "presentation_changes": [
+    "Shortened the entry page and removed repeated narrative.",
+    "Connected student contribution claims to existing evidence.",
+    "Retained team methods, explicit ChatGPT drafting, substantial Codex execution and permission attribution.",
+    "Replaced video-preview links with tested direct downloads and preserved frame-sheet links.",
+    "Separated historical archive audits from the current scoped review."
+  ],
+  "no_new_training_or_simulation": true,
+  "source_artifacts_modified": false,
+  "prior_full_archive_audit": {
+    "path": "PORTFOLIO_AUDIT.json",
+    "checked_at_utc": "2026-10-10T03:16:59.404562+00:00",
+    "rerun_in_this_revision": false
+  },
+  "limits": [
+    "One seed per navigation layout; simulation only.",
+    "Original/new-map time caps differ; model 35500 substituted for absent default 34000.",
+    "No independent certification of student mastery, authorship of every line, mentor endorsement, material rights or application-policy compliance.",
+    "Fresh video endpoint/length checks do not constitute fresh full video decoding.",
+    "This review does not replace the preserved earlier full-source integrity audit."
+  ],
+  "documentation_sha256": {
+    "README.md": "07652c5943bbab14dedb0cd46771eedee245796e4377d1163d32ee0bd3821653",
+    "CONTRIBUTIONS.md": "6cb8b818ddf7b2128b9adadd0a7d50da9267adc0ba11559939a1ac83f2daa919",
+    "docs/HOW_I_DIRECTED_AI.md": "126ed515a4e4bd07ecb8b160dec328867501e7c20aa2c07831f2d721e828cbb0",
+    "docs/ADMISSIONS_RESEARCH_OVERVIEW.md": "2bd880dd994924d6c0cf1bd020faf90a301858469097b342b4d79c334163382a",
+    "docs/VIDEOS.md": "9e0df4c77f6ace2b923cbe48f76dcbcb72f54f89d3a096d3a31ab67555d60ca1",
+    "docs/PORTFOLIO_REVIEW.md": "9d64c4841e3bfe78b60dfb77f2ab7352a5c37c675e057ace76a3085560934524"
+  },
+  "readme_word_count": 741
+}

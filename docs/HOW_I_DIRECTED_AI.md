@@ -1,78 +1,45 @@
-[← Portfolio home](../README.md) · [Team assignment and source record](MENTOR_ALIGNMENT.md) · [Inside the research](RESEARCH_WALKTHROUGH.md)
+[Portfolio home](../README.md) · [Contribution evidence](../CONTRIBUTIONS.md) · [AI and source credits](AI_AND_SOURCE_DISCLOSURE.md)
 
-# My role in the team research
+# How I directed my assigned evaluation
 
-*Shih-Kai Lan (Sky) · directing my assigned evaluation under mentor guidance*
+**Shih-Kai Lan (Sky) · Mentor-guided research, summer 2026–present**
 
-**I directed the workflow and reporting for my assigned evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance.** I began participating in summer 2026 and continue conducting experiments.
+My responsibility was to carry the assigned evaluation forward under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. The practical distinction is between my task direction and research participation, the team's methods, and the technical work performed with AI.
 
-Zhenyu assigned the navigation study; I kept the work focused on that assignment, supplied its context and constraints, examined recordings and measurements, asked follow-up questions and shaped reporting. I also discussed training and evaluation with the team and shared a weekly report. My earlier work included environment reconstruction, preliminary G1 training and foot-tracking reward evaluation.
+## The workflow
 
-The team supplied the underlying methods and models. I directed AI tools for substantial implementation, experiment operation, analysis and presentation support. The [assignment record](MENTOR_ALIGNMENT.md), contribution evidence below and [AI disclosure](AI_AND_SOURCE_DISCLOSURE.md) explain the respective roles.
+1. **Clarify the task.** I sought a manageable contribution and asked that changing tasks remain connected. Zhenyu's navigation instructions were to run an existing map with visible evidence, then test new maps.
+2. **Supply context and constraints.** I provided the assignment, repository context and priorities to the AI-assisted workflow. I corrected scope when needed and asked for results that addressed the mentor's task.
+3. **Follow execution and recovery.** Codex implemented substantial map and script changes, checks and simulation operations. During the later computer restart, I requested investigation and continuation and chose when to pause and resume.
+4. **Examine the outputs.** I worked through recordings and measurements, asked what the results supported, and helped organize explanations of physical arrival, arrival confidence and the comparison limits.
+5. **Communicate.** I discussed training and evaluation with the group, shared a weekly report, and supplied prompts and corrections for the portfolio's presentation.
 
-## Work I contributed
-
-- **Model and training work:** With AI assistance, I set up and trained a preliminary G1 simulation model. The [archived package](../projects/independent-g1-rough-terrain/README.md) preserves the configuration, training log, checkpoint and edge-return command. I did not build the team's later navigation controller from scratch.
-- **Controller implementation and evaluation:** I reconstructed the training environment, modified the foot-tracking reward and completed a 500-iteration diagnostic run with mentor guidance and AI assistance. I identified the unequal sample budget and proposed matched training conditions; the [technical evidence below](#technical-work-and-experimental-judgment) connects these contributions to saved artifacts.
-- **Experiments and data:** I took on Zhenyu's new-map evaluation, supplied the team's code and task context, and used AI-assisted scripts to run tests and calculate and inspect outcomes such as final goal distance and arrival belief. The [study](ADMISSIONS_RESEARCH_OVERVIEW.md) keeps the baseline, three new layouts, recordings, numerical results and limits together.
-- **Team communication:** I discussed training quality and experimental scope with the group, shared a weekly report with mentors, and asked for the results to be explained clearly. The [supporting record](MENTOR_ALIGNMENT.md) distinguishes those conversations from validation of every technical claim.
+[Assignment and discussion context](MENTOR_ALIGNMENT.md) · [Full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md)
 
 ## Technical work and experimental judgment
 
-My technical contribution included rebuilding the software environment, working through CUDA, compiler and library compatibility problems, checking the command and data pipelines, modifying a foot-tracking reward, and completing a diagnostic training run. I did this under Professor Ye Zhao's supervision and Zhenyu Wu's direct guidance, using AI for reading, implementation and troubleshooting and checking its suggestions against the code, observed behavior and measurements.
+My earlier controller work included rebuilding the environment, a foot-tracking reward modification and a 500-iteration diagnostic run, with mentor guidance and AI assistance.
 
-| Contribution | Preserved evidence | Research value |
-| :--- | :--- | :--- |
-| Reconstructing a working training environment | [Environment and recovery account](SETBACK_AND_REBUILD.md), including the Windows-to-WSL compatibility issue and recorded setup checks | Makes it possible to execute and inspect experiments under limited computing resources |
-| Implementing a foot-tracking reward modification | [Reward diff](../projects/tactile-controller/local-reward-change.patch): an additional 0.05 m kernel, retaining the original 0.20 m signal | Turns a proposed precision incentive into a specific change that can be tested |
-| Completing a 500-iteration diagnostic run | [Recorded training evidence](../projects/tactile-controller/report-evidence/experiment_evidence.json) and [model_499.pt](../projects/tactile-controller/logs/rsl_rl/g1_decoupled_joint_foot_mimic_arm/2026-09-13_22-38-08_foot_precise_s005_500/model_499.pt) | Preserves a trained artifact and measurements for later examination; iteration numbering begins at zero |
-| Identifying unequal sample budgets and proposing a fairer comparison | The evidence records 1,024 versus 8,192 environments and 24 rollout steps; the [experiment report](../projects/tactile-controller/outputs/Mission%20Review%20and%20Work%20Report.md) specifies a matched-training follow-up | Prevents attributing an outcome to the reward change when training exposure and other conditions differ |
+The important comparison issue was training exposure: 1,024 environments supplied one eighth of the transitions of an 8,192-environment setup at the same iteration count. I identified that mismatch and proposed controlled training conditions before claiming improvement.
 
-At 500 iterations, the local configuration collected 12,288,000 samples, compared with 98,304,000 for 8,192 environments at the same iteration count: a ratio of 1:8. I recognized that this was not a fair basis for claiming improved accuracy and proposed matching training conditions before drawing that conclusion. Matching sample counts alone would still not make this short run equivalent to the mature reference checkpoint; initialization, command distribution, evaluation conditions and repeated seeds also matter.
+The later screening did not demonstrate improved tracking. Keeping that outcome in the record makes the open question specific: what happens when initialization, sample budget, commands and evaluation are matched?
 
-The later screening measured 33.02 cm mean reference-foot error for the tuned checkpoint versus 9.62 cm for the supplied reference. I retain that unfavorable result because it keeps the open research question honest. The value of this work includes a runnable modification, a saved diagnostic model, and a concrete account of what a stronger comparison would require. It does not establish improved foot-placement accuracy, balance or hand tracking.
+[Reward and training evidence](../CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
 
-## My participation and its evidence
+## What directing AI means here
 
-| Strength | Concrete example | Why it matters in research |
-| :--- | :--- | :--- |
-| **Initiative with a realistic scope** | I asked for a manageable but meaningful task: specific experiments, data analysis, or a technical report that could contribute to the ongoing work. | I tried to find a useful contribution within my experience and available time. |
-| **Curiosity about evidence** | After reporting running training, I asked what good training looked like and how to interpret reward and learning curves. The group directed me toward task-specific metrics. | I was beginning to ask what the output demonstrated, beyond whether the program ran. This is evidence of asking the question, not proof that I already mastered evaluation. |
-| **Coherence and scope judgment** | As tasks changed, I asked that they stay within a related area so the research could accumulate depth. I later clarified that the assignment was new-map navigation testing. | I communicated the need for a connected research question and a deliverable that addressed it. |
-| **Communication and follow-through** | I shared my earlier G1 work, requested guidance, and sent a weekly report to both mentors, explicitly acknowledging AI help. | Progress became something the team could inspect and respond to. An acknowledged report is evidence of communication, not validation of all its claims. |
-| **Persistence and practical direction** | In my personal account, I rebuilt after losing work to a computer failure. During the later navigation restart, I requested investigation, controlled when work resumed, and asked for an explanation of what had been tested. | I supplied context and constraints that guided recovery and continuation. Codex implemented the technical recovery workflow. |
+I supplied prompts, source context, priorities and revision requests; I examined outputs and requested explanations and corrections. ChatGPT integrated material and generated much of the explanatory text. Codex performed substantial implementation, experiment operation, analysis, visualization and documentation.
 
-These strengths describe how I participated. The team's methods and substantial AI implementation remain credited alongside that participation.
+This is a record of directing tools for my assigned research participation. The team retains credit for its methods and models, and AI drafting is disclosed as such. It is not a reconstructed verbatim prompt log.
 
-## From direction to research evidence
+## What remains to be tested
 
-The learning process connects to three tangible stages: an [earlier G1 task package](../projects/independent-g1-rough-terrain/README.md), a [foot-tracking reward experiment with an unfavorable later screening](../projects/tactile-controller/RETROSPECTIVE.md), and the three authored maps evaluated with the team's navigation framework. The archive preserves the maps, executed simulations, recordings, and analysis:
+The new-map pilot raised the gap between physical arrival and confidence in arrival. Repeated seeds, matched time budgets and a controlled final-sensing comparison could investigate that gap. Those are proposed next experiments, not completed results.
 
-- [Research overview](ADMISSIONS_RESEARCH_OVERVIEW.md): the question, map changes, results, and limitations.
-- [Video gallery](VIDEOS.md): recordings of the four completed simulation trials.
-- [Technical explanation](TECHNICAL_DEPTH.md): how planning, localization, walking, and arrival criteria fit together.
-- [Inside the research](RESEARCH_WALKTHROUGH.md): the system, one complete trial, and a controlled follow-up study outline.
-- [Setback and rebuild](SETBACK_AND_REBUILD.md): my early experience, the surviving training artifacts, and the separate later recovery record.
-- [Full experiment report](../projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md): settings, provenance, measurements, and the interrupted attempt.
+[One trial and the proposed next study](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test)
 
-The team's trained controller and navigation algorithms provided the research foundation. For my mentor-assigned evaluation, I helped carry out and document three new-map trials with recordings and measurements, using Codex for substantial map implementation, simulation execution, validation and calculations. My contribution also included the research context, discussions, questions, review of results and reporting described above. This division records my participation under my mentors' guidance alongside the tool's technical contribution.
+## Portfolio and application writing
 
-## The research question behind the directions
+The portfolio is substantially AI-assisted in both technical execution and presentation. Its explanations are not ready-to-submit original application responses. Being able to explain a generated passage does not by itself make its wording my original writing.
 
-The purpose of the assignment was to explore how an existing navigation framework behaves beyond its original maps. That requires testing executed movement as well as describing a proposed layout. The completed pilot then raised a more specific question: why did all four trials physically reach the goal region, while only one met the framework's formal completion criterion?
-
-The reports explain the distinction between physical arrival and the system's belief about arrival. One seed per map provides an initial case study; repeated trials are needed to support broader claims about robustness. These findings came from the AI-assisted analysis and are presented with their limits.
-
-The [short result interpretation](ADMISSIONS_RESEARCH_OVERVIEW.md#reading-one-result-and-planning-the-next-test) connects two recorded trials to a concrete follow-up proposal. My next step would be to discuss that proposal with my mentors, record a prediction before testing, and compare it with repeated results. The [follow-up study outline](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test) provides a concrete opportunity. These are proposed next actions, not completed achievements.
-
-## AI assistance and attribution
-
-As a student still learning the tools, I supplied ChatGPT with prompts, research context, source materials and revision requests. ChatGPT helped integrate those materials and generated much of the portfolio's explanatory and presentation text in response to my directions. It also helped with explanations and setup guidance. Codex provided substantial help with map/script implementation, simulation runs, calculations, visualization and drafting. I supplied the mentor's assignment and repository, corrected the scope when needed, examined the outputs and asked what the results could support. Zhenyu also encouraged AI-assisted reading of the README and parameter experimentation. These tools extended my ability to participate; their technical work and the team's original methods remain credited. [Full contribution boundaries →](../CONTRIBUTIONS.md)
-
-## A concise account of my contribution
-
-> As a student participant in a Georgia Tech robotics project, mentored by Professor Ye Zhao and directly guided by Zhenyu Wu, I worked on environment reconstruction, preliminary G1 training, and a foot-tracking reward modification with AI assistance. I completed a 500-iteration diagnostic run, identified an unequal sample budget, and proposed matched training conditions before claiming improvement. I also discussed the work with the team and shared a weekly report. For Zhenyu Wu's navigation assignment, I used the team's system and AI-assisted tools to test new maps, calculate and examine results, and shape a documented pilot. Four completed trials physically reached their goals, but only one met the system's formal arrival criterion. That gap led me to ask what evidence a robot needs to know it has succeeded. The team's methods and models, mentor guidance and substantial AI implementation are credited separately.
-
-*This paragraph is an AI-generated draft based on the record, not a ready-to-submit application response. Being able to explain it does not by itself make the prose my original writing. Application submissions must follow Common App and each institution's rules; see the [application-writing distinction](AI_AND_SOURCE_DISCLOSURE.md#portfolio-production-and-application-writing).*
-
-[Full contribution and AI-use disclosure →](../CONTRIBUTIONS.md)
+[AI-use disclosure and application-writing distinction](AI_AND_SOURCE_DISCLOSURE.md#portfolio-production-and-application-writing)

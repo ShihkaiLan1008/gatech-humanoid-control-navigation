@@ -1,5 +1,67 @@
 {
-  "admissions_documents": 12,
-  "local_links_checked": 195,
-  "missing": []
+  "base_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
+  "scope": "Root and reader-facing docs plus visual-source Markdown; relative files, HTML hrefs and available Markdown heading targets.",
+  "pages": [
+    {
+      "path": "CONFIDENTIALITY.md",
+      "relative_links": 4
+    },
+    {
+      "path": "CONTRIBUTIONS.md",
+      "relative_links": 21
+    },
+    {
+      "path": "README.md",
+      "relative_links": 19
+    },
+    {
+      "path": "assets/SOURCES.md",
+      "relative_links": 2
+    },
+    {
+      "path": "docs/ADMISSIONS_RESEARCH_OVERVIEW.md",
+      "relative_links": 16
+    },
+    {
+      "path": "docs/AI_AND_SOURCE_DISCLOSURE.md",
+      "relative_links": 15
+    },
+    {
+      "path": "docs/HOW_I_DIRECTED_AI.md",
+      "relative_links": 8
+    },
+    {
+      "path": "docs/MENTOR_ALIGNMENT.md",
+      "relative_links": 5
+    },
+    {
+      "path": "docs/MY_RESEARCH_DIRECTION.md",
+      "relative_links": 9
+    },
+    {
+      "path": "docs/PORTFOLIO_REVIEW.md",
+      "relative_links": 8
+    },
+    {
+      "path": "docs/RESEARCH_WALKTHROUGH.md",
+      "relative_links": 35
+    },
+    {
+      "path": "docs/SETBACK_AND_REBUILD.md",
+      "relative_links": 14
+    },
+    {
+      "path": "docs/TECHNICAL_DEPTH.md",
+      "relative_links": 21
+    },
+    {
+      "path": "docs/VIDEOS.md",
+      "relative_links": 16
+    }
+  ],
+  "relative_links_checked": 193,
+  "heading_links_checked": 8,
+  "broken_links": [],
+  "external_links": "Excluded from relative-link scan; video endpoints checked separately.",
+  "checked_at_utc": "2026-10-27T14:47:08Z"
 }
