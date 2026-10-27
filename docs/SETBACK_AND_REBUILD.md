@@ -37,7 +37,7 @@ The installation history above comes from earlier setup records; it was not reru
 
 ## A second interruption, with a more recoverable workflow
 
-The documented October 3 navigation restart is a **separate event** from the early board failure in my account. Windows recorded a `0x139` kernel crash; the responsible driver or component was not identified. I asked for investigation and continuation, and chose when to pause and resume the work.
+The documented navigation restart is a **separate event** from the early board failure in my account. Windows recorded a `0x139` kernel crash; the responsible driver or component was not identified. I asked for investigation and continuation, and chose when to pause and resume the work.
 
 The resulting AI-assisted recovery preserved completed trials, kept the interrupted offset-opening attempt as `system_restart`, and reran the remaining work separately. The interrupted attempt was not counted as another completed experiment. Restart precautions limited execution to one physical simulation at a time, allocated two CPU cores, monitored a 4 GiB process-group memory limit, and deferred video rendering until simulation finished. These measures constrained workload; they were not a proven repair or a guarantee against hardware failure.
 

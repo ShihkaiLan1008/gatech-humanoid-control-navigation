@@ -2,7 +2,7 @@
 
 # Portfolio review
 
-*Evidence audit completed October 10, 2026 · research conversations reviewed October 9. Presentation note added October 26; the numerical audit was not rerun for the wording changes.*
+*This review describes the preserved project snapshot. Numerical audit results apply to the recorded artifacts; presentation updates do not constitute new experimental validation. Sky reports continuing experiments and plans for further projects.*
 
 ## Overall assessment: share with research caveats
 
@@ -13,7 +13,7 @@ This is suitable as **Shih-Kai Lan's private student research portfolio**. It ex
 | Reader's question | Where to look |
 | :--- | :--- |
 | Who helped, and how? | The acknowledgments later in the [README](../README.md) and the [contribution record](../CONTRIBUTIONS.md) |
-| What did Sky contribute? | [My role in the team research](HOW_I_DIRECTED_AI.md): preliminary G1 training, the assigned navigation evaluation, data review, team discussions and reports, with dated evidence |
+| What did Sky contribute? | [My role in the team research](HOW_I_DIRECTED_AI.md): preliminary G1 training, the assigned navigation evaluation, data review, team discussions and reports, with supporting evidence |
 | What did the team provide? | [Contributions and provenance](../CONTRIBUTIONS.md): advice, practical guidance, maps, research code, models, and resources |
 | What did AI tools do? | The [AI-use disclosure](../CONTRIBUTIONS.md#ai-assisted-learning-and-implementation): learning support and substantial implementation, execution, analysis, and drafting |
 | What was tested and why? | The [research overview](ADMISSIONS_RESEARCH_OVERVIEW.md) |
@@ -45,14 +45,14 @@ The new figure is reproduced by [build_navigation_trace.py](../presentation/buil
 ## Presentation and attribution review
 
 - Professor Ye Zhao's feedback, engineering advice, personal influence, and active help matching research opportunities to Sky's interests remain prominent in concise acknowledgments. The group record supports his requests for resources, an accessible pipeline, and a suitable humanoid topic. Zhenyu remains the main practical mentor, and Huaze is thanked for reference maps/work. Early guidance from other group members is also acknowledged.
-- Student contribution statements distinguish Sky's participation in the assigned evaluation and direction of AI tools for his tasks from the team's underlying algorithms and the substantial tool-assisted implementation. The dated record and artifacts support the stated participation without assigning Sky sole authorship of the code or methods.
+- Student contribution statements distinguish Sky's participation in the assigned evaluation and direction of AI tools for his tasks from the team's underlying algorithms and the substantial tool-assisted implementation. The supporting record and artifacts support the stated participation without assigning Sky sole authorship of the code or methods.
 - The main navigation includes **My contribution** and **Inside the research**. The personal narrative presents Sky's account of the motivating event without claiming that Sky won an award.
 - The cover trajectory and numerical chart derive from saved records. The arrival chart starts at zero, shows the common threshold, and identifies the single-seed scope. Its percentages are internal beliefs, not confidence intervals or population success rates.
 - Original reports are preserved as historical artifacts. The earlier foot-tracking retrospective explains the unfavorable later screening and prevents the old report from serving as proof of improvement.
 - GitHub's contributor graph reflects commits to this archive. The written acknowledgment and contribution record explain research support that a commit graph cannot represent.
-- The new recovery narrative identifies the early board failure and loss as Sky's account, without assigning a date or verified cause. It distinguishes that event from the documented October 3 Windows restart and does not claim all lost files were restored or future damage was prevented.
+- The new recovery narrative identifies the early board failure and loss as Sky's account, without assigning a date or verified cause. It distinguishes that event from the documented Windows restart and does not claim all lost files were restored or future damage was prevented.
 - The expanded technical discussion links coordinate transformations, reward design, training exposure, joint arrival belief, time-weighted metrics, and recovery semantics to preserved records. Mathematical reward examples and proposed follow-up experiments are labeled accordingly. Prior WSL setup checks are historical records, not fresh validation of the current environment.
-- The October 9 Slack review adds dated evidence of Sky's initiative, questions about evaluation, report communication, and scope negotiation. Paraphrases exclude unrelated personal details and raw chat screenshots. Mentor acknowledgment of a report is not presented as scientific validation or application endorsement.
+- The Slack review adds evidence of Sky's initiative, questions about evaluation, report communication, and scope negotiation. Paraphrases exclude unrelated personal details and raw chat screenshots. Mentor acknowledgment of a report is not presented as scientific validation or application endorsement.
 - The walkthrough makes the known-map premise, route versus sensing roles, miss observations, and execution-policy limits visible. Its new figure plots all recorded error samples with separate contact/miss markers and does not attribute error changes causally to nearby probes.
 
 ## GitHub description and topics
@@ -65,7 +65,7 @@ These labels describe the material in the repository. They do not imply an offic
 
 1. **Pilot scope:** One seed per map, simulation only, a substituted team checkpoint, and different original/new-map time caps limit the conclusions. The interrupted attempt is excluded from completed-trial counts.
 2. **Future directions:** Adaptive walking with less retraining, transfer across robot bodies, and cleaner energy are interests for further study. They are not established outcomes of these experiments.
-3. **Contribution evidence:** Personal experiences are based on Sky's account; dated mentor interactions were also reviewed in the visible Slack conversations. The documented actions support the stated participation and workflow role; the audit does not independently establish mastery of every algorithm or mentor endorsement of an application.
+3. **Contribution evidence:** Personal experiences are based on Sky's account; mentor interactions were also reviewed in the visible Slack conversations. The documented actions support the stated participation and workflow role; the audit does not independently establish mastery of every algorithm or mentor endorsement of an application.
 4. **Private access:** An admissions reader cannot open a private repository without access. Use an appropriately approved excerpt or arrange access deliberately while respecting the confidentiality of team materials.
 5. **Team materials:** Inclusion follows the sharing permission reported by Sky. This private portfolio does not grant a new license over the team's work or establish permission for public release.
 
@@ -75,4 +75,4 @@ The generic GitHub description and missing topic labels were replaced with descr
 
 The subsequent narrative revision added the early setup/training and rebuilding experience, strengthened Professor Zhao's acknowledgment, and expanded the technical discussion with source links and concrete comparisons. This was a documentation revision: no new training, simulation, or hardware diagnosis was performed. Relative links and the changed-file scope were checked again; the earlier full source and metric audit remains the numerical evidence for the unchanged experiments.
 
-The October 10 revision reorganized the entry points around student participation and a complete research walkthrough. It added the dated mentor/task record, a source-backed episode plot, and controlled next-study questions. The initial upper-body topic, later foot-tracking work, and subsequent new-map assignment are now distinguished. A planned baseline comparison is clearly labeled unrun, and authored-map pilot coverage is distinguished from a randomized robustness benchmark. Source integrity, calculations, and relative links were rechecked for this revision.
+The presentation revision reorganized the entry points around student participation and a complete research walkthrough. It added the mentor/task record, a source-backed episode plot, and controlled next-study questions. The initial upper-body topic, later foot-tracking work, and subsequent new-map assignment are now distinguished. A planned baseline comparison is clearly labeled unrun, and authored-map pilot coverage is distinguished from a randomized robustness benchmark. Source integrity, calculations, and relative links were rechecked for this revision.

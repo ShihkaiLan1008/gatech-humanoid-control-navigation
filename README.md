@@ -1,4 +1,4 @@
-# Evaluating humanoid navigation on new maps
+# Humanoid Control and Navigation: Training and Evaluation
 
 ![Sky Lan — Walking toward understanding. Robotics research portfolio with a recorded simulation trajectory.](assets/research-cover.svg)
 
@@ -17,9 +17,15 @@
 
 ---
 
+## Research status
+
+**Summer 2026–present · Ongoing research and experiments.**
+
+I began participating in the research in summer 2026 and continue conducting experiments. This repository documents the implementation and recorded results of this project within my ongoing research. I plan to continue with further projects and experiments as the work develops; the results presented here refer to the runs preserved in this repository.
+
 ## The assignment and my role
 
-A humanoid can reach a destination while its estimate of its own position remains uncertain. I participated as a student member of an ongoing Georgia Tech LIDAR research project, **under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. My assigned contribution was to evaluate navigation on new maps: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [The dated assignment record →](docs/MENTOR_ALIGNMENT.md)
+A humanoid can reach a destination while its estimate of its own position remains uncertain. I participate as a student member of an ongoing Georgia Tech LIDAR research project, **under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance**. My assigned contribution was to evaluate navigation on new maps: run the existing navigation system on a known map, then test it on new maps. Zhenyu and Huaze Liu shared guidance, code and reference work; the team had already developed the controller and navigation framework. [Team guidance and assignment →](docs/MENTOR_ALIGNMENT.md)
 
 My research participation also included preliminary G1 training, rebuilding the software environment, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run and preserved its model and measurements.
 
@@ -92,7 +98,7 @@ The offset-opening robot ended **4.07 cm** from its goal but failed the 95% join
 
 ## The curiosity behind the work
 
-At a 2024 Georgia Tech / CIC Asia Future Tech Forum event, I saw professors, university students and high-school students using engineering to contribute to the world. Seeing students close to my age participate made research feel possible for me.
+At a Georgia Tech / CIC Asia Future Tech Forum event, I saw professors, university students and high-school students using engineering to contribute to the world. Seeing students close to my age participate made research feel possible for me.
 
 > Watching a robot learn to walk felt like a parent watching a child take its first steps.
 
@@ -166,7 +172,7 @@ I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his 
 - [Full navigation report](projects/tactile-navigation/outputs/Sky%20Navigation%20Experiment%20Report.md) · [Numeric audit](projects/tactile-navigation/outputs/sky_validation.json) · [Video audit](projects/tactile-navigation/outputs/sky_video_validation.json)
 - [Source inventory and hashes](SOURCE_MANIFEST.json) · [Source revisions](PROVENANCE.json) · [Graphic sources](assets/SOURCES.md)
 - [Portfolio review and sharing caveats](docs/PORTFOLIO_REVIEW.md) · [Repeatable content audit](presentation/audit_portfolio.py)
-- [Historical application-writing guide (October 3; see the current contribution record above)](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
+- [Historical application-writing guide (see the current contribution record above)](projects/tactile-navigation/outputs/College%20Admission%20Research%20Writing%20Guide.md)
 - Scope: one seed per map, simulation only, team model 35500 substituted for the missing default 34000. The original room and new maps had different time caps; the system-interrupted attempt remains separate.
 - The earlier controller screening did not demonstrate improvement. The independent G1 package does not establish guaranteed fall prevention or energy-efficiency gains.
 
@@ -178,7 +184,7 @@ I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his 
 This repository preserves source snapshots, models, datasets, logs, reports and recordings. Large artifacts use Git LFS:
 
 ```bash
-git clone https://github.com/ShihkaiLan1008/gatech-lidar-research-assistant.git research-retrospective
+git clone https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation.git research-retrospective
 cd research-retrospective
 git lfs pull
 ```

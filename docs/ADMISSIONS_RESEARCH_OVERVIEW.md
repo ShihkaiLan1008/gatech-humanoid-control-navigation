@@ -6,6 +6,10 @@
 
 In plain terms, I tested whether the team's robot could navigate new layouts and whether its software could tell when it had reached the goal.
 
+## Ongoing research
+
+**Summer 2026–present.** I began participating in the research in summer 2026 and continue conducting experiments. This repository documents the implementation and recorded results of this project within my ongoing research. I plan to continue with further projects and experiments as the work develops; the results presented here refer to the runs preserved in this repository.
+
 ## Why study this?
 
 I want to study robotics because I hope it can expand the physical help available to people. In the future, robots could carry supplies through buildings, assist with everyday tasks, or help inspect places that are difficult or dangerous for people to enter. These are the kinds of practical contributions that make mechanical engineering meaningful to me.
@@ -16,7 +20,7 @@ My role in this larger ambition is as a student participant under Professor Ye Z
 
 ## Assignment, research question and my role
 
-I participated as a student member of an ongoing Georgia Tech LIDAR research project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. Zhenyu assigned me the navigation evaluation presented here. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Dated task record →](MENTOR_ALIGNMENT.md)
+I participate as a student member of an ongoing Georgia Tech LIDAR research project under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. Zhenyu assigned me the navigation evaluation presented here. The task was to run the existing navigation system with visible evidence, then test it on new maps to explore generality and robustness. The team had already built the humanoid controller, planner, localization and touch-sensing framework; Huaze Liu shared maps and research work as references. [Team guidance and assignment →](MENTOR_ALIGNMENT.md)
 
 I discussed training and evaluation with the group, shared a weekly report, and organized the assigned study into an existing-map run and three new-map tests. I directed AI tools to help with map code, geometry checks, simulation runs and calculations; I worked through the saved recordings and metrics to examine final distance, arrival confidence and the limits of each comparison. I shaped the report around the research question. When a run was interrupted by a computer restart, I requested investigation and continuation and decided when to pause and resume.
 
@@ -83,7 +87,7 @@ Three examples show why this work goes beyond drawing a room and playing a robot
 
 Useful robotics results include unsuccessful criteria and uncertainty, not just an appealing video. Here, a robot can finish close to its target while the system still declines to certify arrival. A careful evaluation separates geometry feasibility, physical movement, localization accuracy and confidence. It also preserves an unfavorable earlier foot-tracking result rather than reporting improvement without support.
 
-Sky describes a 2024 forum experience as the origin of their interest in mechanical engineering, and the sight of robot movement emerging from changed inputs as a source of excitement. Their longer-term interests are more adaptive walking, transferable robot knowledge and cleaner energy. [Personal motivation and research path](MY_RESEARCH_DIRECTION.md) connects those interests to concrete next experiments while keeping untested ambitions distinct from results.
+Sky describes a forum experience as the origin of their interest in mechanical engineering, and the sight of robot movement emerging from changed inputs as a source of excitement. Their longer-term interests are more adaptive walking, transferable robot knowledge and cleaner energy. [Personal motivation and research path](MY_RESEARCH_DIRECTION.md) connects those interests to concrete next experiments while keeping untested ambitions distinct from results.
 
 ## Limits and next questions
 

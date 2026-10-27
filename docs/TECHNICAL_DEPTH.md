@@ -77,7 +77,7 @@ This measurement answers how accurately the system localized itself over time. I
 
 ### 5. Recovery must preserve what an experiment can still prove
 
-A separate October 3 Windows restart interrupted the first offset-opening attempt. The [recovery record](../projects/tactile-navigation/outputs/crash_diagnostics/Crash%20and%20Recovery.md) preserves that attempt as `system_restart`; it is not an additional completed trial. Finished runs were retained, and reruns went into a new directory. The campaign consistently used the available team checkpoint `35500` because the documented default `34000` was absent. Reporting that substitution makes this an evaluation of a specified checkpoint, not an exact replication of an unavailable default.
+A separate Windows restart interrupted the first offset-opening attempt. The [recovery record](../projects/tactile-navigation/outputs/crash_diagnostics/Crash%20and%20Recovery.md) preserves that attempt as `system_restart`; it is not an additional completed trial. Finished runs were retained, and reruns went into a new directory. The campaign consistently used the available team checkpoint `35500` because the documented default `34000` was absent. Reporting that substitution makes this an evaluation of a specified checkpoint, not an exact replication of an unavailable default.
 
 Restart precautions limited physical simulations to one at a time, used two CPU cores and a 4 GiB process-group memory watchdog, and rendered video afterward. These were workload controls, not proof of a repaired driver or protection against every hardware failure. The earlier board failure described in [Sky's personal account](SETBACK_AND_REBUILD.md) is a distinct event whose cause was not established.
 

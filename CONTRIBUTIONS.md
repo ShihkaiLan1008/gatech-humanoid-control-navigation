@@ -1,6 +1,6 @@
 # Contributions and provenance
 
-This portfolio records my participation as a student member of an ongoing Georgia Tech LIDAR research project. Professor Ye Zhao was my research mentor; Zhenyu Wu was my direct mentor and assigned the navigation evaluation. Under their guidance, I used and directed AI tools to help carry out my assigned work and collaborated with the group on questions, results and reporting. The existing framework, navigation model and reference materials remain credited to their authors.
+This portfolio records my participation as a student member of an ongoing Georgia Tech LIDAR research project, beginning in summer 2026. I continue conducting experiments and plan to pursue further projects; this repository preserves the implementation and results of the project presented here. Professor Ye Zhao is my research mentor; Zhenyu Wu is my direct mentor and assigned the navigation evaluation. Under their guidance, I used and directed AI tools to help carry out my assigned work and collaborated with the group on questions, results and reporting. The existing framework, navigation model and reference materials remain credited to their authors.
 
 ## My contribution within the mentor-guided project
 
@@ -48,6 +48,6 @@ I also thank **Huaze Liu** for generously sharing his maps and research work as 
 
 Their guidance and generosity made this learning experience possible. I am grateful for their time and support, and I credit their research contributions throughout this portfolio.
 
-I also appreciate the early onboarding and evaluation guidance from **Rui Yan, Feiyang, and Junnosuke** in the research group. The [dated mentor-alignment record](docs/MENTOR_ALIGNMENT.md) describes these distinct forms of support.
+I also appreciate the early onboarding and evaluation guidance from **Rui Yan, Feiyang, and Junnosuke** in the research group. The [mentor guidance record](docs/MENTOR_ALIGNMENT.md) describes these distinct forms of support.
 
 *Shih-Kai Lan (Sky)*

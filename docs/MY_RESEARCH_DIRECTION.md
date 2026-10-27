@@ -8,7 +8,7 @@
 
 ## Where the interest began
 
-In 2024, I attended a Georgia Tech / CIC Asia Future Tech Forum event. I saw robotics work involving professors, university students and high-school students like me, including students receiving recognition for their work. I was surprised by how much people at different stages of education could contribute. Technology began to mean more to me than an impressive machine: it could be a way to do something useful for the world.
+I attended a Georgia Tech / CIC Asia Future Tech Forum event. I saw robotics work involving professors, university students and high-school students like me, including students receiving recognition for their work. I was surprised by how much people at different stages of education could contribute. Technology began to mean more to me than an impressive machine: it could be a way to do something useful for the world.
 
 That experience made me want to pursue mechanical engineering and create things with practical value. It also changed who I thought could participate in research. Seeing students close to my age take part made the possibility feel real.
 
@@ -48,6 +48,10 @@ I would also like useful movement knowledge to be shared across robots. One data
 
 Cleaner energy is another long-term motivation. A first measurable connection to walking research would be to examine actuator work, power or energy per distance together with stability and task completion. None of the current experiments establishes an energy-efficiency improvement or clean-energy technology. Making the ambition measurable would let me investigate it honestly.
 
+## Continuing beyond this project
+
+I began participating in the research in summer 2026 and continue conducting experiments. This repository documents the implementation and recorded results of this project within my ongoing research. I plan to continue with further projects and experiments as the work develops; the results presented here refer to the runs preserved in this repository. My participation continues under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance. The questions below guide the work I want to develop next.
+
 ## My proposed next steps
 
 1. **Understand:** Explain the current map, localization and controller pipeline, and trace one recorded run end to end.
@@ -62,4 +66,4 @@ The reason I want to keep doing this work is that it connects curiosity with som
 
 I used the mentor's assignment to give AI tools a clear goal, asked where testing had happened, and restated the need to create and test new maps using the team's work as a reference. I also asked for explanations of the research's meaning and future possibilities. Those directions connect my curiosity to a specific task and a record that others can examine. [My contributions and experimental evidence](../CONTRIBUTIONS.md) describe my work alongside the team's foundation and AI assistance.
 
-The earlier group conversations give this interest a more concrete history. On July 22, I expressed curiosity about learned locomotion beyond familiar training conditions; on July 23, I asked how to judge good training and learning curves. In September, I asked for changing tasks to remain connected so the work could accumulate depth. Those were early questions, not established results. The next step is to carry that curiosity into a prediction and a controlled comparison I can explain. [The recorded task history](MENTOR_ALIGNMENT.md) and [proposed next study](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test) connect the motivation to that work.
+The earlier group conversations give this interest a more concrete history. I expressed curiosity about learned locomotion beyond familiar training conditions and asked how to judge good training and learning curves. I also asked for changing tasks to remain connected so the work could accumulate depth. Those were early questions, not established results. The next step is to carry that curiosity into a prediction and a controlled comparison I can explain. [The recorded task history](MENTOR_ALIGNMENT.md) and [proposed next study](RESEARCH_WALKTHROUGH.md#what-a-stronger-next-study-would-test) connect the motivation to that work.
