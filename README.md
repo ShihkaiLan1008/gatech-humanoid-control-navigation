@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="docs/ADMISSIONS_RESEARCH_OVERVIEW.md"><strong>START HERE</strong></a> &nbsp; / &nbsp;
-  <a href="docs/HOW_I_DIRECTED_AI.md"><strong>MY CONTRIBUTION</strong></a> &nbsp; / &nbsp;
+  <a href="CONTRIBUTIONS.md"><strong>MY CONTRIBUTION</strong></a> &nbsp; / &nbsp;
   <a href="docs/RESEARCH_WALKTHROUGH.md"><strong>INSIDE THE RESEARCH</strong></a> &nbsp; / &nbsp;
   <a href="docs/VIDEOS.md">WATCH THE ROBOT</a> &nbsp; / &nbsp;
   <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a>
@@ -23,7 +23,7 @@ A humanoid can reach a destination while its estimate of its own position remain
 
 My research participation also included preliminary G1 training, rebuilding the software environment, and implementing a foot-tracking reward modification with mentor guidance and AI assistance. I completed a 500-iteration diagnostic training run and preserved its model and measurements.
 
-I worked with the group on how to judge training and experiments, shared a weekly report, and turned Zhenyu's instructions into a documented baseline and new-map study. I directed AI tools to help implement and run the tests, used the resulting records to calculate and examine metrics, and shaped the analysis and report through follow-up questions. This was my assigned evaluation within a larger team effort; the tools expanded what I could do while learning. [My work and its supporting record →](docs/HOW_I_DIRECTED_AI.md)
+I worked with the group on how to judge training and experiments, shared a weekly report, and turned Zhenyu's instructions into a documented baseline and new-map study. I directed AI tools to help implement and run the tests, used the resulting records to calculate and examine metrics, and shaped the analysis and report through follow-up questions. This was my assigned evaluation within a larger team effort; the tools expanded what I could do while learning.
 
 **The question that emerged:** a robot can physically enter its goal region without the navigation system having enough confidence to certify arrival. This portfolio examines that gap through the recorded trials; it does not claim a general robustness result from four single-seed runs.
 
@@ -31,7 +31,7 @@ I worked with the group on how to judge training and experiments, shared a weekl
 
 - **Making experiments runnable:** I rebuilt a failed software environment, worked through CUDA, compiler and library compatibility problems, and checked the command and data pipelines with guidance and AI assistance. This restored a working basis for training and evaluation. [Environment and recovery record →](docs/SETBACK_AND_REBUILD.md)
 - **Turning a technical idea into a test:** I implemented an additional, narrower foot-position reward and completed a 500-iteration diagnostic run within an 8 GB GPU constraint. The archive preserves the [reward change](projects/tactile-controller/local-reward-change.patch), [training measurements](projects/tactile-controller/report-evidence/experiment_evidence.json) and saved model. This made a proposed change inspectable and testable.
-- **Judging what the result supports:** I identified that 1,024 parallel environments provided one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed a comparison with matched training conditions. This matters because a completed run alone cannot show that a reward change improved the controller. [Experimental reasoning and evidence →](docs/HOW_I_DIRECTED_AI.md#technical-work-and-experimental-judgment)
+- **Judging what the result supports:** I identified that 1,024 parallel environments provided one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed a comparison with matched training conditions. This matters because a completed run alone cannot show that a reward change improved the controller. [Experimental reasoning and evidence →](CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
 
 Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I used AI to accelerate reading, implementation and troubleshooting, and checked suggestions against source code, system behavior and measured results. My contribution combines technical implementation with careful evaluation and communication of its limits.
 
