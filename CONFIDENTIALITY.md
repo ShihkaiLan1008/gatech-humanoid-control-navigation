@@ -1,13 +1,9 @@
-# Confidentiality and access
+# Access and attribution
 
-User-designated confidential research. Maintain private visibility. Do not publish releases, Pages, public artifacts, screenshots of private content or public forks. Do not invite collaborators without the owner's instruction. Actions are disabled for this archive; no root workflow is installed. This notice is a handling instruction, not a claim of government security classification.
+This repository is public at Shih-Kai Lan's instruction. Readers can open the repository and its presentation pages without a GitHub account.
 
-Private GitHub visibility restricts access but is not client-side encryption and does not prevent an authorized account, app or viewer from copying downloaded material. Account compromise and authorized integrations remain relevant. File hashes and Git history document archive content; they do not provide copy protection. Keep a local backup.
+It records a student participant's work within an ongoing team research project. Sky reports permission to include the shared team materials on GitHub. The underlying controller, navigation framework, trained models and reference materials remain credited to their original authors. Publication does not transfer authorship or replace upstream licenses and notices.
 
-The attempted API restriction on private forks was rejected: GitHub permits changing that setting only for organization-owned private repositories. This repository belongs to a personal account. No additional collaborators or pending invitations were added. Do not describe private forking as disabled; access restriction is the applicable control here. Authorized collaborators can retain local copies even after access is removed. [Personal repository permissions](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/permission-levels-for-a-personal-account-repository).
+The repository includes source snapshots, configurations, models, results and recordings. Large artifacts use Git LFS; local reproduction requires the relevant dependencies and compatible simulation environment. File hashes and Git history document provenance. The recorded pilot results and limitations apply to the preserved runs.
 
-Use a passkey or two-factor authentication and review authorized OAuth/GitHub Apps and active sessions in account settings. Existing connected tools may retain the permissions the owner granted them. No new collaborators, invitations, deploy keys or webhooks are required by this task. Account authentication settings were not changed by this archive.
-
-References: [GitHub repository visibility](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/managing-repository-settings/setting-repository-visibility), [GitHub 2FA](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication).
-
-Git LFS stores large research artifacts. This snapshot is below the documented 10 GiB GitHub Free storage allowance. Repeated versions consume additional storage; monitor account usage. No paid plan or increased spending limit was enabled. [Git LFS billing](https://docs.github.com/en/billing/concepts/product-billing/git-lfs).
+Professor Ye Zhao's mentorship, Zhenyu Wu's direct guidance, the team's research foundation, Sky's participation and substantial AI assistance are described in [Contributions](CONTRIBUTIONS.md).

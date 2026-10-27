@@ -6,7 +6,7 @@
 
 ## Overall assessment: share with research caveats
 
-This is suitable as **Shih-Kai Lan's private student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's participation in that evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
+This is suitable as **Shih-Kai Lan's student research portfolio**. It explains the assigned new-map evaluation, the team's research foundation, Sky's participation in that evaluation under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, the experiment results, and future interests. The study is a simulation pilot with one seed per map. Broader robustness, hardware performance, and energy-efficiency claims require further experiments.
 
 ## What the portfolio shows
 
@@ -66,8 +66,8 @@ These labels describe the material in the repository. They do not imply an offic
 1. **Pilot scope:** One seed per map, simulation only, a substituted team checkpoint, and different original/new-map time caps limit the conclusions. The interrupted attempt is excluded from completed-trial counts.
 2. **Future directions:** Adaptive walking with less retraining, transfer across robot bodies, and cleaner energy are interests for further study. They are not established outcomes of these experiments.
 3. **Contribution evidence:** Personal experiences are based on Sky's account; mentor interactions were also reviewed in the visible Slack conversations. The documented actions support the stated participation and workflow role; the audit does not independently establish mastery of every algorithm or mentor endorsement of an application.
-4. **Private access:** An admissions reader cannot open a private repository without access. Use an appropriately approved excerpt or arrange access deliberately while respecting the confidentiality of team materials.
-5. **Team materials:** Inclusion follows the sharing permission reported by Sky. This private portfolio does not grant a new license over the team's work or establish permission for public release.
+4. **Public access:** The repository is public and readable without a GitHub account. Large artifacts use Git LFS.
+5. **Team materials:** Inclusion follows the sharing permission reported by Sky. Publication is at Sky's instruction; the team's authorship and upstream license notices remain applicable.
 
 ## Issues corrected in this review
 

@@ -30,7 +30,7 @@ Zhenyu Wu, Huaze Liu and the research team provided the tactile-controller and t
 
 The foot-reference screening is a separate earlier experiment, not Zhenyu's new-map assignment. The reference checkpoint measured about 9.62 cm mean reference foot error; the local tuned checkpoint measured about 33.02 cm in that screening. It did not demonstrate improvement. Single-seed screening and different training histories prevent a matched-training causal conclusion. The unfavorable result is retained in this portfolio.
 
-The mentor conversation provided for this portfolio permits including team work in a report, and Sky separately reported permission to include the team's work in this private GitHub archive. Existing ownership, upstream license notices and other rights remain with their respective authors. Listing material here does not transfer the team's authorship to Sky or grant third parties reuse rights.
+The mentor conversation provided for this portfolio permits including team work in a report, and Sky separately reported permission to include the team's work on GitHub. This repository is published publicly at Sky's instruction. Existing ownership, upstream license notices and other rights remain with their respective authors. Listing material here does not transfer the team's authorship to Sky or grant third parties reuse rights.
 
 ## AI-assisted learning and implementation
 

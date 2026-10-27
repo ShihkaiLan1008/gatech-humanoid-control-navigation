@@ -179,7 +179,7 @@ I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his 
 </details>
 
 <details>
-<summary><strong>Private archive and reproduction</strong></summary>
+<summary><strong>Public access and reproduction</strong></summary>
 
 This repository preserves source snapshots, models, datasets, logs, reports and recordings. Large artifacts use Git LFS:
 
@@ -189,7 +189,7 @@ cd research-retrospective
 git lfs pull
 ```
 
-Dependencies and original local paths are documented by project. The archive is private and read-only; authorized updates require unarchiving it. Admissions readers need an approved excerpt or explicitly granted access. [Confidentiality and access →](CONFIDENTIALITY.md)
+This repository is public and can be read without a GitHub account. Dependencies and original local paths are documented by project. Large models and recordings use Git LFS. [Access and attribution →](CONFIDENTIALITY.md)
 
 </details>
 
