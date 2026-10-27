@@ -1,47 +1,29 @@
-[Portfolio home](../README.md) · [Contribution evidence](../CONTRIBUTIONS.md) · [Sources and permission](AI_AND_SOURCE_DISCLOSURE.md)
+[Private portfolio home](../README.md) · [Version notes](../VERSION_NOTES.md) · [Attribution](../CONFIDENTIALITY.md)
 
-# Portfolio review and verification
+# Private full-memoir copy review
 
-**Reviewed 27 October 2026 · Student research portfolio · Ongoing simulation work**
+This separate private repository restores the full research narrative while leaving the public concise admissions portfolio unchanged. It is an archive of ongoing research, not a new simulation or training campaign.
 
-This review checks the presentation against the preserved records. It is an AI-assisted review, not an independent mentor assessment or an admissions-compliance certification.
+## Restored and retained
 
-## What this version is ready to show
+The homepage, contribution statement, workflow account and research overview were restored from the pre-shortening revision. The historical long-form review is preserved separately. Current video guidance, detailed scientific explanations, source code, training artifacts, datasets, logs, figures and recordings remain included.
 
-The entry page provides a short research overview, specific student contributions, a recorded demonstration, measured outcomes, learning and ongoing work. Detailed methods, original artifacts and complete attribution remain one level deeper.
+Full-copy verification is recorded in [MEMOIR_COPY_AUDIT.json](../presentation/MEMOIR_COPY_AUDIT.json), [FINAL_REVIEW.json](../presentation/FINAL_REVIEW.json) and the [link audit](../ADMISSIONS_PRESENTATION_AUDIT.json). The older [PORTFOLIO_AUDIT.json](../PORTFOLIO_AUDIT.json) is preserved as a historical audit. Artifact and calculation checks do not independently certify authorship of every line, personal mastery, mentor endorsement, material rights or application-policy compliance.
 
-The student role is bounded to the assigned evaluation: task direction, implementation with assistance, examination of outputs, experimental judgment and reporting under mentorship. Team methods and substantial AI execution and writing are credited.
+## Current source integrity
 
-## Checks performed for this revision
+All 10,101 manifest-listed source files were examined. Of these, 10,096 match the original legacy hashes; five documentation files already had later annotations in the public source revision. Those five were verified against that exact public revision and their current hashes, rather than silently changing the old manifest. [Recorded historical differences](../presentation/MEMOIR_SOURCE_CHECK.json)
 
-| Check | Scope and result |
-| :--- | :--- |
-| Numerical results | Recomputed goal distance, time-weighted localization RMSE, physical arrival, formal completion and contact counts from all four canonical evaluation records; checked arrival belief against saved runtime transitions |
-| Artifact provenance | Checked the Git blob identities of the eight evaluation/replay files used; verified the LFS content hash when a replay was stored through LFS |
-| Counts and screening | Confirmed four completed trials, four physical arrivals, one formal success, no reported falls and a separately preserved interrupted attempt; checked the earlier controller screening summaries |
-| Presentation navigation | Checked relative files and heading targets across the reader-facing Markdown and embedded links, including the concise entry page |
-| Video access | Checked direct download endpoints and file lengths; inspected public GitHub behavior and provided frame-sheet links because the file page cannot preview these MP4s |
-| Attribution | Retained mentor/team credits, explicit ChatGPT content generation, substantial Codex technical work and the permission statement based on Sky's confirmation |
-| Change scope | Documentation and review records only; no controller, map, model, dataset or original result record was altered |
+The separate [private-copy auditor](../presentation/audit_private_memoir.py) preserves the original auditor and checks this distinction explicitly. The navigation calculations were also recomputed, and the large-file object check passed.
 
-The machine-readable scope and results are in [FINAL_REVIEW.json](../presentation/FINAL_REVIEW.json). The [presentation link audit](../ADMISSIONS_PRESENTATION_AUDIT.json) records the paths and links checked.
+## Access and edition boundaries
 
-## Prior verification, preserved with its date
+The memoir repository is private. The concise admissions repository remains public and was not modified when making this copy. The private edition's media links require an authorized GitHub session.
 
-The 10 October [archive/metric audit](../PORTFOLIO_AUDIT.json) reports integrity checks for 10,101 source files and 1,590,881,755 source bytes. That full archive scan was not repeated for this revision. The current review rechecked the numerical files needed for the presentation and verified that source artifacts were unchanged by this documentation commit.
+The concise edition's prior review is retained as [ADMISSIONS_EDITION_REVIEW.json](../presentation/ADMISSIONS_EDITION_REVIEW.json). The [historical presentation review](HISTORICAL_PRESENTATION_REVIEW.md) describes the earlier long-form source and is not a fresh independent assessment.
 
-The earlier [video audit](../projects/tactile-navigation/outputs/sky_video_validation.json) records complete decoding. Its frame and duration results are historical checks, not a claim of fresh video decoding today.
+## Research and attribution
 
-Historical reports, portfolio plans and application-writing drafts remain unchanged as records of earlier stages. Current contribution statements and canonical results take precedence; historical drafting advice is not a ready-to-submit application response.
+No new training, simulation or scientific results were generated to make this archive. Original limitations remain: one seed per navigation layout, simulation-only results, unequal time caps, a documented checkpoint substitution and an unmatched earlier controller screening.
 
-## What remains a research question
-
-One seed per map, simulation-only execution, differing time caps and a documented checkpoint substitution limit generalization. The earlier foot-tracking screening did not demonstrate improvement and used checkpoints with different training histories.
-
-Repeated trials, matched-training comparisons, arrival-belief calibration, real-hardware transfer and energy measurements require additional experiments. Presentation edits cannot supply that evidence.
-
-## Authorship and permission boundaries
-
-Artifact checks support numerical and provenance claims. They do not independently establish personal mastery, original authorship of every line, mentor endorsement, or the legal scope of each upstream permission. The permission statement records Sky's confirmation that Zhenyu Wu authorized inclusion of the team data, content and images he supplied in this public GitHub portfolio; original credits and notices remain applicable.
-
-AI-generated portfolio text is disclosed. Any application submission must separately follow the relevant writing and integrity requirements. [Complete disclosure](AI_AND_SOURCE_DISCLOSURE.md)
+The student's documented participation, team methods and models, substantial AI execution and drafting, and permission basis remain in the [contribution record](../CONTRIBUTIONS.md) and [AI/source disclosure](AI_AND_SOURCE_DISCLOSURE.md).

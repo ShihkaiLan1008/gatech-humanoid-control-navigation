@@ -1,25 +1,23 @@
-# Access, permission and attribution
+# Private archive, permission and attribution
 
-This repository is public at Shih-Kai Lan's instruction. It is an ongoing student research portfolio, readable without a GitHub account.
+This repository is **Shih-Kai Lan's private full research memoir**. Access requires an authorized GitHub account. It is a separate copy of the public concise portfolio; the public repository and its default branch are unchanged.
 
-## Permission for shared team materials
+## Shared research materials
 
-**Shih-Kai Lan confirms that Zhenyu Wu authorized him to include the team data, reference content and images Zhenyu supplied in this public GitHub research portfolio.** This notice records Sky's confirmation of that permission. It does not publish private correspondence or represent a separately signed license.
+Sky confirms that Zhenyu Wu authorized inclusion of the team data, reference content and images he supplied in the original public GitHub research portfolio. This private copy preserves those materials and credits. Private permission correspondence is not reproduced here.
 
-Zhenyu Wu is the supplying mentor; that role does not imply that he alone authored every shared item. The underlying controller and navigation frameworks, pretrained models, reference data, maps and borrowed visuals remain attributed to their original authors, including Huaze Liu, the research team and any upstream contributors where applicable. The [source revision record](PROVENANCE.json), [contribution record](CONTRIBUTIONS.md) and [visual source inventory](assets/SOURCES.md) preserve those distinctions.
+Zhenyu is credited as the supplying mentor. Original authorship remains with the actual creators, including Huaze Liu, the team and upstream contributors where applicable. The controller, navigation framework, pretrained references and borrowed material are not presented as Sky's independent inventions. Existing licenses and notices remain applicable.
 
-The stated permission concerns inclusion and display in Sky's public GitHub research portfolio. It does not transfer ownership, claim sole authorship, imply endorsement of every result, or create a blanket license for others to reuse team materials. Existing upstream licenses and notices continue to apply. Any reuse beyond rights already granted by applicable licenses or platform terms requires permission from the relevant rights holder.
+Permission to include material in a portfolio does not transfer ownership or grant a blanket third-party reuse license. Keeping this copy private does not alter material already present in the separate public portfolio.
 
-## AI and presentation authorship
+## Student and AI contributions
 
-Sky supplied prompts, source context, priorities and revision requests. ChatGPT helped integrate the materials and generated much of the explanatory and presentation text. Codex also supplied substantial implementation, experiment-operation, analysis, visualization and documentation assistance. AI-generated prose is not represented as independently written student prose.
+Sky supplied the assignment context, prompts, priorities, questions and revision requests, examined outputs and directed the workflow and reporting for his assigned evaluation under mentorship. ChatGPT integrated source material and generated much of the explanatory text. Codex supplied substantial implementation, experiment-operation, analysis, visualization and documentation assistance.
 
-The [AI and source disclosure](docs/AI_AND_SOURCE_DISCLOSURE.md) separates research participation, team authorship, AI production and material permission. This transparency does not certify compliance with every institution's application-writing rules.
+The [contribution record](CONTRIBUTIONS.md), [AI and source disclosure](docs/AI_AND_SOURCE_DISCLOSURE.md) and [version notes](VERSION_NOTES.md) preserve these distinctions. Original research limitations remain applicable.
 
-## Evidence and reproduction
+## Copies and access
 
-The repository preserves source snapshots, configurations, models, results and recordings. Large artifacts use Git LFS; reproduction requires compatible dependencies. File hashes and Git history document artifact provenance, not sole personal authorship, technical mastery or the legal scope of a permission.
+This repository was created as private. No collaborator invitations or public-site publication were part of creating this memoir. Private visibility is an access setting, not encryption or a restriction on copies held by authorized readers.
 
-Research is ongoing. Numerical claims apply to the preserved trials and their stated limitations.
-
-*Permission and disclosure wording updated 27 October 2026 on the basis of Sky's confirmation; this is not the date of the original permission.*
+Large artifacts use Git LFS. The [copy review](docs/PORTFOLIO_REVIEW.md) records verification of the archive and separation between the editions.

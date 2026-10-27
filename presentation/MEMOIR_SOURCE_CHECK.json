@@ -1,0 +1,42 @@
+{
+  "files_examined": 10101,
+  "legacy_manifest_matches": 10096,
+  "preexisting_legacy_manifest_differences": [
+    {
+      "path": "projects/tactile-controller/outputs/GitHub Portfolio Brainstorm.md",
+      "legacy_bytes": 8050,
+      "current_bytes": 8290,
+      "current_sha256": "e3dfbc183401e9618b24c23f3c63476c59de09f3fad168f705ae2bf09c4eca1a",
+      "unchanged_from_public_source": true
+    },
+    {
+      "path": "projects/tactile-navigation/docs/SKY_MAP_EXPERIMENT.md",
+      "legacy_bytes": 6025,
+      "current_bytes": 6343,
+      "current_sha256": "6a8cc50368711050b44b7de2602a00322045c46f96cc5d31f4aa3eecc2f9c780",
+      "unchanged_from_public_source": true
+    },
+    {
+      "path": "projects/tactile-navigation/outputs/College Admission Research Writing Guide.md",
+      "legacy_bytes": 9969,
+      "current_bytes": 10317,
+      "current_sha256": "6a22fd7308507f05e8a6cb6cfb43441242f1e10c17d339a8b6b571fab3f53955",
+      "unchanged_from_public_source": true
+    },
+    {
+      "path": "projects/tactile-navigation/outputs/GitHub Navigation Portfolio Plan.md",
+      "legacy_bytes": 5269,
+      "current_bytes": 5554,
+      "current_sha256": "cf97961f9f4d089846e49d5f1bf1bc4f9f8012daaad570db23881fe5cf605046",
+      "unchanged_from_public_source": true
+    },
+    {
+      "path": "projects/tactile-navigation/outputs/Sky Navigation Experiment Report.md",
+      "legacy_bytes": 7082,
+      "current_bytes": 7257,
+      "current_sha256": "bc1f76b67f9635d52f77523161721b107c3bea41abf0bc8988a80f173196864d",
+      "unchanged_from_public_source": true
+    }
+  ],
+  "interpretation": "These differences already exist in the public source revision and were not introduced by the private copy."
+}

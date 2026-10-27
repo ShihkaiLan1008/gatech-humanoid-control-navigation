@@ -4,7 +4,7 @@ All presentation assets are stored inside this repository. No external badge, tr
 
 ## Shared materials and permission
 
-Sky confirms that **Zhenyu Wu authorized inclusion of the team data, reference content and images he supplied in this public GitHub research portfolio**. Zhenyu is credited as the provider; original authorship remains with the team and upstream creators, including Huaze Liu where documented. Existing licenses and notices remain applicable. See [access and permission](../CONFIDENTIALITY.md) and the [source and permission record](../docs/AI_AND_SOURCE_DISCLOSURE.md#material-permissions-and-provenance).
+Sky confirms that **Zhenyu Wu authorized inclusion of the team data, reference content and images he supplied in the original public GitHub research portfolio, whose materials and credits are preserved in this private copy**. Zhenyu is credited as the provider; original authorship remains with the team and upstream creators, including Huaze Liu where documented. Existing licenses and notices remain applicable. See [access and permission](../CONFIDENTIALITY.md) and the [source and permission record](../docs/AI_AND_SOURCE_DISCLOSURE.md#material-permissions-and-provenance).
 
 ## Portfolio figures and recordings
 

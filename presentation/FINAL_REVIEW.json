@@ -1,135 +1,45 @@
 {
-  "checked_at_utc": "2026-10-27T14:47:08Z",
-  "review_kind": "AI-assisted verification of the presentation and selected preserved research records; not an independent mentor assessment.",
-  "source_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
-  "navigation_verification": {
-    "source_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
-    "source_blob_checks": 8,
-    "calculation_checks": [
-      {
-        "room": "room2",
-        "seed": 0,
-        "samples": 9417,
-        "goal_error_cm": 7.310106716318381,
-        "localization_rmse_cm": 3.4759107834493985,
-        "arrival_belief_pct": 93.3497299941425,
-        "physical_arrival": true,
-        "formal_success": false,
-        "fallen": false,
-        "contacts": 13
-      },
-      {
-        "room": "sky_island_choice",
-        "seed": 0,
-        "samples": 12884,
-        "goal_error_cm": 6.409861863308522,
-        "localization_rmse_cm": 6.568192454875822,
-        "arrival_belief_pct": 92.41460558722426,
-        "physical_arrival": true,
-        "formal_success": false,
-        "fallen": false,
-        "contacts": 12
-      },
-      {
-        "room": "sky_offset_gate",
-        "seed": 0,
-        "samples": 15483,
-        "goal_error_cm": 4.073638322349707,
-        "localization_rmse_cm": 6.643408674529032,
-        "arrival_belief_pct": 91.89116935977027,
-        "physical_arrival": true,
-        "formal_success": false,
-        "fallen": false,
-        "contacts": 12
-      },
-      {
-        "room": "sky_staggered_baffles",
-        "seed": 0,
-        "samples": 21281,
-        "goal_error_cm": 4.158805411026263,
-        "localization_rmse_cm": 6.832591646244109,
-        "arrival_belief_pct": 96.03814786867414,
-        "physical_arrival": true,
-        "formal_success": true,
-        "fallen": false,
-        "contacts": 17
-      }
-    ],
-    "completed_trials": 4,
-    "physical_arrivals": 4,
-    "formal_successes": 1,
-    "interrupted_attempts_excluded": 1
-  },
-  "controller_screening_summary_check": {
-    "reference_mean_reference_foot_error_m": 0.09622298926115036,
-    "tuned_mean_reference_foot_error_m": 0.3301679193973541,
-    "result": "Tuned checkpoint did not demonstrate improvement; different training histories and single-seed screening retained as limitations.",
-    "scope": "Checked existing summaries; no new controller evaluation or training."
-  },
-  "presentation_links": {
-    "pages_checked": 14,
-    "relative_links_checked": 193,
-    "heading_links_checked": 8,
-    "broken_links": []
-  },
-  "video_access": [
-    {
-      "room": "room2",
-      "status": 200,
-      "bytes": 18177943,
-      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/original_room2/footstep/room2/seed_0/room2_footstep_pf_global_s0.mp4",
-      "anonymous_request": true
-    },
-    {
-      "room": "sky_island_choice",
-      "status": 200,
-      "bytes": 13915380,
-      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4",
-      "anonymous_request": true
-    },
-    {
-      "room": "sky_offset_gate",
-      "status": 200,
-      "bytes": 19351422,
-      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_offset_gate/seed_0/sky_offset_gate_footstep_pf_global_s0.mp4",
-      "anonymous_request": true
-    },
-    {
-      "room": "sky_staggered_baffles",
-      "status": 200,
-      "bytes": 24568834,
-      "download_url": "https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics_restart/footstep/sky_staggered_baffles/seed_0/sky_staggered_baffles_footstep_pf_global_s0.mp4",
-      "anonymous_request": true
-    }
+  "checked_at_utc": "2026-10-27T15:17:01.223733+00:00",
+  "edition": "private-full-research-memoir",
+  "private_repository": "ShihkaiLan1008/gatech-humanoid-research-memoir",
+  "private_confirmed": true,
+  "collaborators": [
+    "ShihkaiLan1008"
   ],
-  "presentation_changes": [
-    "Shortened the entry page and removed repeated narrative.",
-    "Connected student contribution claims to existing evidence.",
-    "Retained team methods, explicit ChatGPT drafting, substantial Codex execution and permission attribution.",
-    "Replaced video-preview links with tested direct downloads and preserved frame-sheet links.",
-    "Separated historical archive audits from the current scoped review."
-  ],
-  "no_new_training_or_simulation": true,
-  "source_artifacts_modified": false,
-  "prior_full_archive_audit": {
-    "path": "PORTFOLIO_AUDIT.json",
-    "checked_at_utc": "2026-10-10T03:16:59.404562+00:00",
-    "rerun_in_this_revision": false
+  "pending_invitations": 0,
+  "public_admissions_revision_unchanged": "9876cf328048c4eb644567465084b1ad7633cc4e",
+  "restored_narrative_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
+  "readme_words": 2081,
+  "source_files_verified": 10101,
+  "source_bytes_verified": 1590883121,
+  "source_integrity_record": "presentation/MEMOIR_COPY_AUDIT.json",
+  "legacy_manifest_note": "Five documentation differences predate this copy; checked against the exact public source revision. Original manifest and auditor preserved.",
+  "lfs_unique_current_objects": 28,
+  "lfs_current_bytes": 1379768434,
+  "lfs_local_fsck": "passed",
+  "lfs_private_remote_objects_available": 28,
+  "scientific_project_files_unchanged_from_source": true,
+  "new_training_or_simulation": false,
+  "document_sha256": {
+    "README.md": "6ec2e0d1bb04679c70da443b970633e62f08deb7ff0a122a2c29100327ada767",
+    "CONTRIBUTIONS.md": "135bc24b9b7ea4585270f5f09f3cb9a8ac92a1b28b59036a460315b5f97c3f27",
+    "CONFIDENTIALITY.md": "d6d3d27d8840060141c705206f6b5d9a1318ce76baff0f26245a06300731c4fb",
+    "VERSION_NOTES.md": "b207f052901700a693cfa9a5f84295f2bb8a64d204f73f05d1f4c15aa3ac9a41",
+    "assets/SOURCES.md": "a65632c610b0857f5d723bdc86b0fe6726383444a573811c97eb24e677c38617",
+    "docs/ADMISSIONS_RESEARCH_OVERVIEW.md": "efffcfb20b647edb1c20886aa166286006b15b1add118ac1e3781e9a15f8b83c",
+    "docs/AI_AND_SOURCE_DISCLOSURE.md": "840b3e4c682243966d842c90091a3640fbe028b2197431c4210dd5ba3d936d79",
+    "docs/HISTORICAL_PRESENTATION_REVIEW.md": "580939d8e319d90736669b9f9a6debaa9af5221e8e1c10ace660954fa6362108",
+    "docs/HOW_I_DIRECTED_AI.md": "79fa817bf705e22359385cfcd2b77ebbc274ea04c9cf7dc8783b4570cde64f36",
+    "docs/MENTOR_ALIGNMENT.md": "6fee151aa45f83b31f9d3bd88c46658c1d6ee573b010449037be3d058a67276f",
+    "docs/MY_RESEARCH_DIRECTION.md": "bbe2b5d4567f0328a8746af1c5d26b55d27ea8c7e00844f636c7dca730de61ac",
+    "docs/PORTFOLIO_REVIEW.md": "403fe8d8b0449adba8e163f676aca003f411804c006154a3cbc78f535e74bb08",
+    "docs/RESEARCH_WALKTHROUGH.md": "61ba0a762563b76ecd04bce365fb9a482d5b2567aad9d590df5a80f4aeb3a800",
+    "docs/SETBACK_AND_REBUILD.md": "65723a81af07eeb9d34556e857c2592fc7d14b38240321675bae260ff3864605",
+    "docs/TECHNICAL_DEPTH.md": "0cdb17a863d98556ace9b4fae32a3ffff9d886d4e20e075ab9e88ed051f27c98",
+    "docs/VIDEOS.md": "cdece2758366776084696bbd34f55975843c501c9db70c7c88c68efce6b7dae8"
   },
-  "limits": [
-    "One seed per navigation layout; simulation only.",
-    "Original/new-map time caps differ; model 35500 substituted for absent default 34000.",
-    "No independent certification of student mastery, authorship of every line, mentor endorsement, material rights or application-policy compliance.",
-    "Fresh video endpoint/length checks do not constitute fresh full video decoding.",
-    "This review does not replace the preserved earlier full-source integrity audit."
-  ],
-  "documentation_sha256": {
-    "README.md": "07652c5943bbab14dedb0cd46771eedee245796e4377d1163d32ee0bd3821653",
-    "CONTRIBUTIONS.md": "6cb8b818ddf7b2128b9adadd0a7d50da9267adc0ba11559939a1ac83f2daa919",
-    "docs/HOW_I_DIRECTED_AI.md": "126ed515a4e4bd07ecb8b160dec328867501e7c20aa2c07831f2d721e828cbb0",
-    "docs/ADMISSIONS_RESEARCH_OVERVIEW.md": "2bd880dd994924d6c0cf1bd020faf90a301858469097b342b4d79c334163382a",
-    "docs/VIDEOS.md": "9e0df4c77f6ace2b923cbe48f76dcbcb72f54f89d3a096d3a31ab67555d60ca1",
-    "docs/PORTFOLIO_REVIEW.md": "9d64c4841e3bfe78b60dfb77f2ab7352a5c37c675e057ace76a3085560934524"
-  },
-  "readme_word_count": 741
+  "scope": "Private-copy integrity, research calculations, restored narrative and permissions. Not an independent endorsement or proof of every authorship claim.",
+  "relative_links_checked": 267,
+  "heading_links_checked": 17,
+  "broken_links": []
 }

@@ -8,7 +8,7 @@
 
 **I directed the workflow and reporting for my mentor-assigned evaluation; ChatGPT helped integrate the materials and generated much of this portfolio's explanatory and presentation text in response to my prompts.** I provided the mentor's assignment, research context, source materials, questions and revision requests, examined outputs, and asked for changes. Codex provided substantial assistance with implementation, simulation operation, calculations, figures and documentation.
 
-**Team data, reference content and images supplied through Zhenyu Wu are included with his permission, as confirmed by me, for this public GitHub research portfolio.** Original authorship and existing notices remain credited to the team and upstream creators. Permission to display shared work is separate from authorship.
+**Team data, reference content and images supplied through Zhenyu Wu are included with his permission, as confirmed by me, for the original public GitHub research portfolio, whose materials and credits are preserved in this private copy.** Original authorship and existing notices remain credited to the team and upstream creators. Permission to display shared work is separate from authorship.
 
 ## What I contributed and what the evidence shows
 
@@ -32,7 +32,7 @@ This is a description of the workflow, not a reconstructed verbatim prompt log o
 
 ## Material permissions and provenance
 
-Sky confirms that Zhenyu Wu authorized him to include the team data, reference content and images Zhenyu supplied in this public GitHub portfolio. This statement records Sky's confirmation. Private permission messages are not reproduced here.
+Sky confirms that Zhenyu Wu authorized him to include the team data, reference content and images Zhenyu supplied in the original public GitHub portfolio, whose materials and credits are preserved in this private copy. This statement records Sky's confirmation. Private permission messages are not reproduced here.
 
 | Material | Source and credit | Inclusion and limits |
 | :--- | :--- | :--- |

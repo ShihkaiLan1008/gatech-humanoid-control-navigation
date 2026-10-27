@@ -1,0 +1,66 @@
+{
+  "checked_at_utc": "2026-10-27T15:12:53.748316+00:00",
+  "source_files_verified": 10101,
+  "source_bytes_verified": 1590883121,
+  "all_source_hashes_match": false,
+  "all_source_files_match_legacy_or_documented_public_revision": true,
+  "documented_preexisting_manifest_differences": [
+    "projects/tactile-controller/outputs/GitHub Portfolio Brainstorm.md",
+    "projects/tactile-navigation/docs/SKY_MAP_EXPERIMENT.md",
+    "projects/tactile-navigation/outputs/College Admission Research Writing Guide.md",
+    "projects/tactile-navigation/outputs/GitHub Navigation Portfolio Plan.md",
+    "projects/tactile-navigation/outputs/Sky Navigation Experiment Report.md"
+  ],
+  "source_revision": "9876cf328048c4eb644567465084b1ad7633cc4e",
+  "audit_method": "Legacy hashes for 10096 files; explicit current-public-source identity and hashes for five preexisting documentation changes. Original auditor unchanged.",
+  "credential_pattern_scanned_files": 946,
+  "credential_pattern_findings": [],
+  "scanner_limit": "Known credential patterns in selected text and Office XML; excludes PDF/image text, binary models and unknown patterns.",
+  "calculation_checks": [
+    {
+      "room": "room2",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 7.310106716318381,
+      "localization_rmse_cm": 3.4759107834493985,
+      "arrival_belief_pct": 93.3497299941425
+    },
+    {
+      "room": "sky_island_choice",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 6.409861863308522,
+      "localization_rmse_cm": 6.568192454875822,
+      "arrival_belief_pct": 92.41460558722426
+    },
+    {
+      "room": "sky_offset_gate",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": false,
+      "fallen": false,
+      "goal_error_cm": 4.073638322349707,
+      "localization_rmse_cm": 6.643408674529032,
+      "arrival_belief_pct": 91.89116935977027
+    },
+    {
+      "room": "sky_staggered_baffles",
+      "seed": 0,
+      "physical_arrival": true,
+      "formal_success": true,
+      "fallen": false,
+      "goal_error_cm": 4.158805411026263,
+      "localization_rmse_cm": 6.832591646244109,
+      "arrival_belief_pct": 96.03814786867414
+    }
+  ],
+  "completed_trials": 4,
+  "physical_arrivals": 4,
+  "formal_successes": 1,
+  "interrupted_attempts_excluded": 1,
+  "verification_limit": "Artifact integrity and calculations do not independently certify personal mastery, mentor endorsement, or sharing permission."
+}

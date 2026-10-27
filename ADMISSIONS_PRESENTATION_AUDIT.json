@@ -1,18 +1,24 @@
 {
-  "base_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
-  "scope": "Root and reader-facing docs plus visual-source Markdown; relative files, HTML hrefs and available Markdown heading targets.",
+  "checked_at_utc": "2026-10-27T15:17:28.171539+00:00",
+  "edition": "private-full-research-memoir",
+  "source_revision": "9876cf328048c4eb644567465084b1ad7633cc4e",
+  "restored_narrative_revision": "4fdfd0c0be9b8e2700888ae788d0323673182b62",
   "pages": [
+    {
+      "path": "README.md",
+      "relative_links": 48
+    },
+    {
+      "path": "CONTRIBUTIONS.md",
+      "relative_links": 7
+    },
     {
       "path": "CONFIDENTIALITY.md",
       "relative_links": 4
     },
     {
-      "path": "CONTRIBUTIONS.md",
-      "relative_links": 21
-    },
-    {
-      "path": "README.md",
-      "relative_links": 19
+      "path": "VERSION_NOTES.md",
+      "relative_links": 9
     },
     {
       "path": "assets/SOURCES.md",
@@ -20,15 +26,19 @@
     },
     {
       "path": "docs/ADMISSIONS_RESEARCH_OVERVIEW.md",
-      "relative_links": 16
+      "relative_links": 17
     },
     {
       "path": "docs/AI_AND_SOURCE_DISCLOSURE.md",
       "relative_links": 15
     },
     {
+      "path": "docs/HISTORICAL_PRESENTATION_REVIEW.md",
+      "relative_links": 25
+    },
+    {
       "path": "docs/HOW_I_DIRECTED_AI.md",
-      "relative_links": 8
+      "relative_links": 27
     },
     {
       "path": "docs/MENTOR_ALIGNMENT.md",
@@ -40,7 +50,7 @@
     },
     {
       "path": "docs/PORTFOLIO_REVIEW.md",
-      "relative_links": 8
+      "relative_links": 13
     },
     {
       "path": "docs/RESEARCH_WALKTHROUGH.md",
@@ -59,9 +69,8 @@
       "relative_links": 16
     }
   ],
-  "relative_links_checked": 193,
-  "heading_links_checked": 8,
+  "relative_links_checked": 267,
+  "heading_links_checked": 17,
   "broken_links": [],
-  "external_links": "Excluded from relative-link scan; video endpoints checked separately.",
-  "checked_at_utc": "2026-10-27T14:47:08Z"
+  "scope": "Reader-facing Markdown, visual sources and available heading targets. Private remote access checked separately."
 }
