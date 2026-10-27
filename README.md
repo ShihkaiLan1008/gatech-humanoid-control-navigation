@@ -12,7 +12,8 @@
   <a href="CONTRIBUTIONS.md"><strong>MY CONTRIBUTION</strong></a> &nbsp; / &nbsp;
   <a href="docs/RESEARCH_WALKTHROUGH.md"><strong>INSIDE THE RESEARCH</strong></a> &nbsp; / &nbsp;
   <a href="docs/VIDEOS.md">WATCH THE ROBOT</a> &nbsp; / &nbsp;
-  <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a>
+  <a href="docs/MY_RESEARCH_DIRECTION.md">WHY I CARE</a> &nbsp; / &nbsp;
+  <a href="docs/AI_AND_SOURCE_DISCLOSURE.md">AI &amp; SOURCE CREDITS</a>
 </p>
 
 ---
@@ -40,6 +41,14 @@ I worked with the group on how to judge training and experiments, shared a weekl
 - **Judging what the result supports:** I identified that 1,024 parallel environments provided one eighth of the samples of an 8,192-environment setup at the same iteration count. I kept the improvement question open and proposed a comparison with matched training conditions. This matters because a completed run alone cannot show that a reward change improved the controller. [Experimental reasoning and evidence →](CONTRIBUTIONS.md#controller-implementation-and-experimental-judgment)
 
 Under Professor Ye Zhao's mentorship and Zhenyu Wu's direct guidance, I used AI to accelerate reading, implementation and troubleshooting, and checked suggestions against source code, system behavior and measured results. My contribution combines technical implementation with careful evaluation and communication of its limits.
+
+## How this portfolio was produced
+
+**My research participation, AI-generated presentation, and the team's research foundation are credited separately.** I supplied the research context, prompts, priorities and follow-up directions. **ChatGPT helped integrate the source material and generated much of the explanatory and presentation text in response to my prompts.** Codex provided substantial assistance with code, experiment operation, analysis, figures and documentation. I examined outputs and requested revisions; directing these tools does not mean I independently wrote every passage or implemented every component.
+
+Team data, reference content and images supplied through **Zhenyu Wu** are included with his permission, as confirmed by me, for this public GitHub research portfolio. Original authorship, Huaze Liu's contributions and upstream notices remain credited. This permission does not establish sole authorship or a blanket reuse license.
+
+[Who contributed what, evidence, AI workflow and material permissions →](docs/AI_AND_SOURCE_DISCLOSURE.md)
 
 ## Why this research matters
 

@@ -1,6 +1,16 @@
 # Visual sources
 
-All presentation assets are stored inside this repository. No third-party badge, tracking image, font service or image host is used.
+All presentation assets are stored inside this repository. No external badge, tracking image, font service or image host is used. Local storage does not mean that every image or its underlying research was originally created by Sky.
+
+## Shared materials and permission
+
+Sky confirms that **Zhenyu Wu authorized inclusion of the team data, reference content and images he supplied in this public GitHub research portfolio**. Zhenyu is credited as the provider; original authorship remains with the team and upstream creators, including Huaze Liu where documented. Existing licenses and notices remain applicable. See [access and permission](../CONFIDENTIALITY.md) and the [source and permission record](../docs/AI_AND_SOURCE_DISCLOSURE.md#material-permissions-and-provenance).
+
+## Portfolio figures and recordings
+
+The assets below are presentation derivatives or recordings from the preserved AI-assisted evaluation. Their plots and layout were produced with Codex assistance; they do not establish sole authorship of the underlying controller, navigation method, shared data or reference visuals. ChatGPT helped integrate and draft the accompanying explanations.
+
+These derivatives are distinguished from borrowed team figures and images, which retain their source credits.
 
 - `research-cover.svg`: simplified display of simulator-truth positions from the staggered-baffle seed-0 canonical evaluation record; map boundaries and dividers come from its authored manifest. Points are sampled for display; the raw record is unchanged.
 - `pilot-at-a-glance.svg`: counts from the four completed canonical evaluation records. The interrupted attempt is excluded and remains preserved separately.

@@ -67,7 +67,8 @@ These labels describe the material in the repository. They do not imply an offic
 2. **Future directions:** Adaptive walking with less retraining, transfer across robot bodies, and cleaner energy are interests for further study. They are not established outcomes of these experiments.
 3. **Contribution evidence:** Personal experiences are based on Sky's account; mentor interactions were also reviewed in the visible Slack conversations. The documented actions support the stated participation and workflow role; the audit does not independently establish mastery of every algorithm or mentor endorsement of an application.
 4. **Public access:** The repository is public and readable without a GitHub account. Large artifacts use Git LFS.
-5. **Team materials:** Inclusion follows the sharing permission reported by Sky. Publication is at Sky's instruction; the team's authorship and upstream license notices remain applicable.
+5. **Team materials:** Sky confirms permission from Zhenyu Wu to include the team data, reference content and images he supplied in this public GitHub portfolio. Zhenyu's provider role, the original authors' credits and applicable upstream notices remain distinct; no blanket relicensing is asserted.
+6. **AI-generated presentation:** ChatGPT integrated source material and generated much of the narrative in response to Sky's prompts and revisions. Codex supplied substantial technical and presentation assistance. The disclosure does not establish independent student authorship of that prose or guarantee that it can be submitted as an original application response. See [AI and source disclosure](AI_AND_SOURCE_DISCLOSURE.md).
 
 ## Issues corrected in this review
 
