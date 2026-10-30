@@ -1,6 +1,6 @@
 # Humanoid Control and Navigation: Training and Evaluation
 
-> **Private full research memoir.** This copy restores the long-form research narrative for my personal archive. The concise admissions edition remains unchanged. [Version notes and provenance](VERSION_NOTES.md)
+> **Full research portfolio.** The complete research narrative, contribution record and preserved evidence. [Concise edition](https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation-summary) · [Version notes and provenance](VERSION_NOTES.md)
 
 ![Sky Lan — Walking toward understanding. Robotics research portfolio with a recorded simulation trajectory.](assets/research-cover.svg)
 
@@ -61,7 +61,7 @@ This research has reaffirmed my love for mechanical engineering by connecting me
 
 ## From code to movement
 
-[![A recorded G1 simulation navigating the central-island map, beside its trajectory and localization diagnostics. Click to open the full replay.](projects/tactile-navigation/outputs/island_video_frame.png)](https://github.com/ShihkaiLan1008/gatech-humanoid-research-memoir/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4)
+[![A recorded G1 simulation navigating the central-island map, beside its trajectory and localization diagnostics. Click to open the full replay.](projects/tactile-navigation/outputs/island_video_frame.png)](https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation/raw/refs/heads/main/projects/tactile-navigation/out/sky_evaluation_20261003/new_maps_physics/footstep/sky_island_choice/seed_0/sky_island_choice_footstep_pf_global_s0.mp4)
 
 <p align="center"><sub>Central-island experiment · actual recorded simulation · full replay linked above</sub></p>
 
@@ -92,7 +92,7 @@ The threshold requires enough localization belief to satisfy **both position and
 
 I supplied the task context, prompts, priorities and revision requests, examined outputs and shaped the reporting. **The portfolio's narrative was substantially generated with ChatGPT assistance; its technical work also received substantial Codex assistance.** The [detailed contribution and source record](docs/AI_AND_SOURCE_DISCLOSURE.md) explains this workflow alongside my documented participation.
 
-Team data, reference content and images supplied through **Zhenyu Wu** are included with his permission, as confirmed by me, for the original public GitHub portfolio; this private copy preserves the same materials and credits. Original authorship and upstream notices remain credited. [Permission and attribution →](CONFIDENTIALITY.md)
+Team data, reference content and images supplied through **Zhenyu Wu** are included with his permission, as confirmed by me, for the original public GitHub portfolio; this full edition preserves the same materials and credits. Original authorship and upstream notices remain credited. [Permission and attribution →](CONFIDENTIALITY.md)
 
 ## Follow one recorded experiment
 
@@ -187,17 +187,17 @@ I thank [Professor Ye Zhao](https://people.research.gatech.edu/ye-zhao) for his 
 </details>
 
 <details>
-<summary><strong>Private archive and reproduction</strong></summary>
+<summary><strong>Research archive and reproduction</strong></summary>
 
 This repository preserves source snapshots, models, datasets, logs, reports and recordings. Large artifacts use Git LFS:
 
 ```bash
-git clone https://github.com/ShihkaiLan1008/gatech-humanoid-research-memoir.git research-retrospective
+git clone https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation.git research-retrospective
 cd research-retrospective
 git lfs pull
 ```
 
-This is a private personal archive. Viewing it requires a GitHub account with access; the separate concise admissions portfolio remains public. Dependencies and original local paths are documented by project. Large models and recordings use Git LFS. [Access and attribution →](CONFIDENTIALITY.md)
+This is the public full research portfolio. A [concise edition](https://github.com/ShihkaiLan1008/gatech-humanoid-control-navigation-summary) is also available. Dependencies and original local paths are documented by project. Large models and recordings use Git LFS. [Access and attribution →](CONFIDENTIALITY.md)
 
 </details>
 

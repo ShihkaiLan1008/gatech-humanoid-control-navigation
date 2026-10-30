@@ -1,4 +1,4 @@
-> **Historical long-form review.** Restored from the pre-shortening source revision 4fdfd0c0be9b8e2700888ae788d0323673182b62. Statements about public access and prior audits describe that source edition. This repository is a private memoir; see [version notes](../VERSION_NOTES.md) and the [current copy review](PORTFOLIO_REVIEW.md).
+> **Historical long-form review.** Restored from the pre-shortening source revision 4fdfd0c0be9b8e2700888ae788d0323673182b62. Statements about public access and prior audits describe that source edition. This repository now hosts the public full research portfolio; see [version notes](../VERSION_NOTES.md) and the [current copy review](PORTFOLIO_REVIEW.md).
 
 [← Portfolio home](../README.md) · [My role](HOW_I_DIRECTED_AI.md) · [Contributions](../CONTRIBUTIONS.md)
 
